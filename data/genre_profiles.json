@@ -1,0 +1,623 @@
+{
+ "note": "Starting-estimate centres for the 7 GenreMatch features as defined in rebuild_prompt.md Phase 2. Not measured from audio; calibrate.",
+ "profiles": [
+  {
+   "id": "techno",
+   "name": "Techno",
+   "family": "Techno",
+   "features": {
+    "bpm": 130,
+    "energy": 0.85,
+    "brightness": 0.45,
+    "texture": 0.55,
+    "bass": 0.75,
+    "dynamics": 0.2,
+    "pulse": 0.75
+   },
+   "atlas_ids": [
+    "tec01",
+    "tec05",
+    "tec04"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "house",
+   "name": "House",
+   "family": "House",
+   "features": {
+    "bpm": 123,
+    "energy": 0.8,
+    "brightness": 0.5,
+    "texture": 0.45,
+    "bass": 0.7,
+    "dynamics": 0.22,
+    "pulse": 0.7
+   },
+   "atlas_ids": [
+    "hou01",
+    "hou04"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "deephouse",
+   "name": "Deep House",
+   "family": "House",
+   "features": {
+    "bpm": 120,
+    "energy": 0.7,
+    "brightness": 0.4,
+    "texture": 0.4,
+    "bass": 0.7,
+    "dynamics": 0.22,
+    "pulse": 0.62
+   },
+   "atlas_ids": [
+    "hou04"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "trance",
+   "name": "Trance",
+   "family": "Trance",
+   "features": {
+    "bpm": 138,
+    "energy": 0.85,
+    "brightness": 0.6,
+    "texture": 0.55,
+    "bass": 0.6,
+    "dynamics": 0.2,
+    "pulse": 0.72
+   },
+   "atlas_ids": [
+    "tra05",
+    "tra09"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "dnb",
+   "name": "Drum & Bass",
+   "family": "Drum 'n' Bass",
+   "features": {
+    "bpm": 174,
+    "energy": 0.88,
+    "brightness": 0.6,
+    "texture": 0.6,
+    "bass": 0.72,
+    "dynamics": 0.25,
+    "pulse": 0.88
+   },
+   "atlas_ids": [
+    "dnb01",
+    "dnb05"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "dubstep",
+   "name": "Dubstep",
+   "family": "Drum 'n' Bass",
+   "features": {
+    "bpm": 140,
+    "energy": 0.88,
+    "brightness": 0.5,
+    "texture": 0.65,
+    "bass": 0.85,
+    "dynamics": 0.3,
+    "pulse": 0.6
+   },
+   "atlas_ids": [
+    "dnb08"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "edmtrap",
+   "name": "EDM Trap",
+   "family": "Breakbeat",
+   "features": {
+    "bpm": 145,
+    "energy": 0.88,
+    "brightness": 0.55,
+    "texture": 0.55,
+    "bass": 0.85,
+    "dynamics": 0.3,
+    "pulse": 0.65
+   },
+   "atlas_ids": [
+    "brb11"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "hiphop",
+   "name": "Hip Hop",
+   "family": "Rap",
+   "features": {
+    "bpm": 92,
+    "energy": 0.75,
+    "brightness": 0.4,
+    "texture": 0.35,
+    "bass": 0.78,
+    "dynamics": 0.32,
+    "pulse": 0.52
+   },
+   "atlas_ids": [
+    "rap02",
+    "rap01",
+    "rap08"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "trap",
+   "name": "Trap",
+   "family": "Rap",
+   "features": {
+    "bpm": 142,
+    "energy": 0.78,
+    "brightness": 0.42,
+    "texture": 0.4,
+    "bass": 0.85,
+    "dynamics": 0.3,
+    "pulse": 0.6
+   },
+   "atlas_ids": [
+    "rap09"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "drill",
+   "name": "Drill",
+   "family": "Rap",
+   "features": {
+    "bpm": 143,
+    "energy": 0.75,
+    "brightness": 0.35,
+    "texture": 0.4,
+    "bass": 0.88,
+    "dynamics": 0.32,
+    "pulse": 0.55
+   },
+   "atlas_ids": [
+    "rap09",
+    "x_drill",
+    "x_uk_drill"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "phonk",
+   "name": "Phonk",
+   "family": "Rap",
+   "features": {
+    "bpm": 130,
+    "energy": 0.82,
+    "brightness": 0.45,
+    "texture": 0.55,
+    "bass": 0.85,
+    "dynamics": 0.25,
+    "pulse": 0.7
+   },
+   "atlas_ids": [
+    "x_phonk"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "rnb",
+   "name": "R&B",
+   "family": "Rhythm 'n' Blues",
+   "features": {
+    "bpm": 90,
+    "energy": 0.62,
+    "brightness": 0.4,
+    "texture": 0.3,
+    "bass": 0.62,
+    "dynamics": 0.38,
+    "pulse": 0.42
+   },
+   "atlas_ids": [
+    "rap10"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "soul",
+   "name": "Soul",
+   "family": "Rhythm 'n' Blues",
+   "features": {
+    "bpm": 100,
+    "energy": 0.58,
+    "brightness": 0.45,
+    "texture": 0.3,
+    "bass": 0.45,
+    "dynamics": 0.5,
+    "pulse": 0.45
+   },
+   "atlas_ids": [
+    "rnb04",
+    "rnb03",
+    "rnb12"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "pop",
+   "name": "Pop",
+   "family": "Pop",
+   "features": {
+    "bpm": 118,
+    "energy": 0.8,
+    "brightness": 0.58,
+    "texture": 0.4,
+    "bass": 0.55,
+    "dynamics": 0.28,
+    "pulse": 0.6
+   },
+   "atlas_ids": [
+    "pop11",
+    "pop13",
+    "pop04"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "hyperpop",
+   "name": "Hyperpop",
+   "family": "Pop",
+   "features": {
+    "bpm": 150,
+    "energy": 0.88,
+    "brightness": 0.72,
+    "texture": 0.7,
+    "bass": 0.6,
+    "dynamics": 0.25,
+    "pulse": 0.8
+   },
+   "atlas_ids": [
+    "x_hyperpop"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "kpop",
+   "name": "K-pop",
+   "family": "Pop",
+   "features": {
+    "bpm": 120,
+    "energy": 0.84,
+    "brightness": 0.62,
+    "texture": 0.45,
+    "bass": 0.58,
+    "dynamics": 0.26,
+    "pulse": 0.66
+   },
+   "atlas_ids": [
+    "x_k_pop"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "songwriter",
+   "name": "Singer-Songwriter",
+   "family": "Pop",
+   "features": {
+    "bpm": 95,
+    "energy": 0.4,
+    "brightness": 0.38,
+    "texture": 0.2,
+    "bass": 0.25,
+    "dynamics": 0.62,
+    "pulse": 0.28
+   },
+   "atlas_ids": [
+    "pop03"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "indie",
+   "name": "Indie Rock",
+   "family": "Alternative",
+   "features": {
+    "bpm": 126,
+    "energy": 0.7,
+    "brightness": 0.55,
+    "texture": 0.55,
+    "bass": 0.35,
+    "dynamics": 0.45,
+    "pulse": 0.6
+   },
+   "atlas_ids": [
+    "alt01",
+    "alt07"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "rock",
+   "name": "Rock",
+   "family": "Contemporary",
+   "features": {
+    "bpm": 120,
+    "energy": 0.78,
+    "brightness": 0.58,
+    "texture": 0.62,
+    "bass": 0.4,
+    "dynamics": 0.4,
+    "pulse": 0.65
+   },
+   "atlas_ids": [
+    "con03"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "metal",
+   "name": "Metal",
+   "family": "Metal",
+   "features": {
+    "bpm": 150,
+    "energy": 0.9,
+    "brightness": 0.68,
+    "texture": 0.8,
+    "bass": 0.5,
+    "dynamics": 0.3,
+    "pulse": 0.85
+   },
+   "atlas_ids": [
+    "met01",
+    "met05",
+    "met09"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "punk",
+   "name": "Punk",
+   "family": "Punk / Wave",
+   "features": {
+    "bpm": 172,
+    "energy": 0.85,
+    "brightness": 0.65,
+    "texture": 0.75,
+    "bass": 0.35,
+    "dynamics": 0.35,
+    "pulse": 0.85
+   },
+   "atlas_ids": [
+    "pwv02",
+    "hcp01"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "folk",
+   "name": "Folk",
+   "family": "Folk",
+   "features": {
+    "bpm": 105,
+    "energy": 0.42,
+    "brightness": 0.35,
+    "texture": 0.22,
+    "bass": 0.28,
+    "dynamics": 0.6,
+    "pulse": 0.32
+   },
+   "atlas_ids": [
+    "fol",
+    "rnr03",
+    "con07"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "country",
+   "name": "Country",
+   "family": "Country",
+   "features": {
+    "bpm": 112,
+    "energy": 0.65,
+    "brightness": 0.5,
+    "texture": 0.4,
+    "bass": 0.38,
+    "dynamics": 0.45,
+    "pulse": 0.5
+   },
+   "atlas_ids": [
+    "cou10",
+    "cou07"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "jazz",
+   "name": "Jazz",
+   "family": "Jazz",
+   "features": {
+    "bpm": 125,
+    "energy": 0.45,
+    "brightness": 0.4,
+    "texture": 0.3,
+    "bass": 0.35,
+    "dynamics": 0.68,
+    "pulse": 0.45
+   },
+   "atlas_ids": [
+    "jaz06",
+    "jaz08"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "blues",
+   "name": "Blues",
+   "family": "Blues",
+   "features": {
+    "bpm": 95,
+    "energy": 0.55,
+    "brightness": 0.42,
+    "texture": 0.4,
+    "bass": 0.38,
+    "dynamics": 0.55,
+    "pulse": 0.42
+   },
+   "atlas_ids": [
+    "blu06"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "ambient",
+   "name": "Ambient",
+   "family": "Downtempo",
+   "features": {
+    "bpm": 80,
+    "energy": 0.25,
+    "brightness": 0.3,
+    "texture": 0.4,
+    "bass": 0.35,
+    "dynamics": 0.35,
+    "pulse": 0.1
+   },
+   "atlas_ids": [
+    "dtp06"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "lofi",
+   "name": "Lo-fi Beats",
+   "family": "Downtempo",
+   "features": {
+    "bpm": 80,
+    "energy": 0.45,
+    "brightness": 0.25,
+    "texture": 0.35,
+    "bass": 0.55,
+    "dynamics": 0.3,
+    "pulse": 0.4
+   },
+   "atlas_ids": [
+    "x_lo_fi_beats",
+    "x_chillhop"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "synthwave",
+   "name": "Synthwave",
+   "family": "Downtempo",
+   "features": {
+    "bpm": 105,
+    "energy": 0.72,
+    "brightness": 0.55,
+    "texture": 0.5,
+    "bass": 0.55,
+    "dynamics": 0.25,
+    "pulse": 0.55
+   },
+   "atlas_ids": [
+    "dtp14"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "reggae",
+   "name": "Reggae",
+   "family": "Jamaican",
+   "features": {
+    "bpm": 75,
+    "energy": 0.62,
+    "brightness": 0.4,
+    "texture": 0.3,
+    "bass": 0.75,
+    "dynamics": 0.35,
+    "pulse": 0.45
+   },
+   "atlas_ids": [
+    "jam04"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "reggaeton",
+   "name": "Reggaeton",
+   "family": "Jamaican",
+   "features": {
+    "bpm": 95,
+    "energy": 0.82,
+    "brightness": 0.52,
+    "texture": 0.4,
+    "bass": 0.78,
+    "dynamics": 0.25,
+    "pulse": 0.7
+   },
+   "atlas_ids": [
+    "jam11",
+    "x_dembow"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "latinpop",
+   "name": "Latin Pop",
+   "family": "World Latin",
+   "features": {
+    "bpm": 105,
+    "energy": 0.8,
+    "brightness": 0.55,
+    "texture": 0.42,
+    "bass": 0.62,
+    "dynamics": 0.28,
+    "pulse": 0.68
+   },
+   "atlas_ids": [
+    "x_latin_pop"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "afrobeats",
+   "name": "Afrobeats",
+   "family": "World Pop",
+   "features": {
+    "bpm": 105,
+    "energy": 0.78,
+    "brightness": 0.5,
+    "texture": 0.4,
+    "bass": 0.7,
+    "dynamics": 0.28,
+    "pulse": 0.65
+   },
+   "atlas_ids": [
+    "x_afrobeats",
+    "x_afroswing"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  },
+  {
+   "id": "amapiano",
+   "name": "Amapiano",
+   "family": "House",
+   "features": {
+    "bpm": 113,
+    "energy": 0.7,
+    "brightness": 0.42,
+    "texture": 0.4,
+    "bass": 0.8,
+    "dynamics": 0.28,
+    "pulse": 0.62
+   },
+   "atlas_ids": [
+    "x_amapiano"
+   ],
+   "status": "starting estimate, calibrate with real tracks"
+  }
+ ]
+}

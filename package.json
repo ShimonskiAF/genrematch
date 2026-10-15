@@ -1,0 +1,2 @@
+{ "name": "genrematch", "version": "1.0.0", "private": true, "type": "module",
+  "scripts": { "test": "node --test test/", "harness": "node tools/harness.js", "serve": "python3 -m http.server 8080" } }
