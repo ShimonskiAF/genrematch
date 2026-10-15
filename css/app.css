@@ -33,3 +33,5 @@ input[type=search],input[type=text],select{width:100%;max-width:420px}
 #view:focus{outline:none}
 .gm-drop{display:block;cursor:pointer}
 .gm-drop strong{display:block}
+
+.gm-beta{font-family:"Hanken Grotesk",sans-serif;font-weight:600;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#3C4A6B;border:1px solid #3C4A6B;border-radius:6px;padding:2px 6px;margin-left:8px;vertical-align:middle}
