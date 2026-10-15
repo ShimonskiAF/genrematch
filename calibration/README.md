@@ -1,10 +1,11 @@
-# Calibration (26 tracks from Shima's DJ library, rekordbox crates as labels)
-Audio is NOT in git. Only the measured features are stored (features.json).
+# Calibration
 
-    node tools/extract.js /path/to/crates > calibration/features.json   # ffmpeg decode, 44.1 kHz mono, same analyser as the browser
-    node calibration/evaluate.js                                         # current accuracy
-    node calibration/tune.js                                             # leave-one-out on the training split
-    node calibration/calibrate.js --write                                # refit data/genre_profiles.json
+Round 1: 26 tracks in `/workspace/uploads/cal/`. Round 2: +170 in `/workspace/uploads/r2/` (~178 unique labelled after dedupe).
+Audio is NOT in git. Only measured features (`features.json`) are stored.
 
-The held-out split (labels.js, 8 tracks, about 30%) was fixed before fitting and never used for fitting or tuning.
-before.txt and after.txt hold the per-track results.
+    node tools/extract.js /path/to/crates... > calibration/features.json
+    node calibration/calibrate.js --write
+    node calibration/evaluate.js
+
+Holdout is stratified ~25% per crate (`buildHoldout` in labels.js), fixed before fitting.
+Crates with fewer than 3 training tracks are not fitted (estimate only). Acapellas and Open Format Mashups are skipped for fitting.

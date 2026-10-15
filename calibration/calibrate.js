@@ -1,54 +1,73 @@
-// Fit genre centres to the labelled crates (training split only), convert the
-// remaining estimate profiles to the new feature scales, write data/genre_profiles.json.
-// node calibration/calibrate.js [--write]
+// Fit genre centres to labelled crates. Training split only. node calibration/calibrate.js [--write]
 import fs from 'node:fs';
-import { scaleRaw } from '../js/analyser.js';
+import { FEATURES } from '../js/analyser.js';
 import { featuresFromRaw, evaluate, summary } from './evaluate.js';
-import { labelFor, isHeldOut } from './labels.js';
-const K = ['energy', 'brightness', 'texture', 'bass', 'dynamics', 'pulse'];
+import { labelFor, isHeldOut, buildHoldout, SKIP_FITTING, MIN_FIT } from './labels.js';
+const K = FEATURES.filter((k) => k !== 'bpm');
 const r2 = (x) => Math.round(x * 100) / 100;
 const before = JSON.parse(fs.readFileSync(new URL('./genre_profiles.before.json', import.meta.url)));
 const T = JSON.parse(fs.readFileSync(new URL('./features.json', import.meta.url)));
-export const CFG = { SHRINK: 0.25, BPM_SD: 0.2 };
-let { SHRINK, BPM_SD } = CFG;
-export const setCfg = (c) => ({ SHRINK, BPM_SD } = { ...CFG, ...c });
-const _ = 0; // pull each fitted centre 25% toward the pooled club mean (avoids fitting 2-3 tracks exactly)
+buildHoldout(T);
+export const CFG = { SHRINK: 0.35, BPM_SD: 0.15, SPREAD_FLOOR: 0.12 };
+let { SHRINK, BPM_SD, SPREAD_FLOOR } = CFG;
+export const setCfg = (c) => ({ SHRINK, BPM_SD, SPREAD_FLOOR } = { ...CFG, ...c });
 
-// 1. Convert estimate centres from the old divisors to the new scales via the raw quantity.
-const oldToRaw = { energy: (v) => v * 24 - 30, brightness: (v) => v * 3500 + 500, bass: (v) => v * 0.45, dynamics: (v) => v * 20, pulse: (v) => v * 8 };
-function convert(f) {
-  const raw = { bpm: f.bpm, rmsDb: oldToRaw.energy(f.energy), centroid: oldToRaw.brightness(f.brightness), flatness: 1, bassShare: oldToRaw.bass(f.bass), dynRangeDb: oldToRaw.dynamics(f.dynamics), onsetsPerSec: oldToRaw.pulse(f.pulse) };
-  const s = scaleRaw(raw);
-  s.texture = 0.15 + 0.5 * f.texture; // old texture never matched real audio; keep the ordering only
-  return Object.fromEntries([['bpm', f.bpm], ...K.map((k) => [k, r2(s[k])])]);
-}
-
-// 2. Fitted subgenres: label id -> name, family, atlas ids, tempo anchor (used only to pick the octave).
-const FIT = {
+// Atlas links and family for every fitted subgenre.
+const FIT_META = {
   speedhouse: { name: 'Speed House', family: 'House', atlas_ids: ['hou09', 'hou05'], anchor: 140 },
   basshouse: { name: 'Bass House', family: 'House', atlas_ids: ['hou09', 'hou10', 'brb10'], anchor: 128 },
   techhouse: { name: 'Tech House', family: 'House', atlas_ids: ['tec06', 'hou07'], anchor: 126 },
   peaktechno: { name: 'Peak Time Techno', family: 'Techno', atlas_ids: ['tec01', 'tec04'], anchor: 130 },
   moombahton: { name: 'Moombahton', family: 'House', atlas_ids: ['hou11'], anchor: 110 },
-  hiphop: { anchor: 95 }, dnb: { anchor: 174 }, reggaeton: { anchor: 95 },
+  amapiano: { name: 'Amapiano', family: 'House', atlas_ids: ['x_amapiano'], anchor: 112 },
+  hiphop: { name: 'Hip Hop', family: 'Rap', atlas_ids: ['rap02', 'rap01', 'rap08'], anchor: 95 },
+  phonk: { name: 'Phonk', family: 'Rap', atlas_ids: ['x_phonk'], anchor: 140 },
+  gwalk: { name: 'G-Walk', family: 'Rap', atlas_ids: ['x_gwalk', 'rap03', 'rap04'], anchor: 100 },
+  jerseyclub: { name: 'Jersey Club', family: 'Breakbeat', atlas_ids: ['x_jersey_club', 'hou08'], anchor: 140 },
+  rnb: { name: 'R&B / Soul', family: "Rhythm 'n' Blues", atlas_ids: ['rnb12', 'rnb13', 'rap10'], anchor: 90 },
+  afrobeats: { name: 'Afrobeats', family: 'World Pop', atlas_ids: ['x_afrobeats', 'woC10'], anchor: 105 },
+  bailefunk: { name: 'Baile Funk', family: 'World Latin', atlas_ids: ['x_baile_funk', 'x_dembow', 'rap03'], anchor: 130 },
+  reggae: { name: 'Reggae', family: 'Jamaican', atlas_ids: ['jam04', 'jam08'], anchor: 80 },
+  reggaeton: { name: 'Reggaeton', family: 'Jamaican', atlas_ids: ['jam11', 'x_dembow'], anchor: 95 },
+  dnb: { name: 'Drum & Bass', family: "Drum 'n' Bass", atlas_ids: ['dnb01', 'dnb05'], anchor: 174 },
 };
+
+// Convert old-divisor centres to the new scales; rhythm stays neutral (0.5) for estimates.
+const oldToRaw = { energy: (v) => v * 24 - 30, brightness: (v) => v * 3500 + 500, bass: (v) => v * 0.45, dynamics: (v) => v * 20, pulse: (v) => v * 8 };
+import { scaleRaw } from '../js/analyser.js';
+function convert(f) {
+  const raw = { bpm: f.bpm, rmsDb: oldToRaw.energy(f.energy), centroid: oldToRaw.brightness(f.brightness), flatness: 1, bassShare: oldToRaw.bass(f.bass), dynRangeDb: oldToRaw.dynamics(f.dynamics), onsetsPerSec: oldToRaw.pulse(f.pulse),
+    fourFloor: 1.5, tresillo: 1.0, offbeat: 0.8, syncop: 0.8, backbeat: 1.2 };
+  const s = scaleRaw(raw);
+  s.texture = 0.15 + 0.5 * f.texture;
+  for (const k of ['fourFloor', 'tresillo', 'offbeat', 'syncop', 'backbeat']) s[k] = 0.5;
+  return Object.fromEntries([['bpm', f.bpm], ...K.map((k) => [k, r2(s[k])])]);
+}
 const fold = (b, a) => [b / 2, b, b * 2].reduce((x, y) => (Math.abs(Math.log2(y / a)) < Math.abs(Math.log2(x / a)) ? y : x));
 const med = (a) => { const s = [...a].sort((x, y) => x - y), m = s.length >> 1; return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; };
+const sd = (a) => { if (a.length < 2) return 0; const m = a.reduce((x, y) => x + y, 0) / a.length; return Math.sqrt(a.reduce((x, y) => x + (y - m) ** 2, 0) / a.length); };
 
 export function fit(train) {
-  const rows = train.map((t) => ({ lab: labelFor(t.folder), f: featuresFromRaw(t.raw) }));
-  const club = Object.fromEntries(K.map((k) => [k, rows.reduce((a, r) => a + r.f[k], 0) / rows.length]));
-  const profiles = before.profiles.map((p) => ({ ...p, features: convert(p.features), status: 'estimate, rescaled to calibrated feature scales' }));
-  for (const [id, meta] of Object.entries(FIT)) {
+  const rows = train.map((t) => ({ lab: labelFor(t.folder), f: featuresFromRaw(t.raw) })).filter((r) => r.lab.sub && !SKIP_FITTING.has(r.lab.crate));
+  const club = Object.fromEntries(K.map((k) => [k, rows.reduce((a, r) => a + r.f[k], 0) / Math.max(1, rows.length)]));
+  const profiles = before.profiles.map((p) => ({ ...p, features: convert(p.features), status: 'estimate, rescaled' }));
+  const counts = {};
+  for (const r of rows) counts[r.lab.sub] = (counts[r.lab.sub] || 0) + 1;
+  for (const [id, meta] of Object.entries(FIT_META)) {
     const mine = rows.filter((r) => r.lab.sub === id);
-    if (!mine.length) continue;
+    if (mine.length < MIN_FIT) continue;
     const bs = mine.map((r) => fold(r.f.bpm, meta.anchor)), c = med(bs);
-    const sd = Math.sqrt(bs.reduce((a, b) => a + Math.log2(b / c) ** 2, 0) / bs.length);
     const features = { bpm: Math.round(c) };
-    // tempo spread: crates that span tempos (hip hop, reggaeton) get a softer tempo term
-    if (mine.length >= 2) features.bpmSpread = r2(Math.min(3, Math.max(1, sd / BPM_SD)));
-    for (const k of K) features[k] = r2((1 - SHRINK) * (mine.reduce((a, r) => a + r.f[k], 0) / mine.length) + SHRINK * club[k]);
-    const p = { id, ...(profiles.find((x) => x.id === id) || {}), ...Object.fromEntries(Object.entries(meta).filter(([k]) => k !== 'anchor')), features, status: `calibrated on ${mine.length} labelled track${mine.length > 1 ? 's' : ''}` };
+    const bpmSd = Math.sqrt(bs.reduce((a, b) => a + Math.log2(b / c) ** 2, 0) / bs.length);
+    features.bpmSpread = r2(Math.min(3, Math.max(1, bpmSd / BPM_SD)));
+    const spread = {};
+    for (const k of K) {
+      const vals = mine.map((r) => r.f[k]);
+      features[k] = r2((1 - SHRINK) * (vals.reduce((a, b) => a + b, 0) / vals.length) + SHRINK * club[k]);
+      spread[k] = r2(Math.max(SPREAD_FLOOR, sd(vals)));
+    }
+    features.spread = spread;
+    const p = { id, name: meta.name, family: meta.family, atlas_ids: meta.atlas_ids, features, status: `calibrated on ${mine.length} labelled track${mine.length > 1 ? 's' : ''}` };
     const i = profiles.findIndex((x) => x.id === id);
     if (i >= 0) profiles[i] = p; else profiles.push(p);
   }
@@ -56,14 +75,16 @@ export function fit(train) {
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  const train = T.filter((t) => !isHeldOut(t.file));
+  const usable = T.filter((t) => { const l = labelFor(t.folder); return l.family && !SKIP_FITTING.has(l.crate); });
+  const train = usable.filter((t) => !isHeldOut(t));
   const profiles = fit(train);
-  const rows = evaluate(profiles, T);
-  for (const r of rows) console.log(`${r.held ? 'H' : ' '} ${r.famOk ? '✓' : '✗'}${r.subOk ? '✓' : r.subOk === null ? '·' : '✗'} ${r.file.slice(0, 40).padEnd(40)} ${r.crate.padEnd(19)} ${r.read.padEnd(22)} [${r.gotSub} ${r.fit} ${r.conf}] bpm ${r.f.bpm}`);
+  const rows = evaluate(profiles, usable);
+  for (const r of rows) console.log(`${r.held ? 'H' : ' '} ${r.famOk ? '✓' : '✗'}${r.subOk ? '✓' : r.subOk === null ? '·' : '✗'} ${r.file.slice(0, 36).padEnd(36)} ${r.crate.padEnd(18)} ${String(r.read).slice(0, 22).padEnd(22)} [${r.gotSub} ${r.fit}]`);
   console.log(JSON.stringify(summary(rows)));
+  console.log('profiles', profiles.length, 'train', train.length, 'held', usable.length - train.length);
   if (process.argv.includes('--write')) {
-    const out = { note: 'Genre centres for the 7 GenreMatch features. Club subgenres are fitted to labelled DJ-library tracks (training split, shrunk 25% toward the pooled mean); the rest are estimates rescaled to the calibrated feature scales. See calibration/.', profiles };
+    const out = { note: 'Genre centres for GenreMatch features (7 acoustic + 5 rhythm). Club/urban subgenres fitted to labelled DJ-library tracks (training split, shrunk toward the pooled mean, with per-feature spread). Estimates rescaled. See calibration/.', profiles };
     fs.writeFileSync(new URL('../data/genre_profiles.json', import.meta.url), JSON.stringify(out, null, 1) + '\n');
-    console.log('wrote data/genre_profiles.json', profiles.length);
+    console.log('wrote data/genre_profiles.json');
   }
 }

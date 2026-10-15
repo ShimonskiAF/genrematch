@@ -59,21 +59,21 @@ export function analyseWindow(x, sr) {
   if (nFrames < 8) return null;
   const re = new Float64Array(FRAME), im = new Float64Array(FRAME);
   const half = FRAME / 2, binHz = sr / FRAME, bassBin = Math.floor(150 / binHz);
-  let prev = null, lowFlux = [], cent = 0, flat = 0, bassP = 0, totP = 0, nUsed = 0;
+  let prev = null, lowFlux = [], midFlux = [], kickFlux = [], cent = 0, flat = 0, bassP = 0, totP = 0, nUsed = 0;
   const flux = [];
   for (let f = 0; f < nFrames; f++) {
     const o = f * HOP;
     for (let i = 0; i < FRAME; i++) { re[i] = (x[o + i] || 0) * HANN[i]; im[i] = 0; }
     fft(re, im);
     const mag = new Float64Array(half);
-    let sM = 0, sMf = 0, sP = 0, sLog = 0, fl = 0, lf = 0;
+    let sM = 0, sMf = 0, sP = 0, sLog = 0, fl = 0, lf = 0, mf = 0, kf = 0;
     for (let k = 1; k < half; k++) {
       const m = Math.hypot(re[k], im[k]), p = m * m;
       mag[k] = m; sM += m; sMf += m * k * binHz; sP += p; sLog += Math.log(p + 1e-12);
       if (k <= bassBin) bassP += p;
-      if (prev) { const d = Math.log1p(100 * m) - Math.log1p(100 * prev[k]); if (d > 0) { fl += d; if (k * binHz <= 300) lf += d; } }
+      if (prev) { const d = Math.log1p(100 * m) - Math.log1p(100 * prev[k]); if (d > 0) { fl += d; const hz = k * binHz; if (hz <= 300) lf += d; if (hz <= 150) kf += d; else if (hz >= 200 && hz <= 3000) mf += d; } }
     }
-    totP += sP; flux.push(fl); lowFlux.push(lf); prev = mag;
+    totP += sP; flux.push(fl); lowFlux.push(lf); midFlux.push(mf); kickFlux.push(kf); prev = mag;
     if (sP > 1e-8) { cent += sMf / sM; flat += Math.exp(sLog / (half - 1)) / (sP / (half - 1)); nUsed++; }
   }
   // energy: overall RMS in dBFS
@@ -95,8 +95,42 @@ export function analyseWindow(x, sr) {
   // octave doubts (hats can double a half-time groove). Calibrated on calibration/.
   const octaveApart = tLow.bpm && tFull.bpm && Math.abs(Math.log2(tFull.bpm / tLow.bpm)) > 0.9 && Math.abs(Math.log2(tFull.bpm / tLow.bpm)) < 1.1;
   let t = octaveApart || !tFull.bpm ? tLow : tFull;
-  const raw = { bpm: t.bpm || 0, rmsDb, centroid: cent / nUsed, flatness: flat / nUsed, bassShare: bassP / totP, dynRangeDb: dynRange, onsetsPerSec: onsets / (x.length / sr), tempoConf: t.conf || 0, bpmLow: tLow.bpm, bpmFull: tFull.bpm };
+  const rh = rhythmDescriptors({ kickFlux, midFlux, flux, fr }, t.bpm, onsets / (x.length / sr));
+  const raw = { ...rh, bpm: t.bpm || 0, rmsDb, centroid: cent / nUsed, flatness: flat / nUsed, bassShare: bassP / totP, dynRangeDb: dynRange, onsetsPerSec: onsets / (x.length / sr), tempoConf: t.conf || 0, bpmLow: tLow.bpm, bpmFull: tFull.bpm };
   return { ...scaleRaw(raw), raw };
+}
+
+// Rhythm: tempo-relative autocorrelation peaks of kick/mid/full flux. Cheap, client-side.
+function acfAt(x, lag) {
+  if (!lag || lag < 1 || lag >= x.length) return 0;
+  const L = Math.round(lag); let s = 0, n = 0;
+  for (let i = 0; i + L < x.length; i++) { s += x[i] * x[i + L]; n++; }
+  return n ? s / n : 0;
+}
+function acf0(x) { let s = 0; for (const v of x) s += v * v; return s / Math.max(1, x.length); }
+export function rhythmDescriptors(raw, bpm, onsetsPerSec) {
+  const { kickFlux, midFlux, flux, fr } = raw;
+  if (!bpm || !kickFlux || !flux || (onsetsPerSec != null && onsetsPerSec < 2.5)) return { fourFloor: null, tresillo: null, offbeat: null, syncop: null, backbeat: null };
+  let b = bpm; while (b < 80) b *= 2; while (b >= 160) b /= 2;
+  const beat = (60 * fr) / b, half = beat / 2, qtr = beat / 4;
+  const k0 = acf0(kickFlux) || 1e-12, f0 = acf0(flux) || 1e-12, m0 = acf0(midFlux) || 1e-12;
+  const kBeat = acfAt(kickFlux, beat) / k0;
+  const kHalf = acfAt(kickFlux, half) / k0;
+  const fBeat = acfAt(flux, beat) / f0;
+  const fHalf = acfAt(flux, half) / f0;
+  const fQtr = acfAt(flux, qtr) / f0;
+  // dembow / tresillo: strong ACF at 0.75 beat (3/4) and 1.5 beat relative to the beat
+  const f75 = acfAt(flux, beat * 0.75) / f0;
+  const f150 = acfAt(flux, beat * 1.5) / f0;
+  const mBeat = acfAt(midFlux, beat) / m0;
+  const mHalf = acfAt(midFlux, half) / m0; // backbeat / clap often half-bar in 4/4 when bpm is half
+  return {
+    fourFloor: Math.max(0, kBeat),                          // kick locked to the beat
+    tresillo: Math.max(0, (f75 + f150) / (fBeat + 1e-9)),    // 3-3-2 / dembow vs straight
+    offbeat: Math.max(0, fHalf / (fBeat + 1e-9)),            // half-beat energy (hats, offbeat)
+    syncop: Math.max(0, fQtr / (fBeat + 1e-9)),              // 16th / jersey bounce
+    backbeat: Math.max(0, mHalf / (mBeat + 1e-9)),           // snare/clap between kicks
+  };
 }
 
 // Feature scales (0..1). Calibrated on real club tracks (calibration/), wide enough
@@ -108,15 +142,23 @@ export const SCALES = {
   bass: { raw: 'bassShare', lo: 0, hi: 0.9 },
   dynamics: { raw: 'dynRangeDb', lo: 0, hi: 16 },
   pulse: { raw: 'onsetsPerSec', lo: 0, hi: 9 },
+  fourFloor: { raw: 'fourFloor', lo: 0, hi: 0.8 },
+  tresillo: { raw: 'tresillo', lo: 0, hi: 2.5 },
+  offbeat: { raw: 'offbeat', lo: 0, hi: 2.5 },
+  syncop: { raw: 'syncop', lo: 0, hi: 2.0 },
+  backbeat: { raw: 'backbeat', lo: 0, hi: 3.0 },
 };
 export function scaleRaw(raw) {
   const v = { ...raw, log10Flatness: Math.log10(Math.max(raw.flatness, 1e-12)) };
   const out = { bpm: raw.bpm };
-  for (const [k, s] of Object.entries(SCALES)) out[k] = clamp((v[s.raw] - s.lo) / (s.hi - s.lo));
+  for (const [k, s] of Object.entries(SCALES)) {
+    if (v[s.raw] == null) { out[k] = 0.5; continue; } // neutral when tempo unknown
+    out[k] = clamp((v[s.raw] - s.lo) / (s.hi - s.lo));
+  }
   return out;
 }
 
-export const FEATURES = ['bpm', 'energy', 'brightness', 'texture', 'bass', 'dynamics', 'pulse'];
+export const FEATURES = ['bpm', 'energy', 'brightness', 'texture', 'bass', 'dynamics', 'pulse', 'fourFloor', 'tresillo', 'offbeat', 'syncop', 'backbeat'];
 
 export function analyse(samples, sr) {
   const dur = samples.length / sr;

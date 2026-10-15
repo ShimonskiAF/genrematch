@@ -5,6 +5,8 @@
 *.mp3
 *.wav
 .DS_Store
+calibration/extract.log
+calibration/features.r2.json
 node_modules/
 test-audio/
 uploads/

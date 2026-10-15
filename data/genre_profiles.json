@@ -1,5 +1,5 @@
 {
- "note": "Genre centres for the 7 GenreMatch features. Club subgenres are fitted to labelled DJ-library tracks (training split, shrunk 25% toward the pooled mean); the rest are estimates rescaled to the calibrated feature scales. See calibration/.",
+ "note": "Genre centres for GenreMatch features (7 acoustic + 5 rhythm). Club/urban subgenres fitted to labelled DJ-library tracks (training split, shrunk toward the pooled mean, with per-feature spread). Estimates rescaled. See calibration/.",
  "profiles": [
   {
    "id": "techno",
@@ -12,14 +12,19 @@
     "texture": 0.43,
     "bass": 0.38,
     "dynamics": 0.25,
-    "pulse": 0.67
+    "pulse": 0.67,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "tec01",
     "tec05",
     "tec04"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "house",
@@ -32,13 +37,18 @@
     "texture": 0.38,
     "bass": 0.35,
     "dynamics": 0.28,
-    "pulse": 0.62
+    "pulse": 0.62,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "hou01",
     "hou04"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "deephouse",
@@ -51,12 +61,17 @@
     "texture": 0.35,
     "bass": 0.35,
     "dynamics": 0.28,
-    "pulse": 0.55
+    "pulse": 0.55,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "hou04"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "trance",
@@ -69,33 +84,56 @@
     "texture": 0.43,
     "bass": 0.3,
     "dynamics": 0.25,
-    "pulse": 0.64
+    "pulse": 0.64,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "tra05",
     "tra09"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "dnb",
    "name": "Drum & Bass",
    "family": "Drum 'n' Bass",
-   "features": {
-    "bpm": 174,
-    "bpmSpread": 1,
-    "energy": 0.9,
-    "brightness": 0.66,
-    "texture": 0.4,
-    "bass": 0.7,
-    "dynamics": 0.23,
-    "pulse": 0.65
-   },
    "atlas_ids": [
     "dnb01",
     "dnb05"
    ],
-   "status": "calibrated on 3 labelled tracks"
+   "features": {
+    "bpm": 174,
+    "bpmSpread": 1,
+    "energy": 0.86,
+    "brightness": 0.57,
+    "texture": 0.34,
+    "bass": 0.68,
+    "dynamics": 0.36,
+    "pulse": 0.64,
+    "fourFloor": 0.69,
+    "tresillo": 0.73,
+    "offbeat": 0.39,
+    "syncop": 0.44,
+    "backbeat": 0.33,
+    "spread": {
+     "energy": 0.12,
+     "brightness": 0.14,
+     "texture": 0.12,
+     "bass": 0.12,
+     "dynamics": 0.16,
+     "pulse": 0.15,
+     "fourFloor": 0.15,
+     "tresillo": 0.12,
+     "offbeat": 0.12,
+     "syncop": 0.12,
+     "backbeat": 0.12
+    }
+   },
+   "status": "calibrated on 12 labelled tracks"
   },
   {
    "id": "dubstep",
@@ -108,12 +146,17 @@
     "texture": 0.48,
     "bass": 0.43,
     "dynamics": 0.38,
-    "pulse": 0.53
+    "pulse": 0.53,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "dnb08"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "edmtrap",
@@ -126,33 +169,56 @@
     "texture": 0.43,
     "bass": 0.43,
     "dynamics": 0.38,
-    "pulse": 0.58
+    "pulse": 0.58,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "brb11"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "hiphop",
    "name": "Hip Hop",
    "family": "Rap",
-   "features": {
-    "bpm": 70,
-    "bpmSpread": 1.69,
-    "energy": 0.76,
-    "brightness": 0.5,
-    "texture": 0.3,
-    "bass": 0.56,
-    "dynamics": 0.45,
-    "pulse": 0.66
-   },
    "atlas_ids": [
     "rap02",
     "rap01",
     "rap08"
    ],
-   "status": "calibrated on 3 labelled tracks"
+   "features": {
+    "bpm": 93,
+    "bpmSpread": 2.34,
+    "energy": 0.75,
+    "brightness": 0.49,
+    "texture": 0.29,
+    "bass": 0.71,
+    "dynamics": 0.46,
+    "pulse": 0.6,
+    "fourFloor": 0.61,
+    "tresillo": 0.71,
+    "offbeat": 0.37,
+    "syncop": 0.43,
+    "backbeat": 0.32,
+    "spread": {
+     "energy": 0.12,
+     "brightness": 0.12,
+     "texture": 0.12,
+     "bass": 0.16,
+     "dynamics": 0.19,
+     "pulse": 0.12,
+     "fourFloor": 0.12,
+     "tresillo": 0.12,
+     "offbeat": 0.12,
+     "syncop": 0.12,
+     "backbeat": 0.12
+    }
+   },
+   "status": "calibrated on 14 labelled tracks"
   },
   {
    "id": "trap",
@@ -165,12 +231,17 @@
     "texture": 0.35,
     "bass": 0.43,
     "dynamics": 0.38,
-    "pulse": 0.53
+    "pulse": 0.53,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "rap09"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "drill",
@@ -183,50 +254,95 @@
     "texture": 0.35,
     "bass": 0.44,
     "dynamics": 0.4,
-    "pulse": 0.49
+    "pulse": 0.49,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "rap09",
     "x_drill",
     "x_uk_drill"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "phonk",
    "name": "Phonk",
    "family": "Rap",
-   "features": {
-    "bpm": 130,
-    "energy": 0.62,
-    "brightness": 0.27,
-    "texture": 0.43,
-    "bass": 0.43,
-    "dynamics": 0.31,
-    "pulse": 0.62
-   },
    "atlas_ids": [
     "x_phonk"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "features": {
+    "bpm": 122,
+    "bpmSpread": 1.74,
+    "energy": 0.88,
+    "brightness": 0.37,
+    "texture": 0.21,
+    "bass": 0.83,
+    "dynamics": 0.31,
+    "pulse": 0.59,
+    "fourFloor": 0.74,
+    "tresillo": 0.63,
+    "offbeat": 0.35,
+    "syncop": 0.36,
+    "backbeat": 0.31,
+    "spread": {
+     "energy": 0.12,
+     "brightness": 0.16,
+     "texture": 0.12,
+     "bass": 0.12,
+     "dynamics": 0.16,
+     "pulse": 0.12,
+     "fourFloor": 0.12,
+     "tresillo": 0.13,
+     "offbeat": 0.12,
+     "syncop": 0.12,
+     "backbeat": 0.12
+    }
+   },
+   "status": "calibrated on 12 labelled tracks"
   },
   {
    "id": "rnb",
-   "name": "R&B",
+   "name": "R&B / Soul",
    "family": "Rhythm 'n' Blues",
-   "features": {
-    "bpm": 90,
-    "energy": 0.4,
-    "brightness": 0.23,
-    "texture": 0.3,
-    "bass": 0.31,
-    "dynamics": 0.48,
-    "pulse": 0.37
-   },
    "atlas_ids": [
+    "rnb12",
+    "rnb13",
     "rap10"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "features": {
+    "bpm": 110,
+    "bpmSpread": 1.85,
+    "energy": 0.75,
+    "brightness": 0.38,
+    "texture": 0.25,
+    "bass": 0.72,
+    "dynamics": 0.43,
+    "pulse": 0.56,
+    "fourFloor": 0.63,
+    "tresillo": 0.71,
+    "offbeat": 0.38,
+    "syncop": 0.42,
+    "backbeat": 0.32,
+    "spread": {
+     "energy": 0.12,
+     "brightness": 0.13,
+     "texture": 0.12,
+     "bass": 0.12,
+     "dynamics": 0.17,
+     "pulse": 0.12,
+     "fourFloor": 0.16,
+     "tresillo": 0.12,
+     "offbeat": 0.12,
+     "syncop": 0.12,
+     "backbeat": 0.12
+    }
+   },
+   "status": "calibrated on 12 labelled tracks"
   },
   {
    "id": "soul",
@@ -239,14 +355,19 @@
     "texture": 0.3,
     "bass": 0.23,
     "dynamics": 0.63,
-    "pulse": 0.4
+    "pulse": 0.4,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "rnb04",
     "rnb03",
     "rnb12"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "pop",
@@ -259,14 +380,19 @@
     "texture": 0.35,
     "bass": 0.28,
     "dynamics": 0.35,
-    "pulse": 0.53
+    "pulse": 0.53,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "pop11",
     "pop13",
     "pop04"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "hyperpop",
@@ -279,12 +405,17 @@
     "texture": 0.5,
     "bass": 0.3,
     "dynamics": 0.31,
-    "pulse": 0.71
+    "pulse": 0.71,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "x_hyperpop"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "kpop",
@@ -297,12 +428,17 @@
     "texture": 0.38,
     "bass": 0.29,
     "dynamics": 0.33,
-    "pulse": 0.59
+    "pulse": 0.59,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "x_k_pop"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "songwriter",
@@ -315,12 +451,17 @@
     "texture": 0.25,
     "bass": 0.13,
     "dynamics": 0.78,
-    "pulse": 0.25
+    "pulse": 0.25,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "pop03"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "indie",
@@ -333,13 +474,18 @@
     "texture": 0.43,
     "bass": 0.18,
     "dynamics": 0.56,
-    "pulse": 0.53
+    "pulse": 0.53,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "alt01",
     "alt07"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "rock",
@@ -352,12 +498,17 @@
     "texture": 0.46,
     "bass": 0.2,
     "dynamics": 0.5,
-    "pulse": 0.58
+    "pulse": 0.58,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "con03"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "metal",
@@ -370,14 +521,19 @@
     "texture": 0.55,
     "bass": 0.25,
     "dynamics": 0.38,
-    "pulse": 0.76
+    "pulse": 0.76,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "met01",
     "met05",
     "met09"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "punk",
@@ -390,13 +546,18 @@
     "texture": 0.53,
     "bass": 0.18,
     "dynamics": 0.44,
-    "pulse": 0.76
+    "pulse": 0.76,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "pwv02",
     "hcp01"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "folk",
@@ -409,14 +570,19 @@
     "texture": 0.26,
     "bass": 0.14,
     "dynamics": 0.75,
-    "pulse": 0.28
+    "pulse": 0.28,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "fol",
     "rnr03",
     "con07"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "country",
@@ -429,13 +595,18 @@
     "texture": 0.35,
     "bass": 0.19,
     "dynamics": 0.56,
-    "pulse": 0.44
+    "pulse": 0.44,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "cou10",
     "cou07"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "jazz",
@@ -448,13 +619,18 @@
     "texture": 0.3,
     "bass": 0.18,
     "dynamics": 0.85,
-    "pulse": 0.4
+    "pulse": 0.4,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "jaz06",
     "jaz08"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "blues",
@@ -467,12 +643,17 @@
     "texture": 0.35,
     "bass": 0.19,
     "dynamics": 0.69,
-    "pulse": 0.37
+    "pulse": 0.37,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "blu06"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "ambient",
@@ -485,12 +666,17 @@
     "texture": 0.35,
     "bass": 0.18,
     "dynamics": 0.44,
-    "pulse": 0.09
+    "pulse": 0.09,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "dtp06"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "lofi",
@@ -503,13 +689,18 @@
     "texture": 0.32,
     "bass": 0.28,
     "dynamics": 0.38,
-    "pulse": 0.36
+    "pulse": 0.36,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "x_lo_fi_beats",
     "x_chillhop"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "synthwave",
@@ -522,12 +713,17 @@
     "texture": 0.4,
     "bass": 0.28,
     "dynamics": 0.31,
-    "pulse": 0.49
+    "pulse": 0.49,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "dtp14"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "reggae",
@@ -540,32 +736,55 @@
     "texture": 0.3,
     "bass": 0.38,
     "dynamics": 0.44,
-    "pulse": 0.4
+    "pulse": 0.4,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "jam04"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "reggaeton",
    "name": "Reggaeton",
    "family": "Jamaican",
-   "features": {
-    "bpm": 89,
-    "bpmSpread": 1,
-    "energy": 0.79,
-    "brightness": 0.51,
-    "texture": 0.32,
-    "bass": 0.7,
-    "dynamics": 0.49,
-    "pulse": 0.54
-   },
    "atlas_ids": [
     "jam11",
     "x_dembow"
    ],
-   "status": "calibrated on 4 labelled tracks"
+   "features": {
+    "bpm": 95,
+    "bpmSpread": 1.09,
+    "energy": 0.8,
+    "brightness": 0.47,
+    "texture": 0.28,
+    "bass": 0.69,
+    "dynamics": 0.41,
+    "pulse": 0.58,
+    "fourFloor": 0.63,
+    "tresillo": 0.68,
+    "offbeat": 0.36,
+    "syncop": 0.41,
+    "backbeat": 0.31,
+    "spread": {
+     "energy": 0.12,
+     "brightness": 0.14,
+     "texture": 0.12,
+     "bass": 0.16,
+     "dynamics": 0.15,
+     "pulse": 0.12,
+     "fourFloor": 0.14,
+     "tresillo": 0.15,
+     "offbeat": 0.12,
+     "syncop": 0.12,
+     "backbeat": 0.12
+    }
+   },
+   "status": "calibrated on 13 labelled tracks"
   },
   {
    "id": "latinpop",
@@ -578,31 +797,55 @@
     "texture": 0.36,
     "bass": 0.31,
     "dynamics": 0.35,
-    "pulse": 0.6
+    "pulse": 0.6,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "x_latin_pop"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "afrobeats",
    "name": "Afrobeats",
    "family": "World Pop",
-   "features": {
-    "bpm": 105,
-    "energy": 0.58,
-    "brightness": 0.31,
-    "texture": 0.35,
-    "bass": 0.35,
-    "dynamics": 0.35,
-    "pulse": 0.58
-   },
    "atlas_ids": [
     "x_afrobeats",
-    "x_afroswing"
+    "woC10"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "features": {
+    "bpm": 113,
+    "bpmSpread": 1,
+    "energy": 0.77,
+    "brightness": 0.48,
+    "texture": 0.47,
+    "bass": 0.68,
+    "dynamics": 0.32,
+    "pulse": 0.63,
+    "fourFloor": 0.73,
+    "tresillo": 0.71,
+    "offbeat": 0.37,
+    "syncop": 0.42,
+    "backbeat": 0.32,
+    "spread": {
+     "energy": 0.12,
+     "brightness": 0.18,
+     "texture": 0.12,
+     "bass": 0.13,
+     "dynamics": 0.14,
+     "pulse": 0.12,
+     "fourFloor": 0.12,
+     "tresillo": 0.12,
+     "offbeat": 0.12,
+     "syncop": 0.12,
+     "backbeat": 0.12
+    }
+   },
+   "status": "calibrated on 12 labelled tracks"
   },
   {
    "id": "amapiano",
@@ -615,12 +858,17 @@
     "texture": 0.35,
     "bass": 0.4,
     "dynamics": 0.35,
-    "pulse": 0.55
+    "pulse": 0.55,
+    "fourFloor": 0.5,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5
    },
    "atlas_ids": [
     "x_amapiano"
    ],
-   "status": "estimate, rescaled to calibrated feature scales"
+   "status": "estimate, rescaled"
   },
   {
    "id": "speedhouse",
@@ -631,16 +879,34 @@
     "hou05"
    ],
    "features": {
-    "bpm": 145,
+    "bpm": 140,
     "bpmSpread": 1,
-    "energy": 0.8,
-    "brightness": 0.72,
-    "texture": 0.69,
-    "bass": 0.64,
-    "dynamics": 0.33,
-    "pulse": 0.56
+    "energy": 0.82,
+    "brightness": 0.57,
+    "texture": 0.59,
+    "bass": 0.71,
+    "dynamics": 0.36,
+    "pulse": 0.57,
+    "fourFloor": 0.84,
+    "tresillo": 0.62,
+    "offbeat": 0.35,
+    "syncop": 0.37,
+    "backbeat": 0.31,
+    "spread": {
+     "energy": 0.12,
+     "brightness": 0.27,
+     "texture": 0.12,
+     "bass": 0.15,
+     "dynamics": 0.18,
+     "pulse": 0.12,
+     "fourFloor": 0.12,
+     "tresillo": 0.12,
+     "offbeat": 0.12,
+     "syncop": 0.12,
+     "backbeat": 0.12
+    }
    },
-   "status": "calibrated on 2 labelled tracks"
+   "status": "calibrated on 3 labelled tracks"
   },
   {
    "id": "basshouse",
@@ -652,16 +918,34 @@
     "brb10"
    ],
    "features": {
-    "bpm": 132,
+    "bpm": 128,
     "bpmSpread": 1,
-    "energy": 0.8,
-    "brightness": 0.58,
-    "texture": 0.37,
-    "bass": 0.62,
-    "dynamics": 0.32,
-    "pulse": 0.67
+    "energy": 0.79,
+    "brightness": 0.48,
+    "texture": 0.33,
+    "bass": 0.71,
+    "dynamics": 0.34,
+    "pulse": 0.66,
+    "fourFloor": 0.72,
+    "tresillo": 0.68,
+    "offbeat": 0.38,
+    "syncop": 0.39,
+    "backbeat": 0.32,
+    "spread": {
+     "energy": 0.12,
+     "brightness": 0.16,
+     "texture": 0.14,
+     "bass": 0.22,
+     "dynamics": 0.13,
+     "pulse": 0.12,
+     "fourFloor": 0.15,
+     "tresillo": 0.12,
+     "offbeat": 0.12,
+     "syncop": 0.12,
+     "backbeat": 0.12
+    }
    },
-   "status": "calibrated on 2 labelled tracks"
+   "status": "calibrated on 14 labelled tracks"
   },
   {
    "id": "techhouse",
@@ -672,34 +956,34 @@
     "hou07"
    ],
    "features": {
-    "bpm": 126,
+    "bpm": 125,
+    "bpmSpread": 1,
     "energy": 0.79,
-    "brightness": 0.48,
-    "texture": 0.44,
-    "bass": 0.79,
-    "dynamics": 0.18,
-    "pulse": 0.6
+    "brightness": 0.49,
+    "texture": 0.41,
+    "bass": 0.75,
+    "dynamics": 0.3,
+    "pulse": 0.57,
+    "fourFloor": 0.69,
+    "tresillo": 0.68,
+    "offbeat": 0.38,
+    "syncop": 0.39,
+    "backbeat": 0.32,
+    "spread": {
+     "energy": 0.12,
+     "brightness": 0.12,
+     "texture": 0.12,
+     "bass": 0.12,
+     "dynamics": 0.16,
+     "pulse": 0.12,
+     "fourFloor": 0.13,
+     "tresillo": 0.12,
+     "offbeat": 0.12,
+     "syncop": 0.12,
+     "backbeat": 0.12
+    }
    },
-   "status": "calibrated on 1 labelled track"
-  },
-  {
-   "id": "peaktechno",
-   "name": "Peak Time Techno",
-   "family": "Techno",
-   "atlas_ids": [
-    "tec01",
-    "tec04"
-   ],
-   "features": {
-    "bpm": 126,
-    "energy": 0.66,
-    "brightness": 0.51,
-    "texture": 0.56,
-    "bass": 0.52,
-    "dynamics": 0.16,
-    "pulse": 0.66
-   },
-   "status": "calibrated on 1 labelled track"
+   "status": "calibrated on 3 labelled tracks"
   },
   {
    "id": "moombahton",
@@ -709,15 +993,150 @@
     "hou11"
    ],
    "features": {
-    "bpm": 126,
-    "energy": 0.76,
-    "brightness": 0.51,
-    "texture": 0.36,
-    "bass": 0.7,
-    "dynamics": 0.42,
-    "pulse": 0.54
+    "bpm": 128,
+    "bpmSpread": 1,
+    "energy": 0.78,
+    "brightness": 0.41,
+    "texture": 0.29,
+    "bass": 0.81,
+    "dynamics": 0.59,
+    "pulse": 0.52,
+    "fourFloor": 0.49,
+    "tresillo": 0.54,
+    "offbeat": 0.28,
+    "syncop": 0.32,
+    "backbeat": 0.26,
+    "spread": {
+     "energy": 0.12,
+     "brightness": 0.12,
+     "texture": 0.12,
+     "bass": 0.12,
+     "dynamics": 0.3,
+     "pulse": 0.12,
+     "fourFloor": 0.12,
+     "tresillo": 0.12,
+     "offbeat": 0.12,
+     "syncop": 0.12,
+     "backbeat": 0.12
+    }
    },
-   "status": "calibrated on 1 labelled track"
+   "status": "calibrated on 4 labelled tracks"
+  },
+  {
+   "id": "gwalk",
+   "name": "G-Walk",
+   "family": "Rap",
+   "atlas_ids": [
+    "x_gwalk",
+    "rap03",
+    "rap04"
+   ],
+   "features": {
+    "bpm": 101,
+    "bpmSpread": 1,
+    "energy": 0.78,
+    "brightness": 0.43,
+    "texture": 0.26,
+    "bass": 0.7,
+    "dynamics": 0.36,
+    "pulse": 0.58,
+    "fourFloor": 0.62,
+    "tresillo": 0.69,
+    "offbeat": 0.37,
+    "syncop": 0.41,
+    "backbeat": 0.32,
+    "spread": {
+     "energy": 0.12,
+     "brightness": 0.12,
+     "texture": 0.12,
+     "bass": 0.21,
+     "dynamics": 0.15,
+     "pulse": 0.12,
+     "fourFloor": 0.12,
+     "tresillo": 0.12,
+     "offbeat": 0.12,
+     "syncop": 0.12,
+     "backbeat": 0.12
+    }
+   },
+   "status": "calibrated on 12 labelled tracks"
+  },
+  {
+   "id": "jerseyclub",
+   "name": "Jersey Club",
+   "family": "Breakbeat",
+   "atlas_ids": [
+    "x_jersey_club",
+    "hou08"
+   ],
+   "features": {
+    "bpm": 148,
+    "bpmSpread": 1,
+    "energy": 0.8,
+    "brightness": 0.39,
+    "texture": 0.21,
+    "bass": 0.78,
+    "dynamics": 0.4,
+    "pulse": 0.56,
+    "fourFloor": 0.68,
+    "tresillo": 0.69,
+    "offbeat": 0.37,
+    "syncop": 0.4,
+    "backbeat": 0.31,
+    "spread": {
+     "energy": 0.12,
+     "brightness": 0.2,
+     "texture": 0.12,
+     "bass": 0.14,
+     "dynamics": 0.24,
+     "pulse": 0.12,
+     "fourFloor": 0.12,
+     "tresillo": 0.12,
+     "offbeat": 0.12,
+     "syncop": 0.12,
+     "backbeat": 0.12
+    }
+   },
+   "status": "calibrated on 12 labelled tracks"
+  },
+  {
+   "id": "bailefunk",
+   "name": "Baile Funk",
+   "family": "World Latin",
+   "atlas_ids": [
+    "x_baile_funk",
+    "x_dembow",
+    "rap03"
+   ],
+   "features": {
+    "bpm": 131,
+    "bpmSpread": 1.75,
+    "energy": 0.78,
+    "brightness": 0.48,
+    "texture": 0.3,
+    "bass": 0.61,
+    "dynamics": 0.4,
+    "pulse": 0.57,
+    "fourFloor": 0.7,
+    "tresillo": 0.67,
+    "offbeat": 0.35,
+    "syncop": 0.39,
+    "backbeat": 0.3,
+    "spread": {
+     "energy": 0.12,
+     "brightness": 0.12,
+     "texture": 0.12,
+     "bass": 0.17,
+     "dynamics": 0.12,
+     "pulse": 0.12,
+     "fourFloor": 0.12,
+     "tresillo": 0.12,
+     "offbeat": 0.12,
+     "syncop": 0.12,
+     "backbeat": 0.12
+    }
+   },
+   "status": "calibrated on 10 labelled tracks"
   }
  ]
 }
