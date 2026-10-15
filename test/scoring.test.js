@@ -35,8 +35,9 @@ test('confidence bands', () => {
 });
 
 test('tempo is scored both ways with an octave penalty; measured bpm is never overwritten', () => {
-  const f = { ...at('trap'), bpm: 71 };
-  const g = scoreGenre(f, P.find((p) => p.id === 'trap'));
+  const centre = { ...at('trap'), bpm: 142 };
+  const f = { ...centre, bpm: 71 };
+  const g = scoreGenre(f, { id: 'trap', name: 'Trap', family: 'Rap', features: centre });
   assert.equal(g.octave, 'double');
   assert.equal(g.tempoUsed, 142);
   assert.ok(Math.abs(g.d - OCTAVE_PENALTY) < 1e-9);

@@ -8,6 +8,7 @@ export const LABELS = {
   'Moombahton': { family: 'House', sub: 'moombahton' },
   'Peak Time Techno': { family: 'Techno', sub: 'peaktechno' },
   'Hip Hop': { family: 'Rap', sub: 'hiphop' },
+  'Trap Hip Hop': { family: 'Rap', sub: 'trap' },
   'Phonk': { family: 'Rap', sub: 'phonk' },
   'G-Walk': { family: 'Rap', sub: 'gwalk' },
   'Jersey Club': { family: 'Breakbeat', sub: 'jerseyclub' },
@@ -41,12 +42,12 @@ export function buildHoldout(tracks) {
   for (const [, list] of by) {
     const sorted = [...list].sort((a, b) => hash(a) - hash(b));
     const n = Math.max(list.length >= 4 ? 1 : 0, Math.floor(list.length * 0.25));
-    for (const t of sorted.slice(0, n)) held.add(t.folder + '/' + t.file);
+    for (const t of sorted.slice(0, n)) held.add(t.file);
   }
   _held = held;
   return held;
 }
 export function isHeldOut(t) {
   if (!_held) throw new Error('call buildHoldout(tracks) once before isHeldOut');
-  return _held.has(t.folder + '/' + t.file);
+  return _held.has(t.file);
 }

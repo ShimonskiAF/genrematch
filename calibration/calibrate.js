@@ -8,7 +8,7 @@ const r2 = (x) => Math.round(x * 100) / 100;
 const before = JSON.parse(fs.readFileSync(new URL('./genre_profiles.before.json', import.meta.url)));
 const T = JSON.parse(fs.readFileSync(new URL('./features.json', import.meta.url)));
 buildHoldout(T);
-export const CFG = { SHRINK: 0.35, BPM_SD: 0.15, SPREAD_FLOOR: 0.12 };
+export const CFG = { SHRINK: 0, BPM_SD: 0.15, SPREAD_FLOOR: 0.15 };
 let { SHRINK, BPM_SD, SPREAD_FLOOR } = CFG;
 export const setCfg = (c) => ({ SHRINK, BPM_SD, SPREAD_FLOOR } = { ...CFG, ...c });
 
@@ -21,6 +21,7 @@ const FIT_META = {
   moombahton: { name: 'Moombahton', family: 'House', atlas_ids: ['hou11'], anchor: 110 },
   amapiano: { name: 'Amapiano', family: 'House', atlas_ids: ['x_amapiano'], anchor: 112 },
   hiphop: { name: 'Hip Hop', family: 'Rap', atlas_ids: ['rap02', 'rap01', 'rap08'], anchor: 95 },
+  trap: { name: 'Trap Hip Hop', family: 'Rap', atlas_ids: ['rap09'], anchor: 140 },
   phonk: { name: 'Phonk', family: 'Rap', atlas_ids: ['x_phonk'], anchor: 140 },
   gwalk: { name: 'G-Walk', family: 'Rap', atlas_ids: ['x_gwalk', 'rap03', 'rap04'], anchor: 100 },
   jerseyclub: { name: 'Jersey Club', family: 'Breakbeat', atlas_ids: ['x_jersey_club', 'hou08'], anchor: 140 },
@@ -63,7 +64,8 @@ export function fit(train) {
     const spread = {};
     for (const k of K) {
       const vals = mine.map((r) => r.f[k]);
-      features[k] = r2((1 - SHRINK) * (vals.reduce((a, b) => a + b, 0) / vals.length) + SHRINK * club[k]);
+      const centre = med(vals);
+      features[k] = r2((1 - SHRINK) * centre + SHRINK * club[k]);
       spread[k] = r2(Math.max(SPREAD_FLOOR, sd(vals)));
     }
     features.spread = spread;
