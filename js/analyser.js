@@ -90,18 +90,30 @@ export function analyseWindow(x, sr) {
   const fsd = Math.sqrt(flux.reduce((a, b) => a + (b - fm) ** 2, 0) / flux.length);
   let onsets = 0, last = -1e9; const gap = Math.round(0.06 * fr);
   for (let i = 1; i < flux.length - 1; i++) if (flux[i] > fm + 0.5 * fsd && flux[i] >= flux[i - 1] && flux[i] > flux[i + 1] && i - last >= gap) { onsets++; last = i; }
-  let t = tempoFromFlux(lowFlux, fr);
-  if (!t.bpm) t = tempoFromFlux(flux, fr);
-  return {
-    bpm: t.bpm,
-    energy: clamp((rmsDb + 30) / 24),
-    brightness: clamp((cent / nUsed - 500) / 3500),
-    texture: clamp(flat / nUsed / 0.30),
-    bass: clamp(bassP / totP / 0.45),
-    dynamics: clamp(dynRange / 20),
-    pulse: clamp(onsets / (x.length / sr) / 8),
-    raw: { rmsDb, centroid: cent / nUsed, flatness: flat / nUsed, bassShare: bassP / totP, dynRangeDb: dynRange, onsetsPerSec: onsets / (x.length / sr), tempoConf: t.conf || 0 },
-  };
+  const tLow = tempoFromFlux(lowFlux, fr), tFull = tempoFromFlux(flux, fr);
+  // Full-band flux is steadier on real mixes (kick+snare+hats); low-band flux settles
+  // octave doubts (hats can double a half-time groove). Calibrated on calibration/.
+  const octaveApart = tLow.bpm && tFull.bpm && Math.abs(Math.log2(tFull.bpm / tLow.bpm)) > 0.9 && Math.abs(Math.log2(tFull.bpm / tLow.bpm)) < 1.1;
+  let t = octaveApart || !tFull.bpm ? tLow : tFull;
+  const raw = { bpm: t.bpm || 0, rmsDb, centroid: cent / nUsed, flatness: flat / nUsed, bassShare: bassP / totP, dynRangeDb: dynRange, onsetsPerSec: onsets / (x.length / sr), tempoConf: t.conf || 0, bpmLow: tLow.bpm, bpmFull: tFull.bpm };
+  return { ...scaleRaw(raw), raw };
+}
+
+// Feature scales (0..1). Calibrated on real club tracks (calibration/), wide enough
+// to keep quiet acoustic material on-scale. value = clamp((raw - lo) / (hi - lo)).
+export const SCALES = {
+  energy: { raw: 'rmsDb', lo: -24, hi: -2 },
+  brightness: { raw: 'centroid', lo: 1000, hi: 5000 },
+  texture: { raw: 'log10Flatness', lo: -5, hi: -1.5 },
+  bass: { raw: 'bassShare', lo: 0, hi: 0.9 },
+  dynamics: { raw: 'dynRangeDb', lo: 0, hi: 16 },
+  pulse: { raw: 'onsetsPerSec', lo: 0, hi: 9 },
+};
+export function scaleRaw(raw) {
+  const v = { ...raw, log10Flatness: Math.log10(Math.max(raw.flatness, 1e-12)) };
+  const out = { bpm: raw.bpm };
+  for (const [k, s] of Object.entries(SCALES)) out[k] = clamp((v[s.raw] - s.lo) / (s.hi - s.lo));
+  return out;
 }
 
 export const FEATURES = ['bpm', 'energy', 'brightness', 'texture', 'bass', 'dynamics', 'pulse'];
@@ -119,9 +131,23 @@ export function analyse(samples, sr) {
     const vals = good.map((r) => r[k]).filter((v) => k !== 'bpm' || v > 0);
     out[k] = Math.round((vals.length ? median(vals) : 0) * 100) / 100;
   }
-  out.bpm = Math.round(out.bpm);
+  out.bpm = Math.round(voteTempo(good.map((r) => r.bpm)));
   out.raw = good.map((r) => r.raw);
   return out;
+}
+
+// Octave-aware tempo vote across windows: the value most windows agree with
+// (counting x2 / /2 as half a vote), then the median of the windows at that octave.
+export function voteTempo(bpms) {
+  const v = bpms.filter((b) => b > 0);
+  if (!v.length) return 0;
+  const near = (a, b) => Math.abs(Math.log2(a / b)) < 0.05;
+  let best = v[0], bestS = -1;
+  for (const c of v) {
+    const s = v.reduce((a, b) => a + (near(b, c) ? 1 : near(b * 2, c) || near(b / 2, c) ? 0.5 : 0), 0);
+    if (s > bestS) { bestS = s; best = c; }
+  }
+  return median(v.filter((b) => near(b, best)));
 }
 
 export function toMono(channels) {

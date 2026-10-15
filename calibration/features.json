@@ -1,0 +1,1380 @@
+[
+ {
+  "file": "CHYL vs Lil Jon - Fool Me (DJ Juan Cuba Bootleg) (Dirty).mp3",
+  "folder": "01 House/04 Speed House",
+  "features": {
+   "silent": false,
+   "duration": 91.2195918367347,
+   "bpm": 150,
+   "energy": 0.79,
+   "brightness": 1,
+   "texture": 0.85,
+   "bass": 0.77,
+   "dynamics": 0.54,
+   "pulse": 0.56
+  },
+  "raw": [
+   {
+    "bpm": 150.4,
+    "rmsDb": -6.687943010456994,
+    "centroid": 4223.3447528197685,
+    "flatness": 0.0068827671280252255,
+    "bassShare": 0.7164352323421505,
+    "dynRangeDb": 10.260236617072025,
+    "onsetsPerSec": 3.7,
+    "tempoConf": 0.6070229600511418,
+    "bpmLow": 150.4,
+    "bpmFull": 75
+   },
+   {
+    "bpm": 99.9,
+    "rmsDb": -5.593754534485229,
+    "centroid": 5163.7860247899935,
+    "flatness": 0.011761516690444888,
+    "bassShare": 0.6927842096187137,
+    "dynRangeDb": 8.02084967233485,
+    "onsetsPerSec": 6.4,
+    "tempoConf": 0.6597574119211052,
+    "bpmLow": 75,
+    "bpmFull": 99.9
+   },
+   {
+    "bpm": 150.2,
+    "rmsDb": -6.961595181096665,
+    "centroid": 5237.735057117177,
+    "flatness": 0.009578903280486568,
+    "bassShare": 0.6757000583095671,
+    "dynRangeDb": 8.707140451185992,
+    "onsetsPerSec": 5.05,
+    "tempoConf": 0.7498639646836469,
+    "bpmLow": 150.2,
+    "bpmFull": 75
+   }
+  ]
+ },
+ {
+  "file": "French Montana & 2Rare vs Infected Mushroom - RATATAAAAA (DJ Juan Cuba Segue) (Dirty Extended).mp3",
+  "folder": "01 House/04 Speed House",
+  "features": {
+   "silent": false,
+   "duration": 200.5681632653061,
+   "bpm": 140,
+   "energy": 0.82,
+   "brightness": 0.53,
+   "texture": 0.72,
+   "bass": 0.49,
+   "dynamics": 0.11,
+   "pulse": 0.53
+  },
+  "raw": [
+   {
+    "bpm": 139.8,
+    "rmsDb": -6.737791676080498,
+    "centroid": 3136.5400258879026,
+    "flatness": 0.0019744195323360986,
+    "bassShare": 0.43823445909904835,
+    "dynRangeDb": 5.386113012110841,
+    "onsetsPerSec": 4.75,
+    "tempoConf": 0.29051258005557673,
+    "bpmLow": 185.6,
+    "bpmFull": 139.8
+   },
+   {
+    "bpm": 139.9,
+    "rmsDb": -5.300620761804956,
+    "centroid": 3112.3668983550947,
+    "flatness": 0.0036599307032247463,
+    "bassShare": 0.7220127141410638,
+    "dynRangeDb": 1.0953797757595494,
+    "onsetsPerSec": 5.9,
+    "tempoConf": 0.6385953440052721,
+    "bpmLow": 139.9,
+    "bpmFull": 139.9
+   },
+   {
+    "bpm": 139.9,
+    "rmsDb": -6.018387025479386,
+    "centroid": 2285.1047904155075,
+    "flatness": 0.003373427701054681,
+    "bassShare": 0.4230442387869403,
+    "dynRangeDb": 1.7449113771110243,
+    "onsetsPerSec": 4.8,
+    "tempoConf": 0.23488061274266422,
+    "bpmLow": 138.4,
+    "bpmFull": 139.9
+   }
+  ]
+ },
+ {
+  "file": "Kendrick Lamar vs Henry Fong - N95 (R-You Bootleg V2) (Dirty Extended).mp3",
+  "folder": "01 House/04 Speed House",
+  "features": {
+   "silent": false,
+   "duration": 156.5257142857143,
+   "bpm": 135,
+   "energy": 0.89,
+   "brightness": 0.35,
+   "texture": 0.64,
+   "bass": 0.85,
+   "dynamics": 0.38,
+   "pulse": 0.58
+  },
+  "raw": [
+   {
+    "bpm": 135.2,
+    "rmsDb": -7.700685360949486,
+    "centroid": 3673.2242381414194,
+    "flatness": 0.0038569029708041646,
+    "bassShare": 0.6778705608753208,
+    "dynRangeDb": 9.097731304007066,
+    "onsetsPerSec": 6.55,
+    "tempoConf": 0.6599291519813514,
+    "bpmLow": 135.4,
+    "bpmFull": 135.2
+   },
+   {
+    "bpm": 135.3,
+    "rmsDb": -4.522759712445009,
+    "centroid": 2418.282918827115,
+    "flatness": 0.001747896903689804,
+    "bassShare": 0.7664679226390598,
+    "dynRangeDb": 6.065554553012269,
+    "onsetsPerSec": 5.2,
+    "tempoConf": 0.6904781565815798,
+    "bpmLow": 135.1,
+    "bpmFull": 135.3
+   },
+   {
+    "bpm": 135.3,
+    "rmsDb": -3.541942065834713,
+    "centroid": 2164.171315940324,
+    "flatness": 0.0007034635966660619,
+    "bassShare": 0.8388125696414604,
+    "dynRangeDb": 0.7130991512577265,
+    "onsetsPerSec": 4,
+    "tempoConf": 0.8122849783350681,
+    "bpmLow": 135.4,
+    "bpmFull": 135.3
+   }
+  ]
+ },
+ {
+  "file": "AC Slater MPH - Lights On (Ft. Eloise Keeble).mp3",
+  "folder": "01 House/05 Bass House",
+  "features": {
+   "silent": false,
+   "duration": 193.23646258503402,
+   "bpm": 135,
+   "energy": 0.7,
+   "brightness": 0.53,
+   "texture": 0.32,
+   "bass": 0.4,
+   "dynamics": 0.24,
+   "pulse": 0.76
+  },
+  "raw": [
+   {
+    "bpm": 135.2,
+    "rmsDb": -9.670124305207715,
+    "centroid": 3131.031793399736,
+    "flatness": 0.00013153807419592748,
+    "bassShare": 0.16391788547738456,
+    "dynRangeDb": 2.3485194955511073,
+    "onsetsPerSec": 6.8,
+    "tempoConf": 0.6918467351808325,
+    "bpmLow": 134.9,
+    "bpmFull": 135.2
+   },
+   {
+    "bpm": 135.3,
+    "rmsDb": -8.607384334034393,
+    "centroid": 2686.2829115889213,
+    "flatness": 0.00010399599033841919,
+    "bassShare": 0.36367707939477445,
+    "dynRangeDb": 3.8503159373193174,
+    "onsetsPerSec": 5.35,
+    "tempoConf": 0.716587608843925,
+    "bpmLow": 135.4,
+    "bpmFull": 135.3
+   },
+   {
+    "bpm": 135.2,
+    "rmsDb": -6.274049740432176,
+    "centroid": 3489.2398692785814,
+    "flatness": 0.00017420954847013396,
+    "bassShare": 0.5696577889181869,
+    "dynRangeDb": 5.048895395653261,
+    "onsetsPerSec": 7.2,
+    "tempoConf": 0.7066365042687093,
+    "bpmLow": 135.2,
+    "bpmFull": 135.2
+   }
+  ]
+ },
+ {
+  "file": "Habstrakt - CASH.mp3",
+  "folder": "01 House/05 Bass House",
+  "features": {
+   "silent": false,
+   "duration": 195.04761904761904,
+   "bpm": 128,
+   "energy": 0.91,
+   "brightness": 0.64,
+   "texture": 0.38,
+   "bass": 0.81,
+   "dynamics": 0.38,
+   "pulse": 0.62
+  },
+  "raw": [
+   {
+    "bpm": 128.1,
+    "rmsDb": -5.553974550118186,
+    "centroid": 3850.573182081048,
+    "flatness": 0.00028426236546167337,
+    "bassShare": 0.6551173470475835,
+    "dynRangeDb": 6.789833191721582,
+    "onsetsPerSec": 5.55,
+    "tempoConf": 0.5696542410645646,
+    "bpmLow": 128.1,
+    "bpmFull": 128.1
+   },
+   {
+    "bpm": 128.4,
+    "rmsDb": -3.6141798206811266,
+    "centroid": 3098.7121151775673,
+    "flatness": 0.00015932392949412718,
+    "bassShare": 0.7902414036979202,
+    "dynRangeDb": 2.4122233271725126,
+    "onsetsPerSec": 6,
+    "tempoConf": 0.37168185205957166,
+    "bpmLow": 128.3,
+    "bpmFull": 128.4
+   },
+   {
+    "bpm": 128.4,
+    "rmsDb": -3.8780365083003776,
+    "centroid": 3557.83020831274,
+    "flatness": 0.00022189434968447746,
+    "bassShare": 0.7273602422315866,
+    "dynRangeDb": 6.090234369916891,
+    "onsetsPerSec": 5.2,
+    "tempoConf": 0.5057342856434559,
+    "bpmLow": 128,
+    "bpmFull": 128.4
+   }
+  ]
+ },
+ {
+  "file": "Poto Rico - Jus dorange de pomme.mp3",
+  "folder": "01 House/05 Bass House",
+  "features": {
+   "silent": false,
+   "duration": 152.83374149659863,
+   "bpm": 127,
+   "energy": 0.63,
+   "brightness": 0.59,
+   "texture": 0.35,
+   "bass": 0.55,
+   "dynamics": 0.56,
+   "pulse": 0.77
+  },
+  "raw": [
+   {
+    "bpm": 126.7,
+    "rmsDb": -10.590741861201868,
+    "centroid": 3358.7922078953093,
+    "flatness": 0.00016654341445165608,
+    "bassShare": 0.49664552165741693,
+    "dynRangeDb": 8.927559885183253,
+    "onsetsPerSec": 6.9,
+    "tempoConf": 0.49130067390631693,
+    "bpmLow": 84.7,
+    "bpmFull": 126.7
+   },
+   {
+    "bpm": 126.7,
+    "rmsDb": -10.049721461414654,
+    "centroid": 2759.527169057439,
+    "flatness": 0.00011742947722104713,
+    "bassShare": 0.4917056550682042,
+    "dynRangeDb": 10.723358832029373,
+    "onsetsPerSec": 6.4,
+    "tempoConf": 0.1759609066620111,
+    "bpmLow": 126.6,
+    "bpmFull": 126.7
+   },
+   {
+    "bpm": 126.9,
+    "rmsDb": -6.603312425706681,
+    "centroid": 3679.801000915144,
+    "flatness": 0.00020610623725391043,
+    "bassShare": 0.6514923172266767,
+    "dynRangeDb": 4.142748502477119,
+    "onsetsPerSec": 7.95,
+    "tempoConf": 0.5305536313455789,
+    "bpmLow": 84.8,
+    "bpmFull": 126.9
+   }
+  ]
+ },
+ {
+  "file": "Bad Bunny vs SIDEPIECE - WHERE SHE GOES (R-You Bootleg) (Clean Extended).mp3",
+  "folder": "01 House/07 Tech House",
+  "features": {
+   "silent": false,
+   "duration": 213.52489795918368,
+   "bpm": 83,
+   "energy": 0.79,
+   "brightness": 0.45,
+   "texture": 0.45,
+   "bass": 0.84,
+   "dynamics": 0.13,
+   "pulse": 0.59
+  },
+  "raw": [
+   {
+    "bpm": 126.2,
+    "rmsDb": -12.189981140849305,
+    "centroid": 2803.5670098303217,
+    "flatness": 0.0003169059622267128,
+    "bassShare": 0.0437004953408938,
+    "dynRangeDb": 6.329799369980332,
+    "onsetsPerSec": 5.3,
+    "tempoConf": 0.46441162222734195,
+    "bpmLow": 126,
+    "bpmFull": 126.2
+   },
+   {
+    "bpm": 83.4,
+    "rmsDb": -6.606983487844623,
+    "centroid": 2313.968154182948,
+    "flatness": 0.00036260225085978846,
+    "bassShare": 0.7746419529659018,
+    "dynRangeDb": 2.1214345693459764,
+    "onsetsPerSec": 5.1,
+    "tempoConf": 0.2116160162837646,
+    "bpmLow": 126.1,
+    "bpmFull": 83.4
+   },
+   {
+    "bpm": 63.1,
+    "rmsDb": -5.144269749583802,
+    "centroid": 2840.532731821583,
+    "flatness": 0.0006923323852102155,
+    "bassShare": 0.7537272980294621,
+    "dynRangeDb": 1.8161799451320162,
+    "onsetsPerSec": 5.6,
+    "tempoConf": 0.33104554178934265,
+    "bpmLow": 63.1,
+    "bpmFull": 126
+   }
+  ]
+ },
+ {
+  "file": "Fireboy DML & Luke Andy - Someone (Dirty Extended).mp3",
+  "folder": "02 Techno/06 Peak Time Techno",
+  "features": {
+   "silent": false,
+   "duration": 259.04764172335604,
+   "bpm": 126,
+   "energy": 0.62,
+   "brightness": 0.49,
+   "texture": 0.61,
+   "bass": 0.47,
+   "dynamics": 0.1,
+   "pulse": 0.67
+  },
+  "raw": [
+   {
+    "bpm": 126,
+    "rmsDb": -10.412106929402851,
+    "centroid": 3249.5387930021966,
+    "flatness": 0.0015918006380087981,
+    "bassShare": 0.41973825463904807,
+    "dynRangeDb": 13.406838196598049,
+    "onsetsPerSec": 5.15,
+    "tempoConf": 0.7772032021828934,
+    "bpmLow": 126.1,
+    "bpmFull": 126
+   },
+   {
+    "bpm": 126,
+    "rmsDb": -10.315700216222549,
+    "centroid": 2942.4268872225975,
+    "flatness": 0.0014032163641432603,
+    "bassShare": 0.2241395410831077,
+    "dynRangeDb": 1.6232107835795375,
+    "onsetsPerSec": 6.05,
+    "tempoConf": 0.7429017842881531,
+    "bpmLow": 167.7,
+    "bpmFull": 126
+   },
+   {
+    "bpm": 126,
+    "rmsDb": -5.357744273792251,
+    "centroid": 2909.004618962634,
+    "flatness": 0.0009815716043892664,
+    "bassShare": 0.7709500378546571,
+    "dynRangeDb": 1.2415239744516011,
+    "onsetsPerSec": 7.1,
+    "tempoConf": 0.8341472742864802,
+    "bpmLow": 125.9,
+    "bpmFull": 126
+   }
+  ]
+ },
+ {
+  "file": "Lady Bee ft Sophia vs 20 Fingers - Lick It (Kriss Ree vs Muzik Junkies Bootleg) (Clean).mp3",
+  "folder": "02 Techno/06 Peak Time Techno",
+  "features": {
+   "silent": false,
+   "duration": 107.71655328798185,
+   "bpm": 127,
+   "energy": 0.71,
+   "brightness": 0.67,
+   "texture": 0.7,
+   "bass": 0.76,
+   "dynamics": 0.56,
+   "pulse": 0.69
+  },
+  "raw": [
+   {
+    "bpm": 126.8,
+    "rmsDb": -8.431451592729646,
+    "centroid": 3698.2826432525753,
+    "flatness": 0.002265345534084657,
+    "bassShare": 0.6806412815358973,
+    "dynRangeDb": 8.918035060083927,
+    "onsetsPerSec": 4.95,
+    "tempoConf": 0.8445046177513836,
+    "bpmLow": 101.4,
+    "bpmFull": 126.8
+   },
+   {
+    "bpm": 63.6,
+    "rmsDb": -5.273569921993765,
+    "centroid": 3659.1669729244004,
+    "flatness": 0.0027832700017996048,
+    "bassShare": 0.8020219452720045,
+    "dynRangeDb": 1.3053535682043673,
+    "onsetsPerSec": 6.5,
+    "tempoConf": 0.6654292841761091,
+    "bpmLow": 63.6,
+    "bpmFull": 126.8
+   },
+   {
+    "bpm": 126.8,
+    "rmsDb": -9.257723208126595,
+    "centroid": 4711.593429175314,
+    "flatness": 0.004380820148698934,
+    "bassShare": 0.6110193977803141,
+    "dynRangeDb": 10.642102709342081,
+    "onsetsPerSec": 6.2,
+    "tempoConf": 0.8237599727083531,
+    "bpmLow": 126.7,
+    "bpmFull": 126.8
+   }
+  ]
+ },
+ {
+  "file": "Cardi B, Bad Bunny, J Balvin - I Like It.mp3",
+  "folder": "03 Urban Top 40/02 Hip Hop",
+  "features": {
+   "silent": false,
+   "duration": 253.44580498866213,
+   "bpm": 136,
+   "energy": 0.69,
+   "brightness": 0.53,
+   "texture": 0.27,
+   "bass": 0.28,
+   "dynamics": 0.43,
+   "pulse": 0.64
+  },
+  "raw": [
+   {
+    "bpm": 135.9,
+    "rmsDb": -8.782754756142591,
+    "centroid": 3653.425182757665,
+    "flatness": 0.00014380205188058035,
+    "bassShare": 0.24755878696185166,
+    "dynRangeDb": 4.7243535719613,
+    "onsetsPerSec": 5.75,
+    "tempoConf": 0.3456666886199794,
+    "bpmLow": 90.7,
+    "bpmFull": 135.9
+   },
+   {
+    "bpm": 136.3,
+    "rmsDb": -10.838403789119418,
+    "centroid": 3135.70812157664,
+    "flatness": 0.00004783460607028435,
+    "bassShare": 0.055723959819298646,
+    "dynRangeDb": 6.804187040667522,
+    "onsetsPerSec": 6.1,
+    "tempoConf": 0.2667490787743361,
+    "bpmLow": 136.1,
+    "bpmFull": 136.3
+   },
+   {
+    "bpm": 90.6,
+    "rmsDb": -7.368584872478361,
+    "centroid": 2921.044063927088,
+    "flatness": 0.00009116556838934558,
+    "bassShare": 0.5672153213639277,
+    "dynRangeDb": 7.736023280630826,
+    "onsetsPerSec": 5.15,
+    "tempoConf": 0.3340705827934847,
+    "bpmLow": 90.7,
+    "bpmFull": 90.6
+   }
+  ]
+ },
+ {
+  "file": "Denzel Curry, LAZER DIM 700, Bktherula - STILL IN THE PAINT.mp3",
+  "folder": "03 Urban Top 40/02 Hip Hop",
+  "features": {
+   "silent": false,
+   "duration": 233.1283446712018,
+   "bpm": 140,
+   "energy": 0.86,
+   "brightness": 0.43,
+   "texture": 0.22,
+   "bass": 0.8,
+   "dynamics": 0.26,
+   "pulse": 0.67
+  },
+  "raw": [
+   {
+    "bpm": 139.8,
+    "rmsDb": -5.551144174924558,
+    "centroid": 2731.3008753536915,
+    "flatness": 0.00005933714498216072,
+    "bassShare": 0.7071912589633178,
+    "dynRangeDb": 8.050836830022918,
+    "onsetsPerSec": 5.9,
+    "tempoConf": 0.27538325245195794,
+    "bpmLow": 140.3,
+    "bpmFull": 139.8
+   },
+   {
+    "bpm": 139.8,
+    "rmsDb": -4.323187135134302,
+    "centroid": 2558.0540458310775,
+    "flatness": 0.000047125223183306173,
+    "bassShare": 0.7817745009608208,
+    "dynRangeDb": 3.667933026960446,
+    "onsetsPerSec": 6.05,
+    "tempoConf": 0.41789192380995593,
+    "bpmLow": 0,
+    "bpmFull": 139.8
+   },
+   {
+    "bpm": 139.9,
+    "rmsDb": -5.050237919980719,
+    "centroid": 3181.9200348889976,
+    "flatness": 0.00007892833915370153,
+    "bassShare": 0.7223121516520907,
+    "dynRangeDb": 4.182360485778402,
+    "onsetsPerSec": 6.95,
+    "tempoConf": 0.27965224530492605,
+    "bpmLow": 139.8,
+    "bpmFull": 139.9
+   }
+  ]
+ },
+ {
+  "file": "Joe Budden - Pump It Up.mp3",
+  "folder": "03 Urban Top 40/02 Hip Hop",
+  "features": {
+   "silent": false,
+   "duration": 251.42566893424035,
+   "bpm": 101,
+   "energy": 0.77,
+   "brightness": 0.51,
+   "texture": 0.32,
+   "bass": 0.67,
+   "dynamics": 0.38,
+   "pulse": 0.66
+  },
+  "raw": [
+   {
+    "bpm": 101.2,
+    "rmsDb": -7.0721541864975626,
+    "centroid": 2966.6193312062323,
+    "flatness": 0.00010007011982186715,
+    "bassShare": 0.6741653938946169,
+    "dynRangeDb": 5.750661193835299,
+    "onsetsPerSec": 5.9,
+    "tempoConf": 0.1705112255585289,
+    "bpmLow": 83.4,
+    "bpmFull": 101.2
+   },
+   {
+    "bpm": 101.2,
+    "rmsDb": -7.116326151607984,
+    "centroid": 3085.461483918556,
+    "flatness": 0.00012703163012698092,
+    "bassShare": 0.6006588892433892,
+    "dynRangeDb": 6.055192606772205,
+    "onsetsPerSec": 5.95,
+    "tempoConf": 0.20451785663189004,
+    "bpmLow": 83.5,
+    "bpmFull": 101.2
+   },
+   {
+    "bpm": 71.5,
+    "rmsDb": -7.17317663158498,
+    "centroid": 3053.6004884434806,
+    "flatness": 0.0001308481752650873,
+    "bassShare": 0.5986595172244702,
+    "dynRangeDb": 6.547041099250346,
+    "onsetsPerSec": 6.05,
+    "tempoConf": 0.1607501989056577,
+    "bpmLow": 71.5,
+    "bpmFull": 137.6
+   }
+  ]
+ },
+ {
+  "file": "Lil' Kim - The Jump Off.mp3",
+  "folder": "03 Urban Top 40/02 Hip Hop",
+  "features": {
+   "silent": false,
+   "duration": 234.8234013605442,
+   "bpm": 105,
+   "energy": 0.71,
+   "brightness": 0.44,
+   "texture": 0.3,
+   "bass": 0.52,
+   "dynamics": 0.75,
+   "pulse": 0.7
+  },
+  "raw": [
+   {
+    "bpm": 139.9,
+    "rmsDb": -9.083728055845842,
+    "centroid": 2740.289744787281,
+    "flatness": 0.00011612243459539026,
+    "bassShare": 0.6525393956738108,
+    "dynRangeDb": 12.377497696291705,
+    "onsetsPerSec": 6.3,
+    "tempoConf": 0.25550876853335436,
+    "bpmLow": 135.8,
+    "bpmFull": 139.9
+   },
+   {
+    "bpm": 104.8,
+    "rmsDb": -8.136870324771323,
+    "centroid": 2753.454603976867,
+    "flatness": 0.000109958816664585,
+    "bassShare": 0.46938806945197464,
+    "dynRangeDb": 8.162832141798479,
+    "onsetsPerSec": 6.8,
+    "tempoConf": 0.20099546586624104,
+    "bpmLow": 135.7,
+    "bpmFull": 104.8
+   },
+   {
+    "bpm": 104.8,
+    "rmsDb": -8.316066757555843,
+    "centroid": 2028.5216887902252,
+    "flatness": 0.00005747108992337515,
+    "bassShare": 0.46383720789542976,
+    "dynRangeDb": 12.00443549214448,
+    "onsetsPerSec": 5.95,
+    "tempoConf": 0.45231098691450966,
+    "bpmLow": 136.7,
+    "bpmFull": 104.8
+   }
+  ]
+ },
+ {
+  "file": "Offset & Cardi B vs Henry Fong & FOMO - JEALOUSY (DJ Juan Cuba Mashup Slam Edit) (Dirty Extended).mp3",
+  "folder": "03 Urban Top 40/16 Open Format Mashups",
+  "features": {
+   "silent": false,
+   "duration": 141.00897959183675,
+   "bpm": 140,
+   "energy": 0.77,
+   "brightness": 0.92,
+   "texture": 0.81,
+   "bass": 0.64,
+   "dynamics": 0.17,
+   "pulse": 0.74
+  },
+  "raw": [
+   {
+    "bpm": 140,
+    "rmsDb": -6.797957344006029,
+    "centroid": 4684.961873539951,
+    "flatness": 0.006830792385560849,
+    "bassShare": 0.5769174609481071,
+    "dynRangeDb": 2.7480247948472414,
+    "onsetsPerSec": 6.8,
+    "tempoConf": 0.6037653928198113,
+    "bpmLow": 139.9,
+    "bpmFull": 140
+   },
+   {
+    "bpm": 139.9,
+    "rmsDb": -7.105952519541404,
+    "centroid": 3998.491269505825,
+    "flatness": 0.0046829811389266455,
+    "bassShare": 0.44219176344422945,
+    "dynRangeDb": 3.2150578260395655,
+    "onsetsPerSec": 6.7,
+    "tempoConf": 0.7390982858020286,
+    "bpmLow": 139.9,
+    "bpmFull": 139.9
+   },
+   {
+    "bpm": 70,
+    "rmsDb": -7.773376847706858,
+    "centroid": 4723.584243664608,
+    "flatness": 0.00887154644938878,
+    "bassShare": 0.6163432125293281,
+    "dynRangeDb": 2.331031879466556,
+    "onsetsPerSec": 5.55,
+    "tempoConf": 0.7043069149175852,
+    "bpmLow": 70,
+    "bpmFull": 139.9
+   }
+  ]
+ },
+ {
+  "file": "Andy C x Becky Hill - Indestructible (Disrupta Remix).mp3",
+  "folder": "04 EDM Festival/06 DnB",
+  "features": {
+   "silent": false,
+   "duration": 223.56172335600908,
+   "bpm": 87,
+   "energy": 0.96,
+   "brightness": 0.67,
+   "texture": 0.37,
+   "bass": 0.65,
+   "dynamics": 0.16,
+   "pulse": 0.58
+  },
+  "raw": [
+   {
+    "bpm": 87,
+    "rmsDb": -6.718431436645014,
+    "centroid": 3222.7552855995755,
+    "flatness": 0.0001271678722905866,
+    "bassShare": 0.026907039717129752,
+    "dynRangeDb": 3.406274128533468,
+    "onsetsPerSec": 6.45,
+    "tempoConf": 0.34407409339978473,
+    "bpmLow": 0,
+    "bpmFull": 87
+   },
+   {
+    "bpm": 87,
+    "rmsDb": -2.912771926015372,
+    "centroid": 3679.703981380763,
+    "flatness": 0.00020486176441941454,
+    "bassShare": 0.5917943712686579,
+    "dynRangeDb": 2.5353949588174505,
+    "onsetsPerSec": 4.05,
+    "tempoConf": 0.630097806386188,
+    "bpmLow": 116,
+    "bpmFull": 87
+   },
+   {
+    "bpm": 87.1,
+    "rmsDb": -2.641687235301793,
+    "centroid": 3757.8709222825228,
+    "flatness": 0.00020035245234707356,
+    "bassShare": 0.5811657588315048,
+    "dynRangeDb": 2.216752546535617,
+    "onsetsPerSec": 5.25,
+    "tempoConf": 0.4171247205666974,
+    "bpmLow": 116.1,
+    "bpmFull": 87.1
+   }
+  ]
+ },
+ {
+  "file": "Arcando - Buss Back (ft. Hachi Day).mp3",
+  "folder": "04 EDM Festival/06 DnB",
+  "features": {
+   "silent": false,
+   "duration": 200.2488888888889,
+   "bpm": 88,
+   "energy": 0.9,
+   "brightness": 0.64,
+   "texture": 0.37,
+   "bass": 0.79,
+   "dynamics": 0.24,
+   "pulse": 0.81
+  },
+  "raw": [
+   {
+    "bpm": 87.4,
+    "rmsDb": -4.520575836235679,
+    "centroid": 2137.3775091758143,
+    "flatness": 0.00003722682195455947,
+    "bassShare": 0.712688997425804,
+    "dynRangeDb": 3.861051028660762,
+    "onsetsPerSec": 5.4,
+    "tempoConf": 0.25311903507955436,
+    "bpmLow": 87.5,
+    "bpmFull": 87.4
+   },
+   {
+    "bpm": 87.5,
+    "rmsDb": -4.245916590664059,
+    "centroid": 3616.8159260623047,
+    "flatness": 0.00020449982104558538,
+    "bassShare": 0.705959329951401,
+    "dynRangeDb": 6.60590232147211,
+    "onsetsPerSec": 7.3,
+    "tempoConf": 0.8578657209815377,
+    "bpmLow": 116.7,
+    "bpmFull": 87.5
+   },
+   {
+    "bpm": 87.5,
+    "rmsDb": -1.98615689360838,
+    "centroid": 3556.0310488108175,
+    "flatness": 0.00019233260302219603,
+    "bassShare": 0.7533675954167499,
+    "dynRangeDb": 2.6696498283335703,
+    "onsetsPerSec": 7.3,
+    "tempoConf": 0.5488335835278794,
+    "bpmLow": 116.8,
+    "bpmFull": 87.5
+   }
+  ]
+ },
+ {
+  "file": "Comet Curious Mind - Embers.mp3",
+  "folder": "04 EDM Festival/06 DnB",
+  "features": {
+   "silent": false,
+   "duration": 194.56,
+   "bpm": 174,
+   "energy": 0.97,
+   "brightness": 0.42,
+   "texture": 0.26,
+   "bass": 0.73,
+   "dynamics": 0.31,
+   "pulse": 0.83
+  },
+  "raw": [
+   {
+    "bpm": 173.6,
+    "rmsDb": -4.027351432230306,
+    "centroid": 2664.7007541517073,
+    "flatness": 0.00006973211044240051,
+    "bassShare": 0.6420630095524612,
+    "dynRangeDb": 5.428389163043173,
+    "onsetsPerSec": 7.95,
+    "tempoConf": 0.7776915879800879,
+    "bpmLow": 173.3,
+    "bpmFull": 173.6
+   },
+   {
+    "bpm": 87,
+    "rmsDb": -2.5850995707102618,
+    "centroid": 3968.233675984627,
+    "flatness": 0.0001906268276537068,
+    "bassShare": 0.65786934276573,
+    "dynRangeDb": 3.3377112850892057,
+    "onsetsPerSec": 6.55,
+    "tempoConf": 0.6283380180516208,
+    "bpmLow": 116.4,
+    "bpmFull": 87
+   },
+   {
+    "bpm": 173.6,
+    "rmsDb": -2.091960436241079,
+    "centroid": 2573.638798908359,
+    "flatness": 0.00008448368540098545,
+    "bassShare": 0.7080345926415401,
+    "dynRangeDb": 4.996329294567335,
+    "onsetsPerSec": 7.45,
+    "tempoConf": 0.8029610982069497,
+    "bpmLow": 173.6,
+    "bpmFull": 87
+   }
+  ]
+ },
+ {
+  "file": "IVORY - Mindbreak (Freaks Geeks Remix).mp3",
+  "folder": "04 EDM Festival/06 DnB",
+  "features": {
+   "silent": false,
+   "duration": 216.36353741496598,
+   "bpm": 172,
+   "energy": 0.96,
+   "brightness": 0.74,
+   "texture": 0.42,
+   "bass": 0.7,
+   "dynamics": 0.16,
+   "pulse": 0.59
+  },
+  "raw": [
+   {
+    "bpm": 86,
+    "rmsDb": -4.962266898208591,
+    "centroid": 3947.689339050313,
+    "flatness": 0.00034296181423895526,
+    "bassShare": 0.3259466543460358,
+    "dynRangeDb": 3.419891372843681,
+    "onsetsPerSec": 5.35,
+    "tempoConf": 0.5696466129850327,
+    "bpmLow": 115.2,
+    "bpmFull": 86
+   },
+   {
+    "bpm": 171.8,
+    "rmsDb": -2.9651222417223395,
+    "centroid": 3966.30793635228,
+    "flatness": 0.00028825372926889075,
+    "bassShare": 0.6344097079873562,
+    "dynRangeDb": 2.5276352236154924,
+    "onsetsPerSec": 5.25,
+    "tempoConf": 0.4469816154137117,
+    "bpmLow": 114.9,
+    "bpmFull": 171.8
+   },
+   {
+    "bpm": 171.6,
+    "rmsDb": -2.237157757699548,
+    "centroid": 4405.006623866862,
+    "flatness": 0.0002931986333105035,
+    "bassShare": 0.7093211920476354,
+    "dynRangeDb": 1.621716294897925,
+    "onsetsPerSec": 5.4,
+    "tempoConf": 0.28123658741115837,
+    "bpmLow": 171.6,
+    "bpmFull": 86
+   }
+  ]
+ },
+ {
+  "file": "Rudimental - Ram Pam (feat. Mystic Marley Flowdan) (Carnival Visualiser).mp3",
+  "folder": "04 EDM Festival/06 DnB",
+  "features": {
+   "silent": false,
+   "duration": 171.06140589569162,
+   "bpm": 88,
+   "energy": 0.78,
+   "brightness": 0.69,
+   "texture": 0.32,
+   "bass": 0.59,
+   "dynamics": 0.45,
+   "pulse": 0.54
+  },
+  "raw": [
+   {
+    "bpm": 87.5,
+    "rmsDb": -6.832254226992527,
+    "centroid": 3757.8037960599277,
+    "flatness": 0.0001370379696343573,
+    "bassShare": 0.4712389852443245,
+    "dynRangeDb": 7.204166154533589,
+    "onsetsPerSec": 4.4,
+    "tempoConf": 0.3406168606570908,
+    "bpmLow": 87.2,
+    "bpmFull": 87.5
+   },
+   {
+    "bpm": 87.5,
+    "rmsDb": -7.031530960264382,
+    "centroid": 3560.705859700253,
+    "flatness": 0.0001074568778228422,
+    "bassShare": 0.5294191407629769,
+    "dynRangeDb": 11.314356528256083,
+    "onsetsPerSec": 4.9,
+    "tempoConf": 0.641997123468279,
+    "bpmLow": 87.5,
+    "bpmFull": 87.5
+   },
+   {
+    "bpm": 87.5,
+    "rmsDb": -3.686180477238214,
+    "centroid": 3756.0704896816005,
+    "flatness": 0.0001671711766782129,
+    "bassShare": 0.6892322011528174,
+    "dynRangeDb": 2.846933849499398,
+    "onsetsPerSec": 7.25,
+    "tempoConf": 0.7487226777700027,
+    "bpmLow": 116.8,
+    "bpmFull": 87.5
+   }
+  ]
+ },
+ {
+  "file": "Madrik - Bonita feat. Ash (Official Visualizer).mp3",
+  "folder": "04 EDM Festival/17 Moombahton",
+  "features": {
+   "silent": false,
+   "duration": 132.65560090702948,
+   "bpm": 126,
+   "energy": 0.75,
+   "brightness": 0.48,
+   "texture": 0.34,
+   "bass": 0.72,
+   "dynamics": 0.44,
+   "pulse": 0.51
+  },
+  "raw": [
+   {
+    "bpm": 126.4,
+    "rmsDb": -6.217419524595939,
+    "centroid": 2918.103933278953,
+    "flatness": 0.000159422439577268,
+    "bassShare": 0.6531060531926653,
+    "dynRangeDb": 5.368038423953399,
+    "onsetsPerSec": 5.3,
+    "tempoConf": 0.5508552904481713,
+    "bpmLow": 126.3,
+    "bpmFull": 126.4
+   },
+   {
+    "bpm": 126.3,
+    "rmsDb": -7.518141232456886,
+    "centroid": 3229.603081097626,
+    "flatness": 0.0001821199325374606,
+    "bassShare": 0.6189299010433272,
+    "dynRangeDb": 7.113035194952388,
+    "onsetsPerSec": 4.55,
+    "tempoConf": 0.5048891251019048,
+    "bpmLow": 126.9,
+    "bpmFull": 126.3
+   },
+   {
+    "bpm": 126.7,
+    "rmsDb": -8.10531533419706,
+    "centroid": 2691.455608837813,
+    "flatness": 0.0001190744396740728,
+    "bassShare": 0.645371213272524,
+    "dynRangeDb": 10.11642175605364,
+    "onsetsPerSec": 3.9,
+    "tempoConf": 0.4334759349013816,
+    "bpmLow": 95,
+    "bpmFull": 126.7
+   }
+  ]
+ },
+ {
+  "file": "Bad Bunny, Benito A. Martinez Ocasio, Charles Aznavour - MONACO.mp3",
+  "folder": "05 Latin/01 Reggaeton",
+  "features": {
+   "silent": false,
+   "duration": 267.2384580498866,
+   "bpm": 140,
+   "energy": 0.85,
+   "brightness": 0.42,
+   "texture": 0.24,
+   "bass": 0.95,
+   "dynamics": 0.68,
+   "pulse": 0.47
+  },
+  "raw": [
+   {
+    "bpm": 139.2,
+    "rmsDb": -3.5199291128361843,
+    "centroid": 2877.035334221128,
+    "flatness": 0.0000699523901846065,
+    "bassShare": 0.8702878911873441,
+    "dynRangeDb": 5.532217029439776,
+    "onsetsPerSec": 5.6,
+    "tempoConf": 0.5821428793750566,
+    "bpmLow": 92.7,
+    "bpmFull": 139.2
+   },
+   {
+    "bpm": 144.3,
+    "rmsDb": -9.083483034174138,
+    "centroid": 2515.7615366758687,
+    "flatness": 0.00004842432772758267,
+    "bassShare": 0.8451783376361245,
+    "dynRangeDb": 16.475537915312923,
+    "onsetsPerSec": 3.85,
+    "tempoConf": 0.2961407081774431,
+    "bpmLow": 92.9,
+    "bpmFull": 144.3
+   },
+   {
+    "bpm": 139.6,
+    "rmsDb": -5.221054613466727,
+    "centroid": 2669.1220003595877,
+    "flatness": 0.00006875968583410137,
+    "bassShare": 0.8520381537179639,
+    "dynRangeDb": 10.892549241201866,
+    "onsetsPerSec": 4.25,
+    "tempoConf": 0.2878690992823392,
+    "bpmLow": 92.4,
+    "bpmFull": 139.6
+   }
+  ]
+ },
+ {
+  "file": "CA7RIEL & Paco Amoroso, CA7RIEL, Paco Amoroso - BABY GANGSTA.mp3",
+  "folder": "05 Latin/01 Reggaeton",
+  "features": {
+   "silent": false,
+   "duration": 153.87863945578232,
+   "bpm": 167,
+   "energy": 0.75,
+   "brightness": 0.75,
+   "texture": 0.37,
+   "bass": 0.74,
+   "dynamics": 0.48,
+   "pulse": 0.56
+  },
+  "raw": [
+   {
+    "bpm": 167,
+    "rmsDb": -7.474360217942644,
+    "centroid": 4172.891938171481,
+    "flatness": 0.0002040278826425552,
+    "bassShare": 0.6664928909948996,
+    "dynRangeDb": 7.728857077233053,
+    "onsetsPerSec": 4.9,
+    "tempoConf": 0.457383071205417,
+    "bpmLow": 111.8,
+    "bpmFull": 167
+   },
+   {
+    "bpm": 83.5,
+    "rmsDb": -6.770837085163889,
+    "centroid": 3983.1791405888634,
+    "flatness": 0.00019925830430594414,
+    "bassShare": 0.6857942393316953,
+    "dynRangeDb": 5.308905416970404,
+    "onsetsPerSec": 5.45,
+    "tempoConf": 0.3995355309510832,
+    "bpmLow": 111.3,
+    "bpmFull": 83.5
+   },
+   {
+    "bpm": 167.1,
+    "rmsDb": -8.199202366018785,
+    "centroid": 3231.1769953895623,
+    "flatness": 0.00012610204586261764,
+    "bassShare": 0.5905557335263691,
+    "dynRangeDb": 10.145242099193066,
+    "onsetsPerSec": 5,
+    "tempoConf": 0.32215192638985607,
+    "bpmLow": 111.8,
+    "bpmFull": 167.1
+   }
+  ]
+ },
+ {
+  "file": "CA7RIEL & Paco Amoroso, CA7RIEL, Paco Amoroso - EL ÚNICO.mp3",
+  "folder": "05 Latin/01 Reggaeton",
+  "features": {
+   "silent": false,
+   "duration": 152.06748299319727,
+   "bpm": 123,
+   "energy": 0.85,
+   "brightness": 0.37,
+   "texture": 0.23,
+   "bass": 0.89,
+   "dynamics": 0.45,
+   "pulse": 0.6
+  },
+  "raw": [
+   {
+    "bpm": 120,
+    "rmsDb": -8.682358605365785,
+    "centroid": 2377.9612220236236,
+    "flatness": 0.00004102169611474846,
+    "bassShare": 0.6339720882356625,
+    "dynRangeDb": 7.593149804527143,
+    "onsetsPerSec": 5.3,
+    "tempoConf": 0.2722802836425461,
+    "bpmLow": 0,
+    "bpmFull": 120
+   },
+   {
+    "bpm": 123.3,
+    "rmsDb": -5.200176525825633,
+    "centroid": 2471.291225065506,
+    "flatness": 0.0000641480497734124,
+    "bassShare": 0.8005743064557829,
+    "dynRangeDb": 7.159360231201949,
+    "onsetsPerSec": 5.8,
+    "tempoConf": 0.3714498375959945,
+    "bpmLow": 123.2,
+    "bpmFull": 123.3
+   },
+   {
+    "bpm": 123.3,
+    "rmsDb": -4.779878477476862,
+    "centroid": 2813.266318718254,
+    "flatness": 0.0000680117483985158,
+    "bassShare": 0.7987689165985259,
+    "dynRangeDb": 5.266422683642817,
+    "onsetsPerSec": 5.4,
+    "tempoConf": 0.4142948419067597,
+    "bpmLow": 123.3,
+    "bpmFull": 123.3
+   }
+  ]
+ },
+ {
+  "file": "El Alfa, Chael Produciendo, Emanuel Herrera Batista, Chael Eugenio Betances, Mauro Silvino Bertran - Gogo Dance.mp3",
+  "folder": "05 Latin/01 Reggaeton",
+  "features": {
+   "silent": false,
+   "duration": 173.42984126984126,
+   "bpm": 94,
+   "energy": 0.76,
+   "brightness": 0.3,
+   "texture": 0.26,
+   "bass": 0.7,
+   "dynamics": 0.56,
+   "pulse": 0.52
+  },
+  "raw": [
+   {
+    "bpm": 157,
+    "rmsDb": -7.32406250299868,
+    "centroid": 2275.757382177368,
+    "flatness": 0.00009330076710493921,
+    "bassShare": 0.6339082268584691,
+    "dynRangeDb": 8.997548051649005,
+    "onsetsPerSec": 5.15,
+    "tempoConf": 0.5912555622781458,
+    "bpmLow": 117.8,
+    "bpmFull": 157
+   },
+   {
+    "bpm": 94.3,
+    "rmsDb": -9.071523880347259,
+    "centroid": 2214.1357401629703,
+    "flatness": 0.00008348115790132466,
+    "bassShare": 0.614151871900909,
+    "dynRangeDb": 10.95414074924605,
+    "onsetsPerSec": 4.1,
+    "tempoConf": 0.6088018115669735,
+    "bpmLow": 94.1,
+    "bpmFull": 94.3
+   },
+   {
+    "bpm": 94.3,
+    "rmsDb": -6.263559654369378,
+    "centroid": 1829.042908987966,
+    "flatness": 0.0000632648144068699,
+    "bassShare": 0.6966290812389488,
+    "dynRangeDb": 5.224091053574057,
+    "onsetsPerSec": 4.7,
+    "tempoConf": 0.5431198710671689,
+    "bpmLow": 117.8,
+    "bpmFull": 94.3
+   }
+  ]
+ },
+ {
+  "file": "J Balvin, Tokischa - Perra.mp3",
+  "folder": "05 Latin/01 Reggaeton",
+  "features": {
+   "silent": false,
+   "duration": 157.98857142857142,
+   "bpm": 98,
+   "energy": 0.8,
+   "brightness": 0.66,
+   "texture": 0.35,
+   "bass": 0.51,
+   "dynamics": 0.31,
+   "pulse": 0.71
+  },
+  "raw": [
+   {
+    "bpm": 130.2,
+    "rmsDb": -6.401571177283952,
+    "centroid": 3628.1854677514466,
+    "flatness": 0.0001726861827872855,
+    "bassShare": 0.4596372582205888,
+    "dynRangeDb": 5.021062542482945,
+    "onsetsPerSec": 5.8,
+    "tempoConf": 0.48894682440820375,
+    "bpmLow": 97.8,
+    "bpmFull": 130.2
+   },
+   {
+    "bpm": 97.7,
+    "rmsDb": -6.437753719207105,
+    "centroid": 3622.390489927405,
+    "flatness": 0.0001571753883537615,
+    "bassShare": 0.45078417317432484,
+    "dynRangeDb": 5.504912476105298,
+    "onsetsPerSec": 6.4,
+    "tempoConf": 0.6005234494768628,
+    "bpmLow": 97.8,
+    "bpmFull": 97.7
+   },
+   {
+    "bpm": 97.8,
+    "rmsDb": -6.052204023045373,
+    "centroid": 3603.1665721412683,
+    "flatness": 0.00017282570912406607,
+    "bassShare": 0.48254420917684754,
+    "dynRangeDb": 4.317418874655498,
+    "onsetsPerSec": 6.4,
+    "tempoConf": 0.6706611408384272,
+    "bpmLow": 97.8,
+    "bpmFull": 97.8
+   }
+  ]
+ },
+ {
+  "file": "KAROL G, Maldy - GATÚBELA.mp3",
+  "folder": "05 Latin/01 Reggaeton",
+  "features": {
+   "silent": false,
+   "duration": 208.05079365079365,
+   "bpm": 95,
+   "energy": 0.78,
+   "brightness": 0.48,
+   "texture": 0.27,
+   "bass": 0.49,
+   "dynamics": 0.44,
+   "pulse": 0.49
+  },
+  "raw": [
+   {
+    "bpm": 126.4,
+    "rmsDb": -6.9414832321753215,
+    "centroid": 2681.1722118919347,
+    "flatness": 0.00007225275081495142,
+    "bassShare": 0.5356535183500261,
+    "dynRangeDb": 7.063939839468957,
+    "onsetsPerSec": 4.1,
+    "tempoConf": 0.34428724236954367,
+    "bpmLow": 126.1,
+    "bpmFull": 126.4
+   },
+   {
+    "bpm": 95,
+    "rmsDb": -6.820751772311189,
+    "centroid": 3053.075563177454,
+    "flatness": 0.00008785219004649132,
+    "bassShare": 0.3528611658490752,
+    "dynRangeDb": 8.494486392711256,
+    "onsetsPerSec": 4.45,
+    "tempoConf": 0.4198121819762096,
+    "bpmLow": 126.7,
+    "bpmFull": 95
+   },
+   {
+    "bpm": 95.2,
+    "rmsDb": -5.433817245608105,
+    "centroid": 2923.9121640023136,
+    "flatness": 0.00008883970928110796,
+    "bassShare": 0.4401624036230263,
+    "dynRangeDb": 3.5842285678077017,
+    "onsetsPerSec": 4.6,
+    "tempoConf": 0.5034180020403072,
+    "bpmLow": 126.3,
+    "bpmFull": 95.2
+   }
+  ]
+ }
+]

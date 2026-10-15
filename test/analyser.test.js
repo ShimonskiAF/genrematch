@@ -46,3 +46,10 @@ test('WAV round-trip feeds the same analyser', () => {
   assert.equal(sampleRate, SR);
   assert.ok(Math.abs(analyse(samples, sampleRate).bpm - 144) <= 3);
 });
+
+test('tempo vote is octave-aware across windows', async () => {
+  const { voteTempo } = await import('../js/analyser.js');
+  assert.equal(Math.round(voteTempo([126, 83, 126])), 126);
+  assert.equal(Math.round(voteTempo([87, 174, 87])), 87);
+  assert.equal(voteTempo([0, 0]), 0);
+});

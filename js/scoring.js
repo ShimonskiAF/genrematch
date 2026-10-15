@@ -1,5 +1,6 @@
 // Family-first scoring against genre centres. Pure functions.
-export const WEIGHTS = { bpm: 1.2, energy: 1.0, brightness: 0.8, texture: 0.7, bass: 1.3, dynamics: 0.7, pulse: 0.9 };
+// brightness and dynamics re-weighted by leave-one-out tuning on the training split (calibration/tune.js).
+export const WEIGHTS = { bpm: 1.2, energy: 1.0, brightness: 0.4, texture: 0.7, bass: 1.3, dynamics: 1.05, pulse: 0.9 };
 export const OCTAVE_PENALTY = 0.06;
 export const CLUB_FAMILIES = new Set(['Rap', 'Techno', 'House', 'Trance', "Drum 'n' Bass", 'Breakbeat', 'Jamaican', 'World Pop', 'World Latin']);
 export const GATED_FAMILIES = new Set(['Alternative', 'Contemporary', 'Folk', 'Country']);
@@ -13,7 +14,7 @@ export function distance(f, centre, bpm) {
   const scale = wsum / used;
   let s = 0;
   for (const k of KEYS) {
-    if (k === 'bpm') { if (useTempo) s += WEIGHTS.bpm * scale * (nb(bpm) - nb(centre.bpm)) ** 2; continue; }
+    if (k === 'bpm') { if (useTempo) s += (WEIGHTS.bpm * scale * (nb(bpm) - nb(centre.bpm)) ** 2) / (centre.bpmSpread || 1) ** 2; continue; }
     s += WEIGHTS[k] * scale * (f[k] - centre[k]) ** 2;
   }
   return Math.sqrt(s);

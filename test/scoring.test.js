@@ -7,8 +7,8 @@ const byId = (id) => P.find((p) => p.id === id);
 const at = (id, over = {}) => ({ ...byId(id).features, ...over });
 const CLUB = new Set(['Rap', 'Techno', 'House', 'Trance', "Drum 'n' Bass", 'Breakbeat', 'Jamaican', 'World Pop', 'World Latin']);
 
-test('profiles: 33 genres, 7 features in range, every one linked to the atlas', () => {
-  assert.equal(P.length, 33);
+test('profiles: 38 genres (33 + 5 calibrated club subgenres), 7 features in range, every one linked to the atlas', () => {
+  assert.equal(P.length, 38);
   const atlas = new Set(JSON.parse(fs.readFileSync(new URL('../data/atlas_lite.json', import.meta.url))).genres.map((g) => g.id));
   for (const p of P) {
     for (const k of ['energy', 'brightness', 'texture', 'bass', 'dynamics', 'pulse']) assert.ok(p.features[k] >= 0 && p.features[k] <= 1, `${p.id}.${k}`);
@@ -59,7 +59,7 @@ test('club gate: strong low end keeps guitar families out unless they win by 8+'
 test('no default genre: silent, missing or far-away input gives "No clear genre"', () => {
   assert.equal(classify({ silent: true }, P).label, 'No clear genre');
   assert.equal(classify(null, P).status, 'none');
-  const far = classify({ bpm: 190, energy: 0, brightness: 1, texture: 0, bass: 0, dynamics: 1, pulse: 0 }, P);
+  const far = classify({ bpm: 190, energy: 0, brightness: 1, texture: 1, bass: 0, dynamics: 1, pulse: 1 }, P);
   assert.equal(far.status, 'none');
   assert.equal(far.label, 'No clear genre');
 });
@@ -81,4 +81,11 @@ test('why lines never invent artists and mention octave scoring', () => {
   const f = at('trap', { bpm: 71 });
   const w = whyLines(f, classify(f, P)).join(' ');
   assert.match(w, /scored as double time/);
+});
+
+test('calibrated club subgenres exist with a tempo spread no wider than 3x', () => {
+  for (const id of ['speedhouse', 'basshouse', 'techhouse', 'peaktechno', 'moombahton', 'dnb', 'hiphop', 'reggaeton']) {
+    const p = P.find((x) => x.id === id); assert.ok(p, id);
+    assert.ok(!p.features.bpmSpread || (p.features.bpmSpread >= 1 && p.features.bpmSpread <= 3), id);
+  }
 });

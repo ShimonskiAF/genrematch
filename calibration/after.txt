@@ -1,0 +1,27 @@
+  ✓✓ CHYL vs Lil Jon - Fool Me (DJ Juan Cuba  Speed House         Speed House            [speedhouse 66 medium] bpm 150
+  ✗✗ French Montana & 2Rare vs Infected Mushr Speed House         Techno × House         [peaktechno 72 low] bpm 140
+H ✓✗ Kendrick Lamar vs Henry Fong - N95 (R-Yo Speed House         House                  [techhouse 69 low] bpm 135
+  ✗✗ AC Slater MPH - Lights On (Ft. Eloise Ke Bass House          Trance × Techno        [trance 78 low] bpm 135
+  ✓✗ Habstrakt - CASH.mp3                     Bass House          House                  [moombahton 76 low] bpm 128
+H ✓✓ Poto Rico - Jus dorange de pomme.mp3     Bass House          House × Rap            [basshouse 68 low] bpm 127
+  ✓✓ Bad Bunny vs SIDEPIECE - WHERE SHE GOES  Tech House          Tech House             [techhouse 91 high] bpm 126
+  ✓✓ Fireboy DML & Luke Andy - Someone (Dirty Peak Time Techno    Peak Time Techno       [peaktechno 88 high] bpm 126
+H ✗✗ Lady Bee ft Sophia vs 20 Fingers - Lick  Peak Time Techno    House                  [speedhouse 66 low] bpm 127
+  ✗✗ Cardi B, Bad Bunny, J Balvin - I Like It Hip Hop             Pop × Trance           [kpop 77 low] bpm 136
+  ✗✗ Denzel Curry, LAZER DIM 700, Bktherula - Hip Hop             House                  [techhouse 74 low] bpm 140
+H ✗✗ Joe Budden - Pump It Up.mp3              Hip Hop             Jamaican × Rap         [reggaeton 79 low] bpm 101
+  ✓✓ Lil' Kim - The Jump Off.mp3              Hip Hop             Rap × Jamaican         [hiphop 65 low] bpm 105
+  ✗· Offset & Cardi B vs Henry Fong & FOMO -  Open Format Mashups Speed House            [speedhouse 71 medium] bpm 140
+  ✓✓ Andy C x Becky Hill - Indestructible (Di DnB                 Drum & Bass            [dnb 80 high] bpm 87
+  ✓✓ Arcando - Buss Back (ft. Hachi Day).mp3  DnB                 Drum & Bass            [dnb 74 medium] bpm 88
+H ✓✓ Comet Curious Mind - Embers.mp3          DnB                 Drum & Bass            [dnb 71 medium] bpm 174
+  ✓✓ IVORY - Mindbreak (Freaks Geeks Remix).m DnB                 Drum & Bass            [dnb 86 high] bpm 172
+H ✗✗ Rudimental - Ram Pam (feat. Mystic Marle DnB                 Jamaican × Rap         [reggaeton 81 low] bpm 88
+  ✓✓ Madrik - Bonita feat. Ash (Official Visu Moombahton          Moombahton             [moombahton 94 high] bpm 126
+  ✗✗ Bad Bunny, Benito A. Martinez Ocasio, Ch Reggaeton           House                  [moombahton 59 low] bpm 140
+  ✓✓ CA7RIEL & Paco Amoroso, CA7RIEL, Paco Am Reggaeton           Reggaeton              [reggaeton 75 medium] bpm 167
+H ✗✗ CA7RIEL & Paco Amoroso, CA7RIEL, Paco Am Reggaeton           Moombahton             [moombahton 71 medium] bpm 123
+  ✓✓ El Alfa, Chael Produciendo, Emanuel Herr Reggaeton           Reggaeton              [reggaeton 82 high] bpm 94
+H ✗✗ J Balvin, Tokischa - Perra.mp3           Reggaeton           Hip Hop                [hiphop 75 medium] bpm 98
+  ✗✗ KAROL G, Maldy - GATÚBELA.mp3           Reggaeton           Rap × Jamaican         [hiphop 77 low] bpm 95
+{"all":"family 14/26, subgenre 12/25","train":"family 11/18, subgenre 10/17","held":"family 3/8, subgenre 2/8"}

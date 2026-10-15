@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { analyse } from '../js/analyser.js';
 import { classify, whyLines } from '../js/scoring.js';
+import { decodeFile } from './decode.js';
 import { SR, clubLoop, acousticGuitar, silence, writeWav, readWav } from './synth.js';
 const P = JSON.parse(fs.readFileSync(new URL('../data/genre_profiles.json', import.meta.url))).profiles;
 let files = process.argv.slice(2);
@@ -14,8 +15,7 @@ if (!files.length) {
   files = Object.keys(gen).map((n) => path.join('test-audio', n));
 }
 for (const f of files) {
-  if (!f.toLowerCase().endsWith('.wav')) { console.log(`${f}: skipped (harness reads 16-bit WAV; convert with ffmpeg -i in.mp3 -ac 1 -ar 22050 out.wav)`); continue; }
-  const { samples, sampleRate } = readWav(f);
+  const { samples, sampleRate } = f.toLowerCase().endsWith('.wav') ? readWav(f) : decodeFile(f);
   const feat = analyse(samples, sampleRate), r = classify(feat, P);
   const { raw, ...show } = feat;
   console.log(`\n${path.basename(f)}`);

@@ -1,0 +1,27 @@
+  ✗✗ CHYL vs Lil Jon - Fool Me (DJ Juan Cuba Boot Speed House          Rap [trap 51 low] {"silent":false,"bpm":150,"energy":0.97,"brightness":1,"texture":0.03,"bass":1,"dynamics":0.44,"pulse":0.63}
+  ✗✗ French Montana & 2Rare vs Infected Mushroom  Speed House          Rap [trap 54 low] {"silent":false,"bpm":140,"energy":1,"brightness":0.75,"texture":0.01,"bass":0.97,"dynamics":0.09,"pulse":0.6}
+H ✗✗ Kendrick Lamar vs Henry Fong - N95 (R-You Bo Speed House          Rap [trap 59 low] {"silent":false,"bpm":135,"energy":1,"brightness":0.55,"texture":0.01,"bass":1,"dynamics":0.3,"pulse":0.65}
+  ✓✗ AC Slater MPH - Lights On (Ft. Eloise Keeble Bass House           House [house 57 low] {"silent":false,"bpm":135,"energy":0.89,"brightness":0.75,"texture":0,"bass":0.81,"dynamics":0.19,"pulse":0.85}
+  ✗✗ Habstrakt - CASH.mp3                         Bass House           Rap [trap 52 low] {"silent":false,"bpm":128,"energy":1,"brightness":0.87,"texture":0,"bass":1,"dynamics":0.3,"pulse":0.69}
+H ✗✗ Poto Rico - Jus dorange de pomme.mp3         Bass House           Rap [trap 51 low] {"silent":false,"bpm":127,"energy":0.83,"brightness":0.82,"texture":0,"bass":1,"dynamics":0.45,"pulse":0.86}
+  ✗✗ Bad Bunny vs SIDEPIECE - WHERE SHE GOES (R-Y Tech House           Rap [trap 54 low] {"silent":false,"bpm":126,"energy":0.97,"brightness":0.66,"texture":0,"bass":1,"dynamics":0.11,"pulse":0.66}
+  ✗✗ Fireboy DML & Luke Andy - Someone (Dirty Ext Peak Time Techno     House [house 55 low] {"silent":false,"bpm":126,"energy":0.82,"brightness":0.7,"texture":0,"bass":0.93,"dynamics":0.08,"pulse":0.76}
+H ✗✗ Lady Bee ft Sophia vs 20 Fingers - Lick It ( Peak Time Techno     Rap [trap 51 low] {"silent":false,"bpm":127,"energy":0.9,"brightness":0.91,"texture":0.01,"bass":1,"dynamics":0.45,"pulse":0.78}
+  ✗✗ Cardi B, Bad Bunny, J Balvin - I Like It.mp3 Hip Hop              Pop [pop 61 low] {"silent":false,"bpm":136,"energy":0.88,"brightness":0.75,"texture":0,"bass":0.55,"dynamics":0.34,"pulse":0.72}
+  ✓✗ Denzel Curry, LAZER DIM 700, Bktherula - STI Hip Hop              Rap [trap 55 low] {"silent":false,"bpm":140,"energy":1,"brightness":0.64,"texture":0,"bass":1,"dynamics":0.21,"pulse":0.76}
+H ✗✗ Joe Budden - Pump It Up.mp3                  Hip Hop              Jamaican [reggaeton 57 low] {"silent":false,"bpm":101,"energy":0.95,"brightness":0.73,"texture":0,"bass":1,"dynamics":0.3,"pulse":0.74}
+  ✗✗ Lil' Kim - The Jump Off.mp3                  Hip Hop              Jamaican [reggaeton 50 low] {"silent":false,"bpm":105,"energy":0.9,"brightness":0.64,"texture":0,"bass":1,"dynamics":0.6,"pulse":0.79}
+  ✗· Offset & Cardi B vs Henry Fong & FOMO - JEAL Open Format Mashups  Breakbeat [edmtrap 48 low] {"silent":false,"bpm":140,"energy":0.95,"brightness":1,"texture":0.02,"bass":1,"dynamics":0.14,"pulse":0.84}
+  ✗✗ Andy C x Becky Hill - Indestructible (Disrup DnB                  Jamaican [reggaeton 52 low] {"silent":false,"bpm":87,"energy":1,"brightness":0.91,"texture":0,"bass":1,"dynamics":0.13,"pulse":0.66}
+  ✗✗ Arcando - Buss Back (ft. Hachi Day).mp3      DnB                  Jamaican [reggaeton 52 low] {"silent":false,"bpm":88,"energy":1,"brightness":0.87,"texture":0,"bass":1,"dynamics":0.19,"pulse":0.91}
+H ✗✗ Comet Curious Mind - Embers.mp3              DnB                  Jamaican [reggaeton 50 low] {"silent":false,"bpm":174,"energy":1,"brightness":0.62,"texture":0,"bass":1,"dynamics":0.25,"pulse":0.93}
+  ✗✗ IVORY - Mindbreak (Freaks Geeks Remix).mp3   DnB                  Jamaican [reggaeton 47 low] {"silent":false,"bpm":172,"energy":1,"brightness":0.99,"texture":0,"bass":1,"dynamics":0.13,"pulse":0.67}
+H ✗✗ Rudimental - Ram Pam (feat. Mystic Marley Fl DnB                  Jamaican [reggaeton 53 low] {"silent":false,"bpm":88,"energy":0.97,"brightness":0.93,"texture":0,"bass":1,"dynamics":0.36,"pulse":0.61}
+  ✗✗ Madrik - Bonita feat. Ash (Official Visualiz Moombahton           Rap [trap 57 low] {"silent":false,"bpm":126,"energy":0.94,"brightness":0.69,"texture":0,"bass":1,"dynamics":0.36,"pulse":0.57}
+  ✗✗ Bad Bunny, Benito A. Martinez Ocasio, Charle Reggaeton            Rap [trap 54 low] {"silent":false,"bpm":140,"energy":1,"brightness":0.62,"texture":0,"bass":1,"dynamics":0.54,"pulse":0.53}
+  ✗✗ CA7RIEL & Paco Amoroso, CA7RIEL, Paco Amoros Reggaeton            Rap [trap 49 low] {"silent":false,"bpm":167,"energy":0.94,"brightness":1,"texture":0,"bass":1,"dynamics":0.39,"pulse":0.63}
+H ✗✗ CA7RIEL & Paco Amoroso, CA7RIEL, Paco Amoros Reggaeton            Rap [trap 56 low] {"silent":false,"bpm":123,"energy":1,"brightness":0.56,"texture":0,"bass":1,"dynamics":0.36,"pulse":0.68}
+  ✗✗ El Alfa, Chael Produciendo, Emanuel Herrera  Reggaeton            Rap [hiphop 58 low] {"silent":false,"bpm":94,"energy":0.94,"brightness":0.49,"texture":0,"bass":1,"dynamics":0.45,"pulse":0.59}
+H ✓✓ J Balvin, Tokischa - Perra.mp3               Reggaeton            Jamaican [reggaeton 54 low] {"silent":false,"bpm":98,"energy":0.98,"brightness":0.89,"texture":0,"bass":1,"dynamics":0.25,"pulse":0.8}
+  ✗✗ KAROL G, Maldy - GATÚBELA.mp3               Reggaeton            Rap [hiphop 57 low] {"silent":false,"bpm":95,"energy":0.97,"brightness":0.69,"texture":0,"bass":0.98,"dynamics":0.35,"pulse":0.56}
+{"all":"family 3/26, subgenre 1/25","train":"family 2/18, subgenre 0/17","held":"family 1/8, subgenre 1/8"}
