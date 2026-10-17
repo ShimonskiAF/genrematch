@@ -16,6 +16,7 @@ export const setCfg = (c) => ({ SHRINK, BPM_SD, SPREAD_FLOOR } = { ...CFG, ...c 
 const FIT_META = {
   speedhouse: { name: 'Speed House', family: 'House', atlas_ids: ['hou09', 'hou05'], anchor: 140 },
   basshouse: { name: 'Bass House', family: 'House', atlas_ids: ['hou09', 'hou10', 'brb10'], anchor: 128 },
+  house: { name: 'House', family: 'House', atlas_ids: ['hou01', 'hou04'], anchor: 124 },
   techhouse: { name: 'Tech House', family: 'House', atlas_ids: ['tec06', 'hou07'], anchor: 126 },
   peaktechno: { name: 'Peak Time Techno', family: 'Techno', atlas_ids: ['tec01', 'tec04'], anchor: 130 },
   moombahton: { name: 'Moombahton', family: 'House', atlas_ids: ['hou11'], anchor: 110 },
@@ -42,7 +43,8 @@ function convert(f) {
   const s = scaleRaw(raw);
   s.texture = 0.15 + 0.5 * f.texture;
   for (const k of ['fourFloor', 'tresillo', 'offbeat', 'syncop', 'backbeat']) s[k] = 0.5;
-  return Object.fromEntries([['bpm', f.bpm], ...K.map((k) => [k, r2(s[k])])]);
+  // No estimate for the harmonic features (tonal, vocalMid): leave them out so unfitted profiles skip them.
+  return Object.fromEntries([['bpm', f.bpm], ...K.filter((k) => !['tonal', 'vocalMid'].includes(k)).map((k) => [k, r2(s[k])])]);
 }
 const fold = (b, a) => [b / 2, b, b * 2].reduce((x, y) => (Math.abs(Math.log2(y / a)) < Math.abs(Math.log2(x / a)) ? y : x));
 const med = (a) => { const s = [...a].sort((x, y) => x - y), m = s.length >> 1; return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; };

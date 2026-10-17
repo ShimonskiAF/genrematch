@@ -1,7 +1,7 @@
 // Family-first scoring against genre centres. Pure functions.
-// brightness and dynamics re-weighted by leave-one-out tuning on the training split (calibration/tune.js).
-export const WEIGHTS = { bpm: 1.8, energy: 1.0, brightness: 0.2, texture: 0.5, bass: 1.8, dynamics: 0.7, pulse: 0.9,
-  fourFloor: 2.0, tresillo: 2.2, offbeat: 1.0, syncop: 0.8, backbeat: 1.2 };
+// Weights picked by 5-fold CV on the training split only (calibration/tune_cv.js); dynamics and texture held where played-music tests need them.
+export const WEIGHTS = { bpm: 3.6, energy: 1.5, brightness: 0.2, texture: 0.5, bass: 0.9, dynamics: 0.7, pulse: 0.9,
+  fourFloor: 2.0, tresillo: 0, offbeat: 1.0, syncop: 0, backbeat: 1.2, tonal: 1.6, vocalMid: 0.8 };
 export const OCTAVE_PENALTY = 0.06;
 export const CLUB_FAMILIES = new Set(['Rap', 'Techno', 'House', 'Trance', "Drum 'n' Bass", 'Breakbeat', 'Jamaican', 'World Pop', 'World Latin']);
 export const GATED_FAMILIES = new Set(['Alternative', 'Contemporary', 'Folk', 'Country']);

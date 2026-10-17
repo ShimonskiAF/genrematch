@@ -4,6 +4,7 @@ export const LABELS = {
   'Speed House': { family: 'House', sub: 'speedhouse' },
   'Bass House': { family: 'House', sub: 'basshouse' },
   'Tech House': { family: 'House', sub: 'techhouse' },
+  'House Dance': { family: 'House', sub: 'house' },
   'Amapiano': { family: 'House', sub: 'amapiano' },
   'Moombahton': { family: 'House', sub: 'moombahton' },
   'Peak Time Techno': { family: 'Techno', sub: 'peaktechno' },

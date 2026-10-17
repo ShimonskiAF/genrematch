@@ -60,6 +60,9 @@ export function analyseWindow(x, sr) {
   const re = new Float64Array(FRAME), im = new Float64Array(FRAME);
   const half = FRAME / 2, binHz = sr / FRAME, bassBin = Math.floor(150 / binHz);
   let prev = null, lowFlux = [], midFlux = [], kickFlux = [], cent = 0, flat = 0, bassP = 0, totP = 0, nUsed = 0;
+  // Harmonic read: 12-bin chroma over 100-2000 Hz (sung melody, chords) and mid-band power share (vocal range).
+  const pc = new Int8Array(half).fill(-1); for (let k = 1; k < half; k++) { const hz = k * binHz; if (hz >= 100 && hz <= 2000) pc[k] = ((Math.round(12 * Math.log2(hz / 440)) % 12) + 12) % 12; }
+  const chroma = new Float64Array(12); let tonalSum = 0, tonalW = 0, midP = 0;
   const flux = [];
   for (let f = 0; f < nFrames; f++) {
     const o = f * HOP;
@@ -71,8 +74,11 @@ export function analyseWindow(x, sr) {
       const m = Math.hypot(re[k], im[k]), p = m * m;
       mag[k] = m; sM += m; sMf += m * k * binHz; sP += p; sLog += Math.log(p + 1e-12);
       if (k <= bassBin) bassP += p;
+      if (pc[k] >= 0) chroma[pc[k]] += p;
+      { const hz = k * binHz; if (hz >= 300 && hz <= 3000) midP += p; }
       if (prev) { const d = Math.log1p(100 * m) - Math.log1p(100 * prev[k]); if (d > 0) { fl += d; const hz = k * binHz; if (hz <= 300) lf += d; if (hz <= 150) kf += d; else if (hz >= 200 && hz <= 3000) mf += d; } }
     }
+    { let cs = 0, cm = 0; for (let c = 0; c < 12; c++) { cs += chroma[c]; if (chroma[c] > cm) cm = chroma[c]; chroma[c] = 0; } if (cs > 1e-10) { const w = Math.sqrt(cs); tonalSum += w * (cm / cs); tonalW += w; } }
     totP += sP; flux.push(fl); lowFlux.push(lf); midFlux.push(mf); kickFlux.push(kf); prev = mag;
     if (sP > 1e-8) { cent += sMf / sM; flat += Math.exp(sLog / (half - 1)) / (sP / (half - 1)); nUsed++; }
   }
@@ -96,7 +102,7 @@ export function analyseWindow(x, sr) {
   const octaveApart = tLow.bpm && tFull.bpm && Math.abs(Math.log2(tFull.bpm / tLow.bpm)) > 0.9 && Math.abs(Math.log2(tFull.bpm / tLow.bpm)) < 1.1;
   let t = octaveApart || !tFull.bpm ? tLow : tFull;
   const rh = rhythmDescriptors({ kickFlux, midFlux, flux, fr }, t.bpm, onsets / (x.length / sr));
-  const raw = { ...rh, bpm: t.bpm || 0, rmsDb, centroid: cent / nUsed, flatness: flat / nUsed, bassShare: bassP / totP, dynRangeDb: dynRange, onsetsPerSec: onsets / (x.length / sr), tempoConf: t.conf || 0, bpmLow: tLow.bpm, bpmFull: tFull.bpm };
+  const raw = { ...rh, bpm: t.bpm || 0, rmsDb, centroid: cent / nUsed, flatness: flat / nUsed, bassShare: bassP / totP, dynRangeDb: dynRange, onsetsPerSec: onsets / (x.length / sr), tonal: tonalW ? tonalSum / tonalW : null, midShare: totP ? midP / totP : null, tempoConf: t.conf || 0, bpmLow: tLow.bpm, bpmFull: tFull.bpm };
   return { ...scaleRaw(raw), raw };
 }
 
@@ -147,6 +153,8 @@ export const SCALES = {
   offbeat: { raw: 'offbeat', lo: 0, hi: 2.5 },
   syncop: { raw: 'syncop', lo: 0, hi: 2.0 },
   backbeat: { raw: 'backbeat', lo: 0, hi: 3.0 },
+  tonal: { raw: 'tonal', lo: 0.3, hi: 0.5 },
+  vocalMid: { raw: 'midShare', lo: 0, hi: 0.5 },
 };
 export function scaleRaw(raw) {
   const v = { ...raw, log10Flatness: Math.log10(Math.max(raw.flatness, 1e-12)) };
@@ -158,7 +166,7 @@ export function scaleRaw(raw) {
   return out;
 }
 
-export const FEATURES = ['bpm', 'energy', 'brightness', 'texture', 'bass', 'dynamics', 'pulse', 'fourFloor', 'tresillo', 'offbeat', 'syncop', 'backbeat'];
+export const FEATURES = ['bpm', 'energy', 'brightness', 'texture', 'bass', 'dynamics', 'pulse', 'fourFloor', 'tresillo', 'offbeat', 'syncop', 'backbeat', 'tonal', 'vocalMid'];
 
 export function analyse(samples, sr) {
   const dur = samples.length / sr;
