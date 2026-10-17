@@ -43,3 +43,7 @@ input[type=search],input[type=text],select{width:100%;max-width:420px}
 .gm-fb{display:flex;flex-wrap:wrap;align-items:center;gap:var(--gm-space-3);padding:var(--gm-space-3) 0;border-top:1px solid var(--gm-rule-soft);border-bottom:1px solid var(--gm-rule-soft)}
 .gm .gm-btn--sm{padding:8px 14px;font-size:var(--gm-fs-small)}
 .gm-why .gm-why-head{font-family:var(--gm-sans);font-style:normal;font-weight:600;color:var(--gm-text)}
+/* estimate shelves (Overlap tokens only) */
+.gm-est{display:flex;flex-wrap:wrap;align-items:center;gap:var(--gm-space-2);margin:0}
+.gm .gm-chip--est{border-color:var(--gm-clay);color:var(--gm-text)}
+.gm-est-tag{color:var(--gm-text-muted);font-weight:400}

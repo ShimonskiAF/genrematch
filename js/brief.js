@@ -8,7 +8,7 @@ export function briefArticle({ source, features: f, result: r, why, listen, page
   const date = new Date().toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' });
   const none = r.status === 'none';
   const m = marketFor(r.family);
-  const conf = none ? 'No clear genre' : r.hybrid ? 'Hybrid' : { high: 'High confidence', medium: 'Medium confidence', low: 'Low confidence' }[r.confidence];
+  const conf = none ? 'No clear genre' : r.primary?.estimate ? 'Estimated, low confidence (no labelled tracks yet)' : r.hybrid ? 'Hybrid' : { high: 'High confidence', medium: 'Medium confidence', low: 'Low confidence' }[r.confidence];
   const desc = none ? r.reason : r.status === 'family' ? `${conf}. Leans toward ${r.leansToward.join(' / ')}.` : `${conf}.`;
   const fit = none ? '—' : `${r.confidencePct ?? r.primary.fit}%`;
   const closest = (r.ranked || []).slice(0, 5).map((g, i) => `<div class="meter${i === 0 ? ' top' : ''}" style="--v:${g.fit}%"><span>${esc(g.name)}</span><span>${g.fit}</span></div>`).join('');

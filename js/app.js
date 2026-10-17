@@ -59,8 +59,12 @@ async function readFile(file) {
 function confText(r) {
   if (r.status === 'none') return 'No clear genre';
   if (r.hybrid) return 'Hybrid';
+  if (isEstRead(r)) return 'Estimated';
   return { high: 'High confidence', medium: 'Medium confidence', low: 'Low confidence' }[r.confidence];
 }
+// Estimate shelves (no labelled tracks yet): always shown as estimated, low confidence (v2-tweaks D).
+const EST = { chip: 'Estimated · low confidence', line: 'No labelled tracks for this shelf yet.', tag: ' · est.' };
+const isEstRead = (r) => r.status !== 'none' && !!r.primary?.estimate;
 const TRUST = { high: 'Trust the primary.', medium: 'Check the near misses.', low: 'Treat it as a lean.' };
 function feedbackRow(read) {
   const r = read.result;
@@ -78,13 +82,14 @@ function readCard(read) {
   const m = marketFor(r.family);
   return `<section class="gm-card gm-stack" aria-live="polite">
     <div class="gm-readhead"><div><div class="gm-caps">Primary read</div><div class="gm-genre">${esc(r.label)}</div><p><em>${esc(sub)}</em></p></div>
-    <div><div class="gm-caps">Confidence</div><div class="gm-fit">${r.status === 'none' ? '—' : r.confidencePct + '%'}</div><div class="gm-muted">${r.status === 'none' ? '' : esc(TRUST[r.confidence])}</div></div></div>
+    <div><div class="gm-caps">Confidence</div><div class="gm-fit">${r.status === 'none' ? '—' : r.confidencePct + '%'}</div><div class="gm-muted">${r.status === 'none' ? '' : esc(isEstRead(r) ? TRUST.low : TRUST[r.confidence])}</div></div></div>
+    ${isEstRead(r) ? `<p class="gm-est"><span class="gm-chip gm-chip--est">${EST.chip}</span><span class="gm-muted">${EST.line}</span></p>` : ''}
     ${r.status === 'none' ? '' : `<p class="gm-path"><span>${esc(r.super)}</span> › <span>${esc(r.family)}</span> › <strong>${esc(r.primary.name)}</strong></p>`}
-    ${r.nearMisses?.length ? `<div class="gm-near"><span class="gm-caps">Near misses</span>${r.nearMisses.map((n) => `<span class="gm-chip">${esc(n.name)} ${n.fit}%${n.relation ? ` · ${esc(n.relation)}` : ''}</span>`).join('')}</div>` : ''}
+    ${r.nearMisses?.length ? `<div class="gm-near"><span class="gm-caps">Near misses</span>${r.nearMisses.map((n) => `<span class="gm-chip${n.estimate ? ' gm-chip--est' : ''}">${esc(n.name)} ${n.fit}%${n.relation ? ` · ${esc(n.relation)}` : ''}${n.estimate ? EST.tag : ''}</span>`).join('')}</div>` : ''}
     ${feedbackRow(read)}
     <p class="gm-muted gm-file">Source: ${esc(read.source)}${read.melOn ? '' : ' · Spectrogram model off (features only)'}</p>
     <div class="gm-grid2">
-      <div><div class="gm-caps">Closest genres</div>${(r.ranked || []).slice(0, 5).map((g) => meter(esc(g.name), g.fit, g.fit)).join('')}</div>
+      <div><div class="gm-caps">Closest genres</div>${(r.ranked || []).slice(0, 5).map((g) => meter(esc(g.name) + (g.estimate ? `<span class="gm-est-tag">${EST.tag}</span>` : ''), g.fit, g.fit)).join('')}</div>
       <div><div class="gm-caps">What was measured</div>${meter('Tempo', tempo, f.bpm ? Math.round(Math.max(0, Math.min(1, (f.bpm - 60) / 130)) * 100) : 0)}${['energy', 'brightness', 'texture', 'bass', 'dynamics', 'pulse'].map((k) => meter({ energy: 'Energy', brightness: 'Brightness', texture: 'Texture', bass: 'Low end', dynamics: 'Dynamics', pulse: 'Pulse' }[k], f.silent ? '—' : f[k].toFixed(2), f.silent ? 0 : Math.round(f[k] * 100))).join('')}</div>
     </div>
     <div class="gm-why"><div class="gm-caps">Why this read</div>${why.map((w, i) => `<p${i === 0 ? ' class="gm-why-head"' : ''}>${esc(w)}</p>`).join('')}</div>
@@ -200,6 +205,7 @@ function pageMarket(id) {
     const artists = [...new Set(at.flatMap((g) => g.artists))].slice(0, 6), related = [...new Set(at.flatMap((g) => g.related))].slice(0, 8);
     const bpms = at.map((g) => g.bpm_range).filter(Boolean);
     view.innerHTML = `<p><a href="#/market">← All genres</a></p><section class="gm-hero"><div class="gm-caps">${esc(p.family)}</div><h1 class="gm-display">${esc(p.name)}</h1>
+      ${MODEL && !MODEL.classes.includes(p.id) ? `<p class="gm-est"><span class="gm-chip gm-chip--est">${EST.chip}</span><span class="gm-muted">${EST.line}</span></p>` : ''}
       ${bpms.length ? `<p class="gm-muted">Typical tempo in the atlas: ${Math.min(...bpms.map((b) => b[0]))}–${Math.max(...bpms.map((b) => b[1]))} BPM</p>` : ''}
       ${GRAPH?.profiles?.[p.id] ? (() => { const g = GRAPH.profiles[p.id], nm = (ids) => ids.map((i) => PROFILES.find((x) => x.id === i)?.name).filter(Boolean).join(', '); return `<p><strong>${esc(g.super)}</strong> · pocket ${g.pocket[0]}–${g.pocket[1]} BPM · ${esc(g.character)}</p><p class="gm-muted">${[g.parent.length ? `Parent: ${esc(nm(g.parent))}` : '', g.siblings.length ? `Siblings: ${esc(nm(g.siblings))}` : '', g.influence.length ? `Influence: ${esc(nm(g.influence))}` : ''].filter(Boolean).join(' · ')}</p>`; })() : ''}</section>
       <div class="gm-grid3"><div class="gm-card gm-card--flat"><div class="gm-caps">Audience</div><p>${esc(m.audience)}</p></div><div class="gm-card gm-card--flat"><div class="gm-caps">Sync</div><p>${esc(m.sync)}</p></div><div class="gm-card gm-card--flat"><div class="gm-caps">How to spend the push</div><p>${esc(m.push)}</p><p class="gm-muted">${esc(m.channels)}</p></div></div>

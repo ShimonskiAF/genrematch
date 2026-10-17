@@ -60,3 +60,12 @@ The all-training-best rule doesn't regress the four protected shelves on the hol
 - C1: the 8 tracks moved out of High were all correct, so High gets less accurate.
 - C2: changes only the label on 2 reads that were already Medium or Low. The bands and Brier score are unchanged, so calibration doesn't improve.
 - The patch is at `calibration/v2/patches/closecall_label.patch`, if Shima wants the "House or Techno" label anyway if Shima wants the "House or Techno" label anyway.
+
+## D. Estimate shelves marked in the UI (KEPT)
+- Read card: when the primary is an estimate shelf, it shows a clay-outlined chip "Estimated · low confidence" with "No labelled tracks for this shelf yet." The trust line becomes "Treat it as a lean."
+- Closest genres and near misses tag estimate shelves "· est.".
+- The shelf/market page shows the same chip for estimate shelves.
+- The PDF brief says "Estimated, low confidence (no labelled tracks yet)".
+- Overlap tokens only (--gm-clay, --gm-text, --gm-text-muted).
+- UI only: holdout unchanged (99/108/85). Checked in headless Chrome: Haydn reads Cinematic with the chip; Jazz shows the chip and est. tags; Reggaeton and Tech House reads (fitted shelves) show no chip.
+- Note: Phonk is a fitted shelf (it has a crate), not an estimate. The plan lists it as one.
