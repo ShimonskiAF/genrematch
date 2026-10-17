@@ -19,6 +19,18 @@ const GROUPS = [
   { g: 'dance', keys: ['danceability'], rep: 'danceability', hi: 'high danceability', lo: 'low danceability' },
   { g: 'acoustic', keys: ['acousticness'], rep: 'acousticness', hi: 'acoustic-leaning sound', lo: 'produced, electronic sound' },
 ];
+// Shima's slug groups (prompt 4). Estimate shelves have no trained head, so their reasons come from the
+// measured cues their group is defined by. A cue is only shown when the measurement agrees with it.
+export const SLUG_GROUPS = {
+  vocalPop: { ids: ['futurebass', 'hyperpop', 'dancepop', 'pop', 'indiepop'], cues: [['instrumentalness', -1, 'vocal-led'], ['b_vocalMid', 1, 'voice-forward mids'], ['danceability', 1, 'high danceability']] },
+  highEnergy: { ids: ['hardstyle', 'punk', 'metal'], cues: [['rmsDb', 1, 'loud, dense master'], ['acousticness', -1, 'produced, non-acoustic sound'], ['onsetM', 1, 'dense onsets']] },
+  lowRhythm: { ids: ['cinematic', 'folk', 'ambient', 'jazz'], cues: [['regularity', -1, 'loose, non-grid rhythm'], ['b_fourFloor', -1, 'no four-on-the-floor kick'], ['acousticness', 1, 'acoustic-leaning sound'], ['keyClarity', 1, 'clear harmony']] },
+};
+export const groupOf = (id) => Object.keys(SLUG_GROUPS).find((k) => SLUG_GROUPS[k].ids.includes(id)) || null;
+export function groupCues(model, x, id) {
+  const k = groupOf(id); if (!k || !x) return [];
+  return SLUG_GROUPS[k].cues.filter(([key, sign]) => sign * zOf(model, x, key) > 0.35).map((c) => c[2]);
+}
 const G_OF = {}; for (const G of GROUPS) for (const k of G.keys) G_OF[k] = G;
 
 // Contributions of each group to logit(primary) - logit(rival), averaged over the LR and LDA heads.
@@ -52,6 +64,7 @@ export function reasonsV2(res, f, model, graph) {
   const mi = model.classes.indexOf(p.id), melLead = res.trace.melUsed && mi >= 0 && res.trace.mel[mi] > res.trace.hand[mi] + 0.15;
   if (melLead) bits.push('spectrogram sound-alike');
   for (const d of drivers) { if (bits.length >= 4) break; if (used.has(d.g)) continue; const t = phrase(model, x, d.g, f); if (t) { bits.push(t); used.add(d.g); } }
+  if (p.estimate) for (const t of groupCues(model, x, p.id)) { if (bits.length >= 4) break; if (!bits.includes(t)) bits.push(t); }
   if (bits.length < 3) for (const G of GROUPS) { if (bits.length >= 4) break; if (used.has(G.g) || G.g === 'tempo' || G.g === 'timbre') continue; const t = phrase(model, x, G.g, f); if (t && Math.abs(zOf(model, x, G.rep)) > 1) { bits.push(t); used.add(G.g); } }
   const headline = `${bits.join(' + ')} → ${p.name}`;
   const lines = [headline];
@@ -61,6 +74,7 @@ export function reasonsV2(res, f, model, graph) {
     const i = model.classes.indexOf(p.id), mp = i >= 0 ? res.trace.mel[i] : null, hp = i >= 0 ? res.trace.hand[i] : null;
     if (mp != null) lines.push(`${p.name}: spectrogram model ${Math.round(100 * mp)}%, features ${Math.round(100 * hp)}%.${Math.max(mp, hp) < 0.3 ? ' Neither is sure.' : Math.abs(mp - hp) < 0.15 ? ' They agree.' : mp > hp ? ' The spectrogram carries it.' : ' The features carry it.'}`);
   }
+  if (p.estimate) lines.push(`${p.name} is an estimate shelf (no labelled audio yet)${g?.character ? `: ${g.character.toLowerCase()}` : ''}.`);
   if (res.nearMisses.length) lines.push(`Near miss: ${res.nearMisses.map((n) => `${n.name} ${n.fit}%${n.relation ? ` (${n.relation})` : ''}`).join(', ')}.`);
   if (res.trace.ood.m > 0.2) lines.push('Outside the crates we trained on, so this read leans on estimates.');
   return { headline, lines: lines.slice(0, 5), drivers: drivers.slice(0, 6) };

@@ -150,3 +150,13 @@ test('OOD gates: a far-off embedding pushes the read to estimate shelves', () =>
   const near = rankV2({ f: t.base, v2: t.v2, mel: { emb: t.emb, scores: t.scores }, profiles: P, model: MODEL, graph: GRAPH });
   assert.ok(near.trace.ood.m < 0.2, near.trace.ood.m);
 });
+
+test('prompt 4: slug-group cues only appear when the measurement agrees', async () => {
+  const { groupCues, groupOf } = await import('../js/reasons2.js');
+  const model = JSON.parse(fs.readFileSync(new URL('../data/model_v2.json', import.meta.url)));
+  assert.equal(groupOf('cinematic'), 'lowRhythm'); assert.equal(groupOf('hardstyle'), 'highEnergy'); assert.equal(groupOf('futurebass'), 'vocalPop'); assert.equal(groupOf('house'), null);
+  const x = model.lr.mu.slice(); assert.deepEqual(groupCues(model, x, 'cinematic'), []); // average track: no cue claimed
+  const j = model.handKeys.indexOf('regularity'); x[j] = model.lr.mu[j] - 2 * model.lr.sd[j];
+  assert.ok(groupCues(model, x, 'cinematic').includes('loose, non-grid rhythm'));
+  assert.ok(!groupCues(model, x, 'hardstyle').length);
+});
