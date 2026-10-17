@@ -63,7 +63,11 @@
    ],
    "influence": [
     "techno",
-    "amapiano"
+    "amapiano",
+    "techhouse",
+    "deephouse",
+    "peaktechno",
+    "trance"
    ],
    "pocket": [
     120,
@@ -73,6 +77,14 @@
    "axes": [
     "mechanical",
     "bouncy"
+   ],
+   "anti": [
+    "ambient",
+    "songwriter",
+    "jazz",
+    "hiphop",
+    "folk",
+    "cinematic"
    ]
   },
   "deephouse": {
@@ -86,7 +98,10 @@
    "influence": [
     "soul",
     "jazz",
-    "amapiano"
+    "amapiano",
+    "house",
+    "techhouse",
+    "rnb"
    ],
    "pocket": [
     118,
@@ -96,6 +111,12 @@
    "axes": [
     "mechanical",
     "atmospheric"
+   ],
+   "anti": [
+    "metal",
+    "punk",
+    "hardstyle",
+    "trap"
    ]
   },
   "techhouse": {
@@ -108,7 +129,9 @@
     "house"
    ],
    "influence": [
-    "peaktechno"
+    "peaktechno",
+    "house",
+    "deephouse"
    ],
    "pocket": [
     124,
@@ -118,6 +141,12 @@
    "axes": [
     "mechanical",
     "bouncy"
+   ],
+   "anti": [
+    "ambient",
+    "songwriter",
+    "jazz",
+    "folk"
    ]
   },
   "basshouse": {
@@ -193,7 +222,9 @@
    "siblings": [],
    "influence": [
     "afrobeats",
-    "jazz"
+    "jazz",
+    "house",
+    "deephouse"
    ],
    "pocket": [
     110,
@@ -203,6 +234,12 @@
    "axes": [
     "organic",
     "bouncy"
+   ],
+   "anti": [
+    "metal",
+    "punk",
+    "ambient",
+    "peaktechno"
    ]
   },
   "techno": {
@@ -237,7 +274,8 @@
    ],
    "influence": [
     "trance",
-    "techhouse"
+    "techhouse",
+    "house"
    ],
    "pocket": [
     128,
@@ -247,6 +285,13 @@
    "axes": [
     "mechanical",
     "dense"
+   ],
+   "anti": [
+    "ambient",
+    "songwriter",
+    "jazz",
+    "reggaeton",
+    "folk"
    ]
   },
   "trance": {
@@ -258,7 +303,9 @@
    "siblings": [],
    "influence": [
     "peaktechno",
-    "synthwave"
+    "synthwave",
+    "house",
+    "futurebass"
    ],
    "pocket": [
     132,
@@ -268,6 +315,13 @@
    "axes": [
     "mechanical",
     "atmospheric"
+   ],
+   "anti": [
+    "drill",
+    "hiphop",
+    "songwriter",
+    "ambient",
+    "folk"
    ]
   },
   "dnb": {
@@ -279,7 +333,10 @@
     "dubstep"
    ],
    "influence": [
-    "jerseyclub"
+    "jerseyclub",
+    "dubstep",
+    "peaktechno",
+    "trap"
    ],
    "pocket": [
     170,
@@ -289,6 +346,12 @@
    "axes": [
     "mechanical",
     "spiky"
+   ],
+   "anti": [
+    "songwriter",
+    "ambient",
+    "jazz",
+    "folk"
    ]
   },
   "dubstep": {
@@ -302,7 +365,10 @@
    ],
    "influence": [
     "edmtrap",
-    "basshouse"
+    "basshouse",
+    "dnb",
+    "trap",
+    "phonk"
    ],
    "pocket": [
     138,
@@ -312,6 +378,13 @@
    "axes": [
     "mechanical",
     "dense"
+   ],
+   "anti": [
+    "songwriter",
+    "ambient",
+    "jazz",
+    "lofi",
+    "folk"
    ]
   },
   "edmtrap": {
@@ -366,7 +439,8 @@
    "influence": [
     "rnb",
     "reggae",
-    "jazz"
+    "jazz",
+    "lofi"
    ],
    "pocket": [
     85,
@@ -376,6 +450,13 @@
    "axes": [
     "organic",
     "bouncy"
+   ],
+   "anti": [
+    "trap",
+    "dubstep",
+    "metal",
+    "trance",
+    "phonk"
    ]
   },
   "trap": {
@@ -388,7 +469,10 @@
    ],
    "influence": [
     "phonk",
-    "edmtrap"
+    "edmtrap",
+    "drill",
+    "dubstep",
+    "rnb"
    ],
    "pocket": [
     130,
@@ -398,6 +482,12 @@
    "axes": [
     "mechanical",
     "spiky"
+   ],
+   "anti": [
+    "ambient",
+    "songwriter",
+    "jazz",
+    "folk"
    ]
   },
   "drill": {
@@ -408,7 +498,11 @@
    "siblings": [
     "trap"
    ],
-   "influence": [],
+   "influence": [
+    "trap",
+    "phonk",
+    "dubstep"
+   ],
    "pocket": [
     138,
     145
@@ -417,6 +511,13 @@
    "axes": [
     "mechanical",
     "spiky"
+   ],
+   "anti": [
+    "ambient",
+    "jazz",
+    "songwriter",
+    "hiphop",
+    "folk"
    ]
   },
   "phonk": {
@@ -429,7 +530,10 @@
    ],
    "influence": [
     "bailefunk",
-    "gwalk"
+    "gwalk",
+    "trap",
+    "drill",
+    "dubstep"
    ],
    "pocket": [
     130,
@@ -439,6 +543,13 @@
    "axes": [
     "mechanical",
     "dense"
+   ],
+   "anti": [
+    "ambient",
+    "songwriter",
+    "jazz",
+    "folk",
+    "cinematic"
    ]
   },
   "gwalk": {
@@ -473,7 +584,9 @@
    "influence": [
     "hiphop",
     "pop",
-    "afrobeats"
+    "afrobeats",
+    "trap",
+    "deephouse"
    ],
    "pocket": [
     65,
@@ -520,7 +633,12 @@
    "influence": [
     "house",
     "songwriter",
-    "hyperpop"
+    "hyperpop",
+    "dancepop",
+    "indiepop",
+    "rnb",
+    "afrobeats",
+    "latinpop"
    ],
    "pocket": [
     95,
@@ -539,7 +657,10 @@
    ],
    "siblings": [],
    "influence": [
-    "edmtrap"
+    "edmtrap",
+    "pop",
+    "futurebass",
+    "dancepop"
    ],
    "pocket": [
     140,
@@ -549,6 +670,12 @@
    "axes": [
     "mechanical",
     "spiky"
+   ],
+   "anti": [
+    "hiphop",
+    "ambient",
+    "folk",
+    "jazz"
    ]
   },
   "kpop": {
@@ -583,7 +710,10 @@
     "folk"
    ],
    "influence": [
-    "indie"
+    "indie",
+    "indiepop",
+    "jazz",
+    "folk"
    ],
    "pocket": [
     70,
@@ -593,6 +723,15 @@
    "axes": [
     "organic",
     "atmospheric"
+   ],
+   "anti": [
+    "metal",
+    "dubstep",
+    "trap",
+    "house",
+    "peaktechno",
+    "hardstyle",
+    "punk"
    ]
   },
   "indie": {
@@ -606,7 +745,9 @@
    ],
    "influence": [
     "songwriter",
-    "synthwave"
+    "synthwave",
+    "indiepop",
+    "altrock"
    ],
    "pocket": [
     100,
@@ -647,7 +788,9 @@
    ],
    "siblings": [],
    "influence": [
-    "punk"
+    "punk",
+    "indie",
+    "hardstyle"
    ],
    "pocket": [
     90,
@@ -657,6 +800,15 @@
    "axes": [
     "organic",
     "dense"
+   ],
+   "anti": [
+    "songwriter",
+    "ambient",
+    "lofi",
+    "jazz",
+    "rnb",
+    "folk",
+    "cinematic"
    ]
   },
   "punk": {
@@ -668,10 +820,18 @@
     "indie"
    ],
    "influence": [
-    "metal"
+    "metal",
+    "indie",
+    "altrock"
    ],
    "anti": [
-    "rock"
+    "rock",
+    "ambient",
+    "songwriter",
+    "jazz",
+    "lofi",
+    "cinematic",
+    "deephouse"
    ],
    "pocket": [
     150,
@@ -691,7 +851,10 @@
     "songwriter"
    ],
    "influence": [
-    "blues"
+    "blues",
+    "songwriter",
+    "country",
+    "jazz"
    ],
    "pocket": [
     80,
@@ -701,6 +864,15 @@
    "axes": [
     "organic",
     "atmospheric"
+   ],
+   "anti": [
+    "metal",
+    "trap",
+    "dubstep",
+    "house",
+    "peaktechno",
+    "hardstyle",
+    "punk"
    ]
   },
   "country": {
@@ -714,7 +886,9 @@
    ],
    "influence": [
     "rock",
-    "pop"
+    "pop",
+    "folk",
+    "songwriter"
    ],
    "pocket": [
     80,
@@ -724,6 +898,13 @@
    "axes": [
     "organic",
     "bouncy"
+   ],
+   "anti": [
+    "metal",
+    "peaktechno",
+    "trap",
+    "dubstep",
+    "hardstyle"
    ]
   },
   "jazz": {
@@ -735,7 +916,10 @@
    "influence": [
     "soul",
     "hiphop",
-    "lofi"
+    "lofi",
+    "songwriter",
+    "ambient",
+    "cinematic"
    ],
    "pocket": [
     80,
@@ -745,6 +929,14 @@
    "axes": [
     "organic",
     "spiky"
+   ],
+   "anti": [
+    "trap",
+    "metal",
+    "dubstep",
+    "house",
+    "phonk",
+    "hardstyle"
    ]
   },
   "blues": {
@@ -776,7 +968,11 @@
    ],
    "influence": [
     "trance",
-    "techno"
+    "techno",
+    "synthwave",
+    "lofi",
+    "jazz",
+    "cinematic"
    ],
    "pocket": [
     60,
@@ -786,6 +982,16 @@
    "axes": [
     "organic",
     "atmospheric"
+   ],
+   "anti": [
+    "house",
+    "peaktechno",
+    "trance",
+    "metal",
+    "trap",
+    "dubstep",
+    "hardstyle",
+    "punk"
    ]
   },
   "lofi": {
@@ -797,7 +1003,11 @@
    "siblings": [
     "ambient"
    ],
-   "influence": [],
+   "influence": [
+    "hiphop",
+    "ambient",
+    "jazz"
+   ],
    "pocket": [
     70,
     90
@@ -806,6 +1016,14 @@
    "axes": [
     "organic",
     "atmospheric"
+   ],
+   "anti": [
+    "metal",
+    "trance",
+    "dubstep",
+    "trap",
+    "hardstyle",
+    "punk"
    ]
   },
   "synthwave": {
@@ -816,7 +1034,11 @@
    "siblings": [],
    "influence": [
     "house",
-    "trance"
+    "trance",
+    "ambient",
+    "indiepop",
+    "pop",
+    "cinematic"
    ],
    "pocket": [
     80,
@@ -826,6 +1048,13 @@
    "axes": [
     "mechanical",
     "atmospheric"
+   ],
+   "anti": [
+    "drill",
+    "metal",
+    "dubstep",
+    "phonk",
+    "punk"
    ]
   },
   "reggae": {
@@ -861,7 +1090,11 @@
    ],
    "influence": [
     "moombahton",
-    "bailefunk"
+    "bailefunk",
+    "afrobeats",
+    "pop",
+    "trap",
+    "latinpop"
    ],
    "pocket": [
     88,
@@ -871,6 +1104,13 @@
    "axes": [
     "mechanical",
     "bouncy"
+   ],
+   "anti": [
+    "peaktechno",
+    "trance",
+    "ambient",
+    "metal",
+    "folk"
    ]
   },
   "latinpop": {
@@ -881,7 +1121,11 @@
    "siblings": [
     "reggaeton"
    ],
-   "influence": [],
+   "influence": [
+    "pop",
+    "reggaeton",
+    "afrobeats"
+   ],
    "pocket": [
     90,
     120
@@ -890,6 +1134,12 @@
    "axes": [
     "organic",
     "bouncy"
+   ],
+   "anti": [
+    "metal",
+    "peaktechno",
+    "ambient",
+    "drill"
    ]
   },
   "afrobeats": {
@@ -904,7 +1154,11 @@
    ],
    "influence": [
     "reggaeton",
-    "moombahton"
+    "moombahton",
+    "pop",
+    "amapiano",
+    "rnb",
+    "dancehall"
    ],
    "pocket": [
     95,
@@ -914,6 +1168,12 @@
    "axes": [
     "organic",
     "bouncy"
+   ],
+   "anti": [
+    "metal",
+    "peaktechno",
+    "ambient",
+    "punk"
    ]
   },
   "bailefunk": {
@@ -941,46 +1201,81 @@
    "super": "Electronic",
    "parent": [],
    "siblings": [],
-   "influence": [],
+   "influence": [
+    "trance",
+    "dancepop",
+    "pop"
+   ],
    "pocket": [
     140,
     160
    ],
    "character": "Melodic drop, Sidechain, Bright, Vocal chops",
    "axes": [],
-   "estimate": true
+   "estimate": true,
+   "anti": [
+    "hiphop",
+    "drill",
+    "ambient",
+    "folk"
+   ]
   },
   "hardstyle": {
    "super": "Electronic",
    "parent": [],
    "siblings": [],
-   "influence": [],
+   "influence": [
+    "trance",
+    "peaktechno",
+    "metal"
+   ],
    "pocket": [
     150,
     160
    ],
    "character": "Distorted kick, Bright lead, High energy, Hard pulse",
    "axes": [],
-   "estimate": true
+   "estimate": true,
+   "anti": [
+    "ambient",
+    "songwriter",
+    "jazz",
+    "lofi",
+    "folk"
+   ]
   },
   "ukgarage": {
    "super": "Electronic",
    "parent": [],
    "siblings": [],
-   "influence": [],
+   "influence": [
+    "house",
+    "rnb",
+    "afrobeats"
+   ],
    "pocket": [
     130,
     140
    ],
    "character": "2-step, Swung, Bassline, Mid tempo",
    "axes": [],
-   "estimate": true
+   "estimate": true,
+   "anti": [
+    "metal",
+    "punk",
+    "ambient",
+    "peaktechno"
+   ]
   },
   "dancepop": {
    "super": "Pop & R&B",
    "parent": [],
    "siblings": [],
-   "influence": [],
+   "influence": [
+    "pop",
+    "house",
+    "futurebass"
+   ],
    "pocket": [
     118,
     128
@@ -993,7 +1288,12 @@
    "super": "Pop & R&B",
    "parent": [],
    "siblings": [],
-   "influence": [],
+   "influence": [
+    "pop",
+    "indie",
+    "songwriter",
+    "shoegaze"
+   ],
    "pocket": [
     100,
     132
@@ -1006,7 +1306,11 @@
    "super": "Rock",
    "parent": [],
    "siblings": [],
-   "influence": [],
+   "influence": [
+    "indie",
+    "shoegaze",
+    "punk"
+   ],
    "pocket": [
     100,
     140
@@ -1019,40 +1323,75 @@
    "super": "Rock",
    "parent": [],
    "siblings": [],
-   "influence": [],
+   "influence": [
+    "indiepop",
+    "altrock",
+    "ambient"
+   ],
    "pocket": [
     90,
     120
    ],
    "character": "Washed, Reverb, Textural, Mid tempo",
    "axes": [],
-   "estimate": true
+   "estimate": true,
+   "anti": [
+    "trap",
+    "metal",
+    "hardstyle",
+    "phonk"
+   ]
   },
   "cinematic": {
    "super": "Song & jazz",
    "parent": [],
    "siblings": [],
-   "influence": [],
+   "influence": [
+    "ambient",
+    "jazz",
+    "synthwave"
+   ],
    "pocket": [
     60,
     100
    ],
    "character": "Atmospheric, Dynamic, Emotional, Wide",
    "axes": [],
-   "estimate": true
+   "estimate": true,
+   "anti": [
+    "trap",
+    "metal",
+    "dubstep",
+    "house",
+    "hardstyle",
+    "punk"
+   ]
   },
   "dancehall": {
    "super": "Global",
    "parent": [],
    "siblings": [],
-   "influence": [],
+   "influence": [
+    "reggaeton",
+    "afrobeats",
+    "rnb"
+   ],
    "pocket": [
     80,
     110
    ],
    "character": "Offbeat, Bass forward, Sparse, Rhythmic",
    "axes": [],
-   "estimate": true
+   "estimate": true,
+   "anti": [
+    "peaktechno",
+    "trance",
+    "metal",
+    "ambient"
+   ]
   }
- }
+ },
+ "relSources": [
+  "Shima analyze-patch.ts INFLUENCE/ANTI (hand-set, merged as extra links)"
+ ]
 }

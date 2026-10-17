@@ -1,0 +1,423 @@
+{
+ "influence": {
+  "house": [
+   "tech-house",
+   "deep-house",
+   "techno",
+   "trance"
+  ],
+  "tech-house": [
+   "house",
+   "techno",
+   "deep-house"
+  ],
+  "deep-house": [
+   "house",
+   "tech-house",
+   "rnb"
+  ],
+  "techno": [
+   "house",
+   "tech-house",
+   "trance"
+  ],
+  "trance": [
+   "house",
+   "techno",
+   "future-bass"
+  ],
+  "future-bass": [
+   "trance",
+   "dance-pop",
+   "pop"
+  ],
+  "hardstyle": [
+   "trance",
+   "techno",
+   "metal"
+  ],
+  "uk-garage": [
+   "house",
+   "rnb",
+   "afrobeats"
+  ],
+  "drum-and-bass": [
+   "dubstep",
+   "techno",
+   "trap"
+  ],
+  "dubstep": [
+   "drum-and-bass",
+   "trap",
+   "phonk"
+  ],
+  "ambient": [
+   "synthwave",
+   "lofi-hip-hop",
+   "jazz",
+   "cinematic"
+  ],
+  "synthwave": [
+   "ambient",
+   "indie-pop",
+   "pop",
+   "cinematic"
+  ],
+  "trap": [
+   "drill",
+   "phonk",
+   "dubstep",
+   "rnb"
+  ],
+  "drill": [
+   "trap",
+   "phonk",
+   "dubstep"
+  ],
+  "phonk": [
+   "trap",
+   "drill",
+   "dubstep"
+  ],
+  "boom-bap": [
+   "lofi-hip-hop",
+   "jazz"
+  ],
+  "lofi-hip-hop": [
+   "boom-bap",
+   "ambient",
+   "jazz"
+  ],
+  "pop": [
+   "dance-pop",
+   "indie-pop",
+   "rnb",
+   "afrobeats",
+   "latin-pop"
+  ],
+  "dance-pop": [
+   "pop",
+   "house",
+   "future-bass"
+  ],
+  "indie-pop": [
+   "pop",
+   "indie-rock",
+   "singer-songwriter",
+   "shoegaze"
+  ],
+  "hyperpop": [
+   "pop",
+   "future-bass",
+   "dance-pop"
+  ],
+  "rnb": [
+   "pop",
+   "afrobeats",
+   "trap",
+   "deep-house"
+  ],
+  "indie-rock": [
+   "indie-pop",
+   "alternative-rock",
+   "singer-songwriter"
+  ],
+  "alternative-rock": [
+   "indie-rock",
+   "shoegaze",
+   "punk"
+  ],
+  "punk": [
+   "metal",
+   "indie-rock",
+   "alternative-rock"
+  ],
+  "metal": [
+   "punk",
+   "indie-rock",
+   "hardstyle"
+  ],
+  "shoegaze": [
+   "indie-pop",
+   "alternative-rock",
+   "ambient"
+  ],
+  "singer-songwriter": [
+   "indie-rock",
+   "indie-pop",
+   "jazz",
+   "folk"
+  ],
+  "folk": [
+   "singer-songwriter",
+   "country",
+   "jazz"
+  ],
+  "country": [
+   "folk",
+   "singer-songwriter",
+   "pop"
+  ],
+  "jazz": [
+   "singer-songwriter",
+   "ambient",
+   "lofi-hip-hop",
+   "cinematic"
+  ],
+  "cinematic": [
+   "ambient",
+   "jazz",
+   "synthwave"
+  ],
+  "afrobeats": [
+   "pop",
+   "reggaeton",
+   "amapiano",
+   "rnb",
+   "dancehall"
+  ],
+  "amapiano": [
+   "afrobeats",
+   "house",
+   "deep-house"
+  ],
+  "reggaeton": [
+   "afrobeats",
+   "pop",
+   "trap",
+   "latin-pop"
+  ],
+  "dancehall": [
+   "reggaeton",
+   "afrobeats",
+   "rnb"
+  ],
+  "latin-pop": [
+   "pop",
+   "reggaeton",
+   "afrobeats"
+  ]
+ },
+ "anti": {
+  "house": [
+   "ambient",
+   "singer-songwriter",
+   "jazz",
+   "boom-bap",
+   "folk",
+   "cinematic"
+  ],
+  "tech-house": [
+   "ambient",
+   "singer-songwriter",
+   "jazz",
+   "folk"
+  ],
+  "deep-house": [
+   "metal",
+   "punk",
+   "hardstyle",
+   "trap"
+  ],
+  "techno": [
+   "ambient",
+   "singer-songwriter",
+   "jazz",
+   "reggaeton",
+   "folk"
+  ],
+  "trance": [
+   "drill",
+   "boom-bap",
+   "singer-songwriter",
+   "ambient",
+   "folk"
+  ],
+  "future-bass": [
+   "boom-bap",
+   "drill",
+   "ambient",
+   "folk"
+  ],
+  "hardstyle": [
+   "ambient",
+   "singer-songwriter",
+   "jazz",
+   "lofi-hip-hop",
+   "folk"
+  ],
+  "uk-garage": [
+   "metal",
+   "punk",
+   "ambient",
+   "techno"
+  ],
+  "drum-and-bass": [
+   "singer-songwriter",
+   "ambient",
+   "jazz",
+   "folk"
+  ],
+  "dubstep": [
+   "singer-songwriter",
+   "ambient",
+   "jazz",
+   "lofi-hip-hop",
+   "folk"
+  ],
+  "phonk": [
+   "ambient",
+   "singer-songwriter",
+   "jazz",
+   "folk",
+   "cinematic"
+  ],
+  "ambient": [
+   "house",
+   "techno",
+   "trance",
+   "metal",
+   "trap",
+   "dubstep",
+   "hardstyle",
+   "punk"
+  ],
+  "synthwave": [
+   "drill",
+   "metal",
+   "dubstep",
+   "phonk",
+   "punk"
+  ],
+  "trap": [
+   "boom-bap",
+   "ambient",
+   "singer-songwriter",
+   "jazz",
+   "folk"
+  ],
+  "boom-bap": [
+   "trap",
+   "dubstep",
+   "metal",
+   "trance",
+   "phonk"
+  ],
+  "lofi-hip-hop": [
+   "metal",
+   "trance",
+   "dubstep",
+   "trap",
+   "hardstyle",
+   "punk"
+  ],
+  "drill": [
+   "ambient",
+   "jazz",
+   "singer-songwriter",
+   "boom-bap",
+   "folk"
+  ],
+  "metal": [
+   "singer-songwriter",
+   "ambient",
+   "lofi-hip-hop",
+   "jazz",
+   "rnb",
+   "folk",
+   "cinematic"
+  ],
+  "punk": [
+   "ambient",
+   "singer-songwriter",
+   "jazz",
+   "lofi-hip-hop",
+   "cinematic",
+   "deep-house"
+  ],
+  "singer-songwriter": [
+   "metal",
+   "dubstep",
+   "trap",
+   "house",
+   "techno",
+   "hardstyle",
+   "punk"
+  ],
+  "folk": [
+   "metal",
+   "trap",
+   "dubstep",
+   "house",
+   "techno",
+   "hardstyle",
+   "punk"
+  ],
+  "country": [
+   "metal",
+   "techno",
+   "trap",
+   "dubstep",
+   "hardstyle"
+  ],
+  "jazz": [
+   "trap",
+   "metal",
+   "dubstep",
+   "house",
+   "phonk",
+   "hardstyle"
+  ],
+  "cinematic": [
+   "trap",
+   "metal",
+   "dubstep",
+   "house",
+   "hardstyle",
+   "punk"
+  ],
+  "reggaeton": [
+   "techno",
+   "trance",
+   "ambient",
+   "metal",
+   "folk"
+  ],
+  "afrobeats": [
+   "metal",
+   "techno",
+   "ambient",
+   "punk"
+  ],
+  "amapiano": [
+   "metal",
+   "punk",
+   "ambient",
+   "techno"
+  ],
+  "dancehall": [
+   "techno",
+   "trance",
+   "metal",
+   "ambient"
+  ],
+  "latin-pop": [
+   "metal",
+   "techno",
+   "ambient",
+   "drill"
+  ],
+  "hyperpop": [
+   "boom-bap",
+   "ambient",
+   "folk",
+   "jazz"
+  ],
+  "shoegaze": [
+   "trap",
+   "metal",
+   "hardstyle",
+   "phonk"
+  ]
+ }
+}
