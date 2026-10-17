@@ -41,3 +41,22 @@ The all-training-best rule doesn't regress the four protected shelves on the hol
 - The +1 is one track, and on training this rule only ties the model.
 - Nested CV shows threshold tuning loses on unseen data (32 vs 39).
 - The feature set can't separate this pair; more Techno labels are needed (Priority 1).
+
+## C. Confidence calibration (DROPPED, both variants)
+**Training, out-of-fold.** High is about 87–88% family-correct at every threshold from 0.60 to 0.80, so raising the threshold mostly shrinks the High band.
+- At 0.70 the High band's exact rate goes 73% → 77%.
+- The close-call rule (Techno/House-family or R&B/Soul as the top 2, gap under 8 points) fires 11 times. None of those were High.
+
+**Holdout** (126 tracks; family 99, exact 85 in every variant):
+
+| Variant | High | Medium | Low | Close calls | Brier |
+|---|---|---|---|---|---|
+| C0, now (0.65) | 67/75 (89%, exact 75%) | 27/40 (68%) | 5/11 (45%) | – | 0.160 |
+| C1, High at 0.70 | 59/67 (88%, exact 75%) | 35/48 (73%) | 5/11 (45%) | – | 0.160 |
+| C2, close call only | same as C0 | same as C0 | same as C0 | 2 (1 family-right), relabelled "House or Techno" | 0.160 |
+| C3, 0.70 + close call | same as C1 | same as C1 | same as C1 | 2 (1 family-right) | 0.160 |
+
+**Dropped:**
+- C1: the 8 tracks moved out of High were all correct, so High gets less accurate.
+- C2: changes only the label on 2 reads that were already Medium or Low. The bands and Brier score are unchanged, so calibration doesn't improve.
+- The patch is at `calibration/v2/patches/closecall_label.patch`, if Shima wants the "House or Techno" label anyway if Shima wants the "House or Techno" label anyway.

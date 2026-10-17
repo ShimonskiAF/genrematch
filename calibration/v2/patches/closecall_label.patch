@@ -1,0 +1,43 @@
+diff --git a/js/rank2.js b/js/rank2.js
+index 3292671..f42c9a3 100644
+--- a/js/rank2.js
++++ b/js/rank2.js
+@@ -7,6 +7,14 @@ import { scoreGenre } from './scoring.js';
+ import { oodEvidence } from './melpath.js';
+ 
+ export const CONF_BANDS = { high: 0.65, medium: 0.4 };
++// Close calls (v2-tweaks C): top two shelves are a pair the model confuses and are under CLOSE.gap apart.
++// Confidence is capped at medium and the label names the family (or both families) instead of one shelf.
++export const CLOSE = { gap: 0.08, on: true, pairs: [[['peaktechno'], ['house', 'techhouse', 'basshouse', 'speedhouse', 'deephouse']], [['rnb'], ['soul']]] };
++export function closeCall(P, close = CLOSE) {
++  const [a, b] = Object.keys(P).sort((x, y) => P[y] - P[x]);
++  if (!b || P[a] - P[b] >= close.gap) return null;
++  return close.pairs.some(([L, R]) => (L.includes(a) && R.includes(b)) || (L.includes(b) && R.includes(a))) ? [a, b] : null;
++}
+ export const NEAR = { beta: 0.25, minP: 0.08, rel: 0.35, max: 2 };
+ export const SUPER_KEEP = 0.6; // keep every super-genre within 60% of the best one, then pick the family
+ export const HYBRID = 0.6;     // second family at >= 60% of the first, both >= 25%: show as a hybrid
+@@ -94,7 +102,9 @@ export function rankV2({ f, v2, mel, profiles, model, graph, bias = {}, opts = {
+   const fams = Object.entries(F).sort((a, b) => b[1] - a[1]);
+   const fam1 = opts.flat ? famOf[Object.keys(P).sort((a, b) => P[b] - P[a])[0]] : fams.find(([k]) => keep.has(graph.familySuper[k]))[0];
+   const primaryId = Object.keys(P).filter((id) => famOf[id] === fam1).sort((a, b) => P[b] - P[a])[0];
+-  const famP = F[fam1], conf = famP >= CONF_BANDS.high ? 'high' : famP >= CONF_BANDS.medium ? 'medium' : 'low';
++  const hi = opts.confHigh ?? CONF_BANDS.high, cc = (opts.closeCall ?? CLOSE.on) ? closeCall(P) : null;
++  const famP = F[fam1]; let conf = famP >= hi ? 'high' : famP >= CONF_BANDS.medium ? 'medium' : 'low';
++  if (cc && conf === 'high') conf = 'medium';
+   const others = Object.keys(P).filter((id) => id !== primaryId).map((id) => ({ id, p: P[id], score: P[id] * (1 + (opts.beta ?? NEAR.beta) * relation(graph, primaryId, id, famOf)) })).sort((a, b) => b.score - a.score);
+   const near = others.filter((o) => o.p >= NEAR.minP && o.p >= NEAR.rel * P[primaryId]).slice(0, NEAR.max);
+   const fam2 = fams.find(([k]) => k !== fam1);
+@@ -103,9 +113,10 @@ export function rankV2({ f, v2, mel, profiles, model, graph, bias = {}, opts = {
+   const primary = item(primaryId);
+   const ranked = [primaryId, ...others.map((o) => o.id)].map(item);
+   const nearMisses = near.map((o) => item(o.id));
+-  const label = hybrid ? `${fam1} × ${fam2[0]}` : conf === 'low' ? fam1 : primary.name;
++  const ccFams = cc ? [...new Set(cc.map((id) => famOf[id]))] : null;
++  const label = hybrid ? `${fam1} × ${fam2[0]}` : cc ? (ccFams.length > 1 ? ccFams.join(' or ') : ccFams[0]) : conf === 'low' ? fam1 : primary.name;
+   return {
+-    status: hybrid ? 'hybrid' : conf === 'low' ? 'family' : 'genre', label, super: sup(primaryId), superP: S[sup(primaryId)], family: fam1, familyP: famP,
++    status: hybrid ? 'hybrid' : cc ? 'closecall' : conf === 'low' ? 'family' : 'genre', closeCall: cc, label, super: sup(primaryId), superP: S[sup(primaryId)], family: fam1, familyP: famP,
+     primary, second: ranked[1], nearMisses, secondFamily: fam2?.[0] ?? null, hybrid, confidence: conf, confidencePct: Math.round(100 * famP),
+     leansToward: nearMisses.map((n) => n.name), tempoUsed: primary.tempoUsed, octave: primary.octave, ranked,
+     supers: supers.map(([k, v]) => ({ name: k, p: v })), families: fams.map(([k, v]) => ({ name: k, p: v })),

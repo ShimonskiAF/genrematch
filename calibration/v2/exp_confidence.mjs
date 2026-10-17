@@ -1,0 +1,7 @@
+import fs from 'node:fs'; import { rankV2 } from '../../js/rank2.js'; // needs the close-call patch (see TWEAKS_LOG C) for C2/C3
+const R = JSON.parse(fs.readFileSync('/workspace/rows.json')), Y = JSON.parse(fs.readFileSync('/workspace/yam16_all.json'));
+const J = (p) => JSON.parse(fs.readFileSync('/workspace/genrematch-app/' + p)); const model = J('data/model_v2.json'), P = J('data/genre_profiles.json').profiles, graph = J('data/atlas_graph.json');
+const V = { 'C0 now (0.65)': { confHigh: 0.65, closeCall: false }, 'C1 high 0.70': { confHigh: 0.7, closeCall: false }, 'C2 close-call only': { confHigh: 0.65, closeCall: true }, 'C3 0.70 + close-call': { confHigh: 0.7, closeCall: true } };
+for (const [n, opts] of Object.entries(V)) { const b = { high: [0, 0, 0], medium: [0, 0, 0], low: [0, 0, 0] }; let f = 0, s = 0, ccN = 0, ccOk = 0, brier = 0;
+  for (const r of R.filter((r) => r.held)) { const x = rankV2({ f: r.base, v2: r.v2, mel: Y[r.key], profiles: P, model, graph, opts }); const fo = x.family === r.family, so = x.primary?.id === r.sub; f += fo; s += so; b[x.confidence][0]++; b[x.confidence][1] += fo; b[x.confidence][2] += so; if (x.closeCall) { ccN++; ccOk += fo; } brier += (x.familyP - fo) ** 2; }
+  console.log(n.padEnd(22), `family ${f} exact ${s} |`, ['high', 'medium', 'low'].map((k) => `${k} ${b[k][1]}/${b[k][0]} (${Math.round(100 * b[k][1] / (b[k][0] || 1))}%, exact ${Math.round(100 * b[k][2] / (b[k][0] || 1))}%)`).join(' · '), `| close-calls ${ccN} (${ccOk} family-right) | brier ${(brier / 126).toFixed(3)}`); }
