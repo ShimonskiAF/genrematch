@@ -15,3 +15,29 @@ Rule: tune on training CV only, look at the holdout once per item. Keep an item 
   - Baseline at melWeight 0.5: 101 / 88. So the whole gain is the mel weight, not the class weights.
 - Dropped: class weights don't help.
 - melWeight 0.5 is not adopted. The original training CV picks 0.6, and switching now would be a choice made on the holdout.
+
+## B. Second stage for Techno vs House (DROPPED)
+Runs only when the top 2 shelves are Peak Time Techno plus a House-family shelf. Script: `calibration/v2/exp_techno_house.py`.
+
+**Training, 5-fold out-of-fold** (62 such cases; the current model gets 39 right):
+
+| Variant | Correct (of 62) |
+|---|---|
+| Her rule as written (Techno if bright < 0.35, vocalMid < 0.4, fourFloor > 0.8; House if bright > 0.5 or vocalMid > 0.5) | 33 |
+| Thresholds chosen by nested CV | 32 |
+| Tiny logistic second stage, nested CV | 38 |
+| Best thresholds on all of training (Techno if bright < 0.3 and vocalMid < 0.3; House if vocalMid > 0.7) | 39, a tie with no stage |
+
+**Holdout** (fires on 19 tracks; no stage = 99 / 85):
+
+| Variant | Family | Exact | Techno |
+|---|---|---|---|
+| Her rule | 96 | 82 | 8 → 5 |
+| All-training best | 100 | 86 | 9 |
+
+The all-training-best rule doesn't regress the four protected shelves on the holdout.
+
+**Dropped:**
+- The +1 is one track, and on training this rule only ties the model.
+- Nested CV shows threshold tuning loses on unseen data (32 vs 39).
+- The feature set can't separate this pair; more Techno labels are needed (Priority 1).
