@@ -2,7 +2,7 @@
 import { marketFor } from './market.js';
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
 const pct = (v) => Math.round(Math.max(0, Math.min(1, v)) * 100);
-const DISCLAIMER = 'Acoustic read only. Not a trained neural net, and not a substitute for a supervisor’s ear. Your file stays in your browser.';
+const DISCLAIMER = 'Acoustic read only. Measured in your browser with hand-made features and a small audio model. Not a substitute for a supervisor’s ear. Your file stays in your browser.';
 
 export function briefArticle({ source, features: f, result: r, why, listen, page = 1 }) {
   const date = new Date().toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' });
@@ -10,16 +10,16 @@ export function briefArticle({ source, features: f, result: r, why, listen, page
   const m = marketFor(r.family);
   const conf = none ? 'No clear genre' : r.hybrid ? 'Hybrid' : { high: 'High confidence', medium: 'Medium confidence', low: 'Low confidence' }[r.confidence];
   const desc = none ? r.reason : r.status === 'family' ? `${conf}. Leans toward ${r.leansToward.join(' / ')}.` : `${conf}.`;
-  const fit = none ? '—' : r.primary.fit;
+  const fit = none ? '—' : `${r.confidencePct ?? r.primary.fit}%`;
   const closest = (r.ranked || []).slice(0, 5).map((g, i) => `<div class="meter${i === 0 ? ' top' : ''}" style="--v:${g.fit}%"><span>${esc(g.name)}</span><span>${g.fit}</span></div>`).join('');
   const meas = [['Tempo', f.bpm ? `${Math.round(f.bpm)} BPM` : '—', f.bpm ? pct((f.bpm - 60) / 130) : 0], ['Energy', f.energy], ['Brightness', f.brightness], ['Texture', f.texture], ['Low end', f.bass], ['Dynamics', f.dynamics], ['Pulse', f.pulse]]
     .map(([k, v, p]) => `<div class="meter" style="--v:${p ?? pct(v ?? 0)}%"><span>${k}</span><span>${typeof v === 'number' ? v.toFixed(2) : v ?? '—'}</span></div>`).join('');
   const refs = (listen || []).slice(0, 2).map((x) => `<div class="ref"><div><b>${esc(x.name)}</b><div class="m">${esc(x.family || '')}${x.bpm ? ' · ' + x.bpm : ''}</div></div><div>${esc(x.line)}</div></div>`).join('');
   return `<article class="gm-brief" style="${page > 1 ? 'break-before:page;' : ''}">
 <header><div class="brand"><img src="genrematch_mark.svg" alt=""><div><div class="wm">Genre<i>Match</i></div><div class="sub">Genre Analysis Hub · ${esc(date)}</div></div></div><div class="plan"><span class="cap">Plan</span><b>Free read</b></div></header>
-<section class="primary"><div><div class="cap">Primary read</div><div class="genre">${esc(r.label)}</div><div class="desc">${esc(desc)}</div><p class="lede">${esc(none ? '' : `${r.family} family. Fit is against the ${r.primary.name} centre.`)}</p></div>
-<div class="fit"><div class="cap">Fit</div><div class="n">${fit}</div><small>of 100${none ? '' : ` · against the ${esc(r.primary.name)} centre`}</small></div></section>
-<section class="facts"><div><span class="cap">Source</span><div class="src">${esc(source)}</div></div><div><span class="cap">Family</span><div>${esc(none ? '—' : r.family)}</div></div><div><span class="cap">Beside</span><div>${esc(r.second ? `${r.second.name} ${r.second.fit}` : '—')}</div></div></section>
+<section class="primary"><div><div class="cap">Primary read</div><div class="genre">${esc(r.label)}</div><div class="desc">${esc(desc)}</div><p class="lede">${esc(none ? '' : `${r.family} family.${r.nearMisses?.length ? ` Near misses: ${r.nearMisses.map((n) => `${n.name} ${n.fit}%`).join(', ')}.` : ''}`)}</p></div>
+<div class="fit"><div class="cap">Confidence</div><div class="n">${fit}</div><small>${none ? '' : esc(`${r.super ?? ''} › ${r.family}`)}</small></div></section>
+<section class="facts"><div><span class="cap">Source</span><div class="src">${esc(source)}</div></div><div><span class="cap">Family</span><div>${esc(none ? '—' : r.family)}</div></div><div><span class="cap">Beside</span><div>${esc(r.second ? `${r.second.name} ${r.second.fit}%` : '—')}</div></div></section>
 <section class="two"><div><div class="cap">Closest genres</div>${closest}</div><div><div class="cap">What was measured</div>${meas}</div></section>
 <section class="why"><div class="cap">Why this read</div>${why.map((w) => `<p>${esc(w)}</p>`).join('')}</section>
 <section class="three"><div><div class="cap">Audience</div><p>${esc(none ? '—' : m.audience)}</p></div><div><div class="cap">Sync</div><p>${esc(none ? '—' : m.sync)}</p></div><div><div class="cap">How to spend the push</div><p>${esc(none ? '—' : m.push)}</p><p class="chan">${esc(none ? '' : m.channels)}</p></div></section>

@@ -1,0 +1,941 @@
+{
+ "note": "GenreMatch atlas graph. Super-genres group the Musicmap families into six shelves. Relations follow Musicmap link types (parent = primary link, influence = secondary link, anti = backlash) plus sibling groups. Pockets and character lines are reference knowledge (Atlas/Chosic tempo ranges, Every Noise-style sonic axes) checked against our calibration crates. Structure only: no songs, no artists, no catalogue lookup.",
+ "sources": [
+  "https://musicmap.info/ (super-genres, sibling genres, parent/influence/anti links)",
+  "https://everynoise.com/ (organic-mechanical and atmospheric-bouncy axes)",
+  "https://www.chosic.com/music-genre-finder/ (tempo ranges, Spotify-style traits)"
+ ],
+ "supergenres": [
+  "Electronic",
+  "Hip-hop",
+  "Pop & R&B",
+  "Rock",
+  "Song & jazz",
+  "Global"
+ ],
+ "familySuper": {
+  "House": "Electronic",
+  "Techno": "Electronic",
+  "Trance": "Electronic",
+  "Drum 'n' Bass": "Electronic",
+  "Breakbeat": "Electronic",
+  "Hardcore Techno": "Electronic",
+  "Downtempo": "Electronic",
+  "Industrial": "Electronic",
+  "Rap": "Hip-hop",
+  "Pop": "Pop & R&B",
+  "Rhythm 'n' Blues": "Pop & R&B",
+  "Gospel": "Pop & R&B",
+  "Alternative": "Rock",
+  "Contemporary": "Rock",
+  "Metal": "Rock",
+  "Punk / Wave": "Rock",
+  "Hardcore Punk": "Rock",
+  "Rock 'n' Roll": "Rock",
+  "Golden Age": "Rock",
+  "Jazz": "Song & jazz",
+  "Blues": "Song & jazz",
+  "Folk": "Song & jazz",
+  "Country": "Song & jazz",
+  "Classical": "Song & jazz",
+  "Utility": "Song & jazz",
+  "Jamaican": "Global",
+  "World Pop": "Global",
+  "World Latin": "Global",
+  "World Cuban": "Global"
+ },
+ "relWeights": {
+  "sibling": 1.0,
+  "parent": 0.8,
+  "influence": 0.5,
+  "family": 0.6,
+  "anti": -0.3
+ },
+ "profiles": {
+  "house": {
+   "super": "Electronic",
+   "parent": [
+    "soul"
+   ],
+   "siblings": [
+    "deephouse",
+    "techhouse"
+   ],
+   "influence": [
+    "techno",
+    "amapiano"
+   ],
+   "pocket": [
+    120,
+    128
+   ],
+   "character": "Four-on-the-floor kick, offbeat hats, warm mids",
+   "axes": [
+    "mechanical",
+    "bouncy"
+   ]
+  },
+  "deephouse": {
+   "super": "Electronic",
+   "parent": [
+    "house"
+   ],
+   "siblings": [
+    "house"
+   ],
+   "influence": [
+    "soul",
+    "jazz",
+    "amapiano"
+   ],
+   "pocket": [
+    118,
+    124
+   ],
+   "character": "Soft four-on-the-floor, rounded low end, jazzy chords",
+   "axes": [
+    "mechanical",
+    "atmospheric"
+   ]
+  },
+  "techhouse": {
+   "super": "Electronic",
+   "parent": [
+    "house",
+    "techno"
+   ],
+   "siblings": [
+    "house"
+   ],
+   "influence": [
+    "peaktechno"
+   ],
+   "pocket": [
+    124,
+    128
+   ],
+   "character": "Locked kick, rolling bass, sparse percussive tops",
+   "axes": [
+    "mechanical",
+    "bouncy"
+   ]
+  },
+  "basshouse": {
+   "super": "Electronic",
+   "parent": [
+    "house"
+   ],
+   "siblings": [
+    "speedhouse"
+   ],
+   "influence": [
+    "dubstep",
+    "techhouse"
+   ],
+   "pocket": [
+    124,
+    130
+   ],
+   "character": "Four-on-the-floor with a distorted, wobbling bass",
+   "axes": [
+    "mechanical",
+    "dense"
+   ]
+  },
+  "speedhouse": {
+   "super": "Electronic",
+   "parent": [
+    "basshouse",
+    "house"
+   ],
+   "siblings": [
+    "basshouse"
+   ],
+   "influence": [
+    "jerseyclub"
+   ],
+   "pocket": [
+    135,
+    145
+   ],
+   "character": "Fast four-on-the-floor, bass-house sound at speed",
+   "axes": [
+    "mechanical",
+    "dense"
+   ]
+  },
+  "moombahton": {
+   "super": "Electronic",
+   "parent": [
+    "house",
+    "reggaeton"
+   ],
+   "siblings": [],
+   "influence": [
+    "afrobeats"
+   ],
+   "pocket": [
+    105,
+    112
+   ],
+   "character": "Dembow pattern at house sound and weight",
+   "axes": [
+    "mechanical",
+    "bouncy"
+   ]
+  },
+  "amapiano": {
+   "super": "Electronic",
+   "parent": [
+    "deephouse",
+    "house"
+   ],
+   "siblings": [],
+   "influence": [
+    "afrobeats",
+    "jazz"
+   ],
+   "pocket": [
+    110,
+    116
+   ],
+   "character": "Log-drum bass, shuffled percussion, open space",
+   "axes": [
+    "organic",
+    "bouncy"
+   ]
+  },
+  "techno": {
+   "super": "Electronic",
+   "parent": [
+    "house"
+   ],
+   "siblings": [
+    "peaktechno"
+   ],
+   "influence": [
+    "trance",
+    "techhouse"
+   ],
+   "pocket": [
+    125,
+    135
+   ],
+   "character": "Driving kick, dark spectrum, little harmony",
+   "axes": [
+    "mechanical",
+    "dense"
+   ]
+  },
+  "peaktechno": {
+   "super": "Electronic",
+   "parent": [
+    "techno"
+   ],
+   "siblings": [
+    "techno"
+   ],
+   "influence": [
+    "trance",
+    "techhouse"
+   ],
+   "pocket": [
+    128,
+    136
+   ],
+   "character": "Hard locked kick, noisy tops, low harmonic content",
+   "axes": [
+    "mechanical",
+    "dense"
+   ]
+  },
+  "trance": {
+   "super": "Electronic",
+   "parent": [
+    "techno",
+    "house"
+   ],
+   "siblings": [],
+   "influence": [
+    "peaktechno",
+    "synthwave"
+   ],
+   "pocket": [
+    132,
+    140
+   ],
+   "character": "Four-on-the-floor, long bright pads, rising leads",
+   "axes": [
+    "mechanical",
+    "atmospheric"
+   ]
+  },
+  "dnb": {
+   "super": "Electronic",
+   "parent": [
+    "reggae"
+   ],
+   "siblings": [
+    "dubstep"
+   ],
+   "influence": [
+    "jerseyclub"
+   ],
+   "pocket": [
+    170,
+    176
+   ],
+   "character": "Fast broken breaks over heavy sub bass",
+   "axes": [
+    "mechanical",
+    "spiky"
+   ]
+  },
+  "dubstep": {
+   "super": "Electronic",
+   "parent": [
+    "dnb",
+    "reggae"
+   ],
+   "siblings": [
+    "dnb"
+   ],
+   "influence": [
+    "edmtrap",
+    "basshouse"
+   ],
+   "pocket": [
+    138,
+    142
+   ],
+   "character": "Half-time snare, sub and mid-bass wobble",
+   "axes": [
+    "mechanical",
+    "dense"
+   ]
+  },
+  "edmtrap": {
+   "super": "Electronic",
+   "parent": [
+    "trap",
+    "dubstep"
+   ],
+   "siblings": [],
+   "influence": [
+    "hyperpop"
+   ],
+   "pocket": [
+    140,
+    150
+   ],
+   "character": "Trap hats and 808s with festival build-ups",
+   "axes": [
+    "mechanical",
+    "spiky"
+   ]
+  },
+  "jerseyclub": {
+   "super": "Electronic",
+   "parent": [
+    "house",
+    "hiphop"
+   ],
+   "siblings": [],
+   "influence": [
+    "trap",
+    "bailefunk"
+   ],
+   "pocket": [
+    135,
+    145
+   ],
+   "character": "Bouncing kick triplets, chopped vocal samples",
+   "axes": [
+    "mechanical",
+    "bouncy"
+   ]
+  },
+  "hiphop": {
+   "super": "Hip-hop",
+   "parent": [
+    "soul"
+   ],
+   "siblings": [
+    "gwalk"
+   ],
+   "influence": [
+    "rnb",
+    "reggae",
+    "jazz"
+   ],
+   "pocket": [
+    85,
+    100
+   ],
+   "character": "Boom-bap or swung backbeat, voice up front",
+   "axes": [
+    "organic",
+    "bouncy"
+   ]
+  },
+  "trap": {
+   "super": "Hip-hop",
+   "parent": [
+    "hiphop"
+   ],
+   "siblings": [
+    "drill"
+   ],
+   "influence": [
+    "phonk",
+    "edmtrap"
+   ],
+   "pocket": [
+    130,
+    150
+   ],
+   "character": "Half-time snare, rolling hi-hats, long 808s",
+   "axes": [
+    "mechanical",
+    "spiky"
+   ]
+  },
+  "drill": {
+   "super": "Hip-hop",
+   "parent": [
+    "trap"
+   ],
+   "siblings": [
+    "trap"
+   ],
+   "influence": [],
+   "pocket": [
+    138,
+    145
+   ],
+   "character": "Sliding 808s, off-grid snares, dark pads",
+   "axes": [
+    "mechanical",
+    "spiky"
+   ]
+  },
+  "phonk": {
+   "super": "Hip-hop",
+   "parent": [
+    "hiphop"
+   ],
+   "siblings": [
+    "trap"
+   ],
+   "influence": [
+    "bailefunk",
+    "gwalk"
+   ],
+   "pocket": [
+    130,
+    160
+   ],
+   "character": "Cowbell leads, distorted 808, Memphis-style samples",
+   "axes": [
+    "mechanical",
+    "dense"
+   ]
+  },
+  "gwalk": {
+   "super": "Hip-hop",
+   "parent": [
+    "hiphop"
+   ],
+   "siblings": [
+    "hiphop"
+   ],
+   "influence": [
+    "phonk"
+   ],
+   "pocket": [
+    90,
+    105
+   ],
+   "character": "West-coast bounce, synth leads, steady backbeat",
+   "axes": [
+    "organic",
+    "bouncy"
+   ]
+  },
+  "rnb": {
+   "super": "Pop & R&B",
+   "parent": [
+    "soul"
+   ],
+   "siblings": [
+    "soul"
+   ],
+   "influence": [
+    "hiphop",
+    "pop",
+    "afrobeats"
+   ],
+   "pocket": [
+    65,
+    100
+   ],
+   "character": "Smooth backbeat, rich harmony, voice-led mids",
+   "axes": [
+    "organic",
+    "atmospheric"
+   ]
+  },
+  "soul": {
+   "super": "Pop & R&B",
+   "parent": [
+    "blues"
+   ],
+   "siblings": [
+    "rnb"
+   ],
+   "influence": [
+    "jazz",
+    "hiphop",
+    "house"
+   ],
+   "pocket": [
+    70,
+    110
+   ],
+   "character": "Live band groove, gospel harmony, wide dynamics",
+   "axes": [
+    "organic",
+    "bouncy"
+   ]
+  },
+  "pop": {
+   "super": "Pop & R&B",
+   "parent": [
+    "rnb",
+    "rock"
+   ],
+   "siblings": [
+    "kpop"
+   ],
+   "influence": [
+    "house",
+    "songwriter",
+    "hyperpop"
+   ],
+   "pocket": [
+    95,
+    128
+   ],
+   "character": "Clear vocal, bright master, steady pulse",
+   "axes": [
+    "mechanical",
+    "bouncy"
+   ]
+  },
+  "hyperpop": {
+   "super": "Pop & R&B",
+   "parent": [
+    "pop"
+   ],
+   "siblings": [],
+   "influence": [
+    "edmtrap"
+   ],
+   "pocket": [
+    140,
+    170
+   ],
+   "character": "Pitched vocals, clipped bright master, maximal drops",
+   "axes": [
+    "mechanical",
+    "spiky"
+   ]
+  },
+  "kpop": {
+   "super": "Pop & R&B",
+   "parent": [
+    "pop"
+   ],
+   "siblings": [
+    "pop"
+   ],
+   "influence": [
+    "rnb",
+    "hiphop"
+   ],
+   "pocket": [
+    95,
+    130
+   ],
+   "character": "Polished pop, genre switches, dense production",
+   "axes": [
+    "mechanical",
+    "bouncy"
+   ]
+  },
+  "songwriter": {
+   "super": "Pop & R&B",
+   "parent": [
+    "folk",
+    "pop"
+   ],
+   "siblings": [
+    "folk"
+   ],
+   "influence": [
+    "indie"
+   ],
+   "pocket": [
+    70,
+    120
+   ],
+   "character": "Voice and one instrument, open dynamics",
+   "axes": [
+    "organic",
+    "atmospheric"
+   ]
+  },
+  "indie": {
+   "super": "Rock",
+   "parent": [
+    "rock",
+    "punk"
+   ],
+   "siblings": [
+    "rock"
+   ],
+   "influence": [
+    "songwriter",
+    "synthwave"
+   ],
+   "pocket": [
+    100,
+    140
+   ],
+   "character": "Guitars and live drums, mid-forward mix",
+   "axes": [
+    "organic",
+    "spiky"
+   ]
+  },
+  "rock": {
+   "super": "Rock",
+   "parent": [
+    "blues"
+   ],
+   "siblings": [
+    "indie"
+   ],
+   "influence": [
+    "metal",
+    "punk"
+   ],
+   "pocket": [
+    100,
+    140
+   ],
+   "character": "Live kit backbeat, distorted guitars, wide dynamics",
+   "axes": [
+    "organic",
+    "dense"
+   ]
+  },
+  "metal": {
+   "super": "Rock",
+   "parent": [
+    "rock"
+   ],
+   "siblings": [],
+   "influence": [
+    "punk"
+   ],
+   "pocket": [
+    90,
+    180
+   ],
+   "character": "Dense distortion, fast double kick, noisy spectrum",
+   "axes": [
+    "organic",
+    "dense"
+   ]
+  },
+  "punk": {
+   "super": "Rock",
+   "parent": [
+    "rock"
+   ],
+   "siblings": [
+    "indie"
+   ],
+   "influence": [
+    "metal"
+   ],
+   "anti": [
+    "rock"
+   ],
+   "pocket": [
+    150,
+    190
+   ],
+   "character": "Fast straight drums, raw guitars, shouted voice",
+   "axes": [
+    "organic",
+    "spiky"
+   ]
+  },
+  "folk": {
+   "super": "Song & jazz",
+   "parent": [],
+   "siblings": [
+    "country",
+    "songwriter"
+   ],
+   "influence": [
+    "blues"
+   ],
+   "pocket": [
+    80,
+    130
+   ],
+   "character": "Acoustic strings, light low end, natural dynamics",
+   "axes": [
+    "organic",
+    "atmospheric"
+   ]
+  },
+  "country": {
+   "super": "Song & jazz",
+   "parent": [
+    "folk",
+    "blues"
+   ],
+   "siblings": [
+    "folk"
+   ],
+   "influence": [
+    "rock",
+    "pop"
+   ],
+   "pocket": [
+    80,
+    130
+   ],
+   "character": "Acoustic and steel guitars, train-beat drums",
+   "axes": [
+    "organic",
+    "bouncy"
+   ]
+  },
+  "jazz": {
+   "super": "Song & jazz",
+   "parent": [
+    "blues"
+   ],
+   "siblings": [],
+   "influence": [
+    "soul",
+    "hiphop",
+    "lofi"
+   ],
+   "pocket": [
+    80,
+    200
+   ],
+   "character": "Swing feel, extended harmony, live dynamics",
+   "axes": [
+    "organic",
+    "spiky"
+   ]
+  },
+  "blues": {
+   "super": "Song & jazz",
+   "parent": [],
+   "siblings": [
+    "soul"
+   ],
+   "influence": [
+    "rock",
+    "jazz",
+    "country"
+   ],
+   "pocket": [
+    60,
+    120
+   ],
+   "character": "Shuffle feel, blue notes, sparse band",
+   "axes": [
+    "organic",
+    "atmospheric"
+   ]
+  },
+  "ambient": {
+   "super": "Electronic",
+   "parent": [],
+   "siblings": [
+    "lofi"
+   ],
+   "influence": [
+    "trance",
+    "techno"
+   ],
+   "pocket": [
+    60,
+    100
+   ],
+   "character": "No steady kick, long tones, soft spectrum",
+   "axes": [
+    "organic",
+    "atmospheric"
+   ]
+  },
+  "lofi": {
+   "super": "Electronic",
+   "parent": [
+    "hiphop",
+    "jazz"
+   ],
+   "siblings": [
+    "ambient"
+   ],
+   "influence": [],
+   "pocket": [
+    70,
+    90
+   ],
+   "character": "Dusty swung drums, muffled highs, jazzy keys",
+   "axes": [
+    "organic",
+    "atmospheric"
+   ]
+  },
+  "synthwave": {
+   "super": "Electronic",
+   "parent": [
+    "pop"
+   ],
+   "siblings": [],
+   "influence": [
+    "house",
+    "trance"
+   ],
+   "pocket": [
+    80,
+    118
+   ],
+   "character": "Gated 80s drums, analog pads and arps",
+   "axes": [
+    "mechanical",
+    "atmospheric"
+   ]
+  },
+  "reggae": {
+   "super": "Global",
+   "parent": [
+    "soul"
+   ],
+   "siblings": [],
+   "influence": [
+    "dnb",
+    "dubstep",
+    "reggaeton",
+    "hiphop"
+   ],
+   "pocket": [
+    60,
+    90
+   ],
+   "character": "One-drop drums, offbeat skank, heavy bass",
+   "axes": [
+    "organic",
+    "bouncy"
+   ]
+  },
+  "reggaeton": {
+   "super": "Global",
+   "parent": [
+    "reggae",
+    "hiphop"
+   ],
+   "siblings": [
+    "latinpop"
+   ],
+   "influence": [
+    "moombahton",
+    "bailefunk"
+   ],
+   "pocket": [
+    88,
+    100
+   ],
+   "character": "Dembow 3-3-2 pattern, steady kick, bright vocal",
+   "axes": [
+    "mechanical",
+    "bouncy"
+   ]
+  },
+  "latinpop": {
+   "super": "Global",
+   "parent": [
+    "pop"
+   ],
+   "siblings": [
+    "reggaeton"
+   ],
+   "influence": [],
+   "pocket": [
+    90,
+    120
+   ],
+   "character": "Latin percussion in a pop mix",
+   "axes": [
+    "organic",
+    "bouncy"
+   ]
+  },
+  "afrobeats": {
+   "super": "Global",
+   "parent": [
+    "hiphop",
+    "rnb",
+    "reggae"
+   ],
+   "siblings": [
+    "amapiano"
+   ],
+   "influence": [
+    "reggaeton",
+    "moombahton"
+   ],
+   "pocket": [
+    95,
+    115
+   ],
+   "character": "Syncopated percussion, light kick, melodic vocal",
+   "axes": [
+    "organic",
+    "bouncy"
+   ]
+  },
+  "bailefunk": {
+   "super": "Global",
+   "parent": [
+    "hiphop"
+   ],
+   "siblings": [],
+   "influence": [
+    "phonk",
+    "reggaeton",
+    "jerseyclub"
+   ],
+   "pocket": [
+    125,
+    135
+   ],
+   "character": "Tamborzao drum loop, heavy kick, chanted vocal",
+   "axes": [
+    "mechanical",
+    "spiky"
+   ]
+  }
+ }
+}

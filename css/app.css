@@ -35,3 +35,11 @@ input[type=search],input[type=text],select{width:100%;max-width:420px}
 .gm-drop strong{display:block}
 
 .gm-beta{font-family:"Hanken Grotesk",sans-serif;font-weight:600;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#3C4A6B;border:1px solid #3C4A6B;border-radius:6px;padding:2px 6px;margin-left:8px;vertical-align:middle}
+/* v2 read: path, near misses, feedback (Overlap tokens only) */
+.gm-path{margin:0;font:600 var(--gm-fs-small)/1.4 var(--gm-sans);color:var(--gm-text-muted)}
+.gm-path strong{color:var(--gm-accent)}
+.gm-near{display:flex;flex-wrap:wrap;align-items:center;gap:var(--gm-space-2)}
+.gm-near .gm-caps{margin-right:var(--gm-space-2)}
+.gm-fb{display:flex;flex-wrap:wrap;align-items:center;gap:var(--gm-space-3);padding:var(--gm-space-3) 0;border-top:1px solid var(--gm-rule-soft);border-bottom:1px solid var(--gm-rule-soft)}
+.gm .gm-btn--sm{padding:8px 14px;font-size:var(--gm-fs-small)}
+.gm-why .gm-why-head{font-family:var(--gm-sans);font-style:normal;font-weight:600;color:var(--gm-text)}
