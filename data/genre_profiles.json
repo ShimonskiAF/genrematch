@@ -90,22 +90,36 @@
    "family": "House",
    "features": {
     "bpm": 120,
-    "energy": 0.49,
-    "brightness": 0.23,
-    "texture": 0.35,
-    "bass": 0.35,
-    "dynamics": 0.28,
-    "pulse": 0.55,
-    "fourFloor": 0.5,
-    "tresillo": 0.5,
-    "offbeat": 0.5,
-    "syncop": 0.5,
-    "backbeat": 0.5
+    "energy": 0.7,
+    "brightness": 0.51,
+    "texture": 0.32,
+    "bass": 0.68,
+    "dynamics": 0.26,
+    "pulse": 0.59,
+    "fourFloor": 0.81,
+    "tresillo": 0.68,
+    "offbeat": 0.37,
+    "syncop": 0.39,
+    "backbeat": 0.33,
+    "bpmSpread": 1,
+    "spread": {
+     "energy": 0.22,
+     "brightness": 0.22,
+     "texture": 0.22,
+     "bass": 0.42,
+     "dynamics": 0.3,
+     "pulse": 0.22,
+     "fourFloor": 0.22,
+     "tresillo": 0.22,
+     "offbeat": 0.22,
+     "syncop": 0.22,
+     "backbeat": 0.22
+    }
    },
    "atlas_ids": [
     "hou04"
    ],
-   "status": "estimate, rescaled"
+   "status": "estimate, from Shima genre targets placed relative to house (named in her prompt); untested, no labelled audio"
   },
   {
    "id": "trance",
@@ -357,24 +371,38 @@
    "family": "Rap",
    "features": {
     "bpm": 143,
-    "energy": 0.55,
-    "brightness": 0.18,
-    "texture": 0.35,
-    "bass": 0.44,
-    "dynamics": 0.4,
-    "pulse": 0.49,
-    "fourFloor": 0.5,
-    "tresillo": 0.5,
-    "offbeat": 0.5,
-    "syncop": 0.5,
-    "backbeat": 0.5
+    "energy": 0.67,
+    "brightness": 0.63,
+    "texture": 0.74,
+    "bass": 0.66,
+    "dynamics": 0.26,
+    "pulse": 0.56,
+    "fourFloor": 0.52,
+    "tresillo": 0.71,
+    "offbeat": 0.39,
+    "syncop": 0.45,
+    "backbeat": 0.33,
+    "bpmSpread": 1,
+    "spread": {
+     "energy": 0.22,
+     "brightness": 0.26,
+     "texture": 0.22,
+     "bass": 0.29,
+     "dynamics": 0.26,
+     "pulse": 0.22,
+     "fourFloor": 0.22,
+     "tresillo": 0.22,
+     "offbeat": 0.22,
+     "syncop": 0.22,
+     "backbeat": 0.22
+    }
    },
    "atlas_ids": [
     "rap09",
     "x_drill",
     "x_uk_drill"
    ],
-   "status": "estimate, rescaled"
+   "status": "estimate, from Shima genre targets placed relative to trap (named in her prompt); untested, no labelled audio"
   },
   {
    "id": "phonk",
@@ -549,21 +577,22 @@
    "features": {
     "bpm": 150,
     "energy": 0.69,
-    "brightness": 0.51,
-    "texture": 0.5,
-    "bass": 0.3,
-    "dynamics": 0.31,
-    "pulse": 0.71,
-    "fourFloor": 0.5,
+    "brightness": 0.48,
+    "texture": 0.35,
+    "bass": 0.28,
+    "dynamics": 0.35,
+    "pulse": 0.57,
+    "fourFloor": 0.48,
     "tresillo": 0.5,
     "offbeat": 0.5,
     "syncop": 0.5,
-    "backbeat": 0.5
+    "backbeat": 0.5,
+    "bpmSpread": 1.21
    },
    "atlas_ids": [
     "x_hyperpop"
    ],
-   "status": "estimate, rescaled"
+   "status": "estimate, from Shima genre targets placed relative to pop (named in her prompt); untested, no labelled audio"
   },
   {
    "id": "kpop",
@@ -689,23 +718,24 @@
    "family": "Punk / Wave",
    "features": {
     "bpm": 172,
-    "energy": 0.65,
+    "energy": 0.6,
     "brightness": 0.44,
-    "texture": 0.53,
+    "texture": 0.43,
     "bass": 0.18,
-    "dynamics": 0.44,
-    "pulse": 0.76,
-    "fourFloor": 0.5,
+    "dynamics": 0.56,
+    "pulse": 0.59,
+    "fourFloor": 0.48,
     "tresillo": 0.5,
     "offbeat": 0.5,
     "syncop": 0.5,
-    "backbeat": 0.5
+    "backbeat": 0.5,
+    "bpmSpread": 1.07
    },
    "atlas_ids": [
     "pwv02",
     "hcp01"
    ],
-   "status": "estimate, rescaled"
+   "status": "estimate, from Shima genre targets placed relative to indie (named in her prompt); untested, no labelled audio"
   },
   {
    "id": "folk",
@@ -995,22 +1025,36 @@
    "family": "World Latin",
    "features": {
     "bpm": 105,
-    "energy": 0.6,
-    "brightness": 0.36,
-    "texture": 0.36,
-    "bass": 0.31,
-    "dynamics": 0.35,
-    "pulse": 0.6,
-    "fourFloor": 0.5,
-    "tresillo": 0.5,
-    "offbeat": 0.5,
-    "syncop": 0.5,
-    "backbeat": 0.5
+    "energy": 0.72,
+    "brightness": 0.43,
+    "texture": 0.49,
+    "bass": 0.69,
+    "dynamics": 0.33,
+    "pulse": 0.61,
+    "fourFloor": 0.74,
+    "tresillo": 0.75,
+    "offbeat": 0.38,
+    "syncop": 0.43,
+    "backbeat": 0.33,
+    "bpmSpread": 1.38,
+    "spread": {
+     "energy": 0.22,
+     "brightness": 0.22,
+     "texture": 0.29,
+     "bass": 0.22,
+     "dynamics": 0.22,
+     "pulse": 0.22,
+     "fourFloor": 0.22,
+     "tresillo": 0.22,
+     "offbeat": 0.22,
+     "syncop": 0.22,
+     "backbeat": 0.22
+    }
    },
    "atlas_ids": [
     "x_latin_pop"
    ],
-   "status": "estimate, rescaled"
+   "status": "estimate, from Shima genre targets placed relative to afrobeats (fitted neighbour); untested, no labelled audio"
   },
   {
    "id": "afrobeats",
@@ -1592,6 +1636,263 @@
     "halfTime": 0.21
    },
    "status": "calibrated on 18 labelled tracks"
+  },
+  {
+   "id": "futurebass",
+   "name": "Future Bass",
+   "family": "Drum 'n' Bass",
+   "atlas_ids": [
+    "dnb10"
+   ],
+   "features": {
+    "bpm": 150,
+    "energy": 0.63,
+    "brightness": 0.41,
+    "texture": 0.43,
+    "bass": 0.3,
+    "dynamics": 0.25,
+    "pulse": 0.63,
+    "fourFloor": 0.44,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5,
+    "bpmSpread": 1
+   },
+   "status": "estimate, from Shima genre targets placed relative to trance (named in her prompt); untested, no labelled audio"
+  },
+  {
+   "id": "hardstyle",
+   "name": "Hardstyle",
+   "family": "Hardcore Techno",
+   "atlas_ids": [
+    "hct09"
+   ],
+   "features": {
+    "bpm": 155,
+    "energy": 0.83,
+    "brightness": 0.65,
+    "texture": 0.32,
+    "bass": 0.68,
+    "dynamics": 0.26,
+    "pulse": 0.65,
+    "fourFloor": 0.81,
+    "tresillo": 0.68,
+    "offbeat": 0.37,
+    "syncop": 0.39,
+    "backbeat": 0.33,
+    "bpmSpread": 1,
+    "spread": {
+     "energy": 0.22,
+     "brightness": 0.22,
+     "texture": 0.22,
+     "bass": 0.42,
+     "dynamics": 0.3,
+     "pulse": 0.22,
+     "fourFloor": 0.22,
+     "tresillo": 0.22,
+     "offbeat": 0.22,
+     "syncop": 0.22,
+     "backbeat": 0.22
+    }
+   },
+   "status": "estimate, from Shima genre targets placed relative to house (fitted neighbour); untested, no labelled audio"
+  },
+  {
+   "id": "ukgarage",
+   "name": "UK Garage",
+   "family": "Breakbeat",
+   "atlas_ids": [
+    "brb06",
+    "brb09"
+   ],
+   "features": {
+    "bpm": 135,
+    "energy": 0.73,
+    "brightness": 0.54,
+    "texture": 0.32,
+    "bass": 0.68,
+    "dynamics": 0.26,
+    "pulse": 0.62,
+    "fourFloor": 0.76,
+    "tresillo": 0.68,
+    "offbeat": 0.37,
+    "syncop": 0.39,
+    "backbeat": 0.33,
+    "bpmSpread": 1,
+    "spread": {
+     "energy": 0.22,
+     "brightness": 0.22,
+     "texture": 0.22,
+     "bass": 0.42,
+     "dynamics": 0.3,
+     "pulse": 0.22,
+     "fourFloor": 0.22,
+     "tresillo": 0.22,
+     "offbeat": 0.22,
+     "syncop": 0.22,
+     "backbeat": 0.22
+    }
+   },
+   "status": "estimate, from Shima genre targets placed relative to house (named in her prompt); untested, no labelled audio"
+  },
+  {
+   "id": "dancepop",
+   "name": "Dance Pop",
+   "family": "Pop",
+   "atlas_ids": [
+    "pop11"
+   ],
+   "features": {
+    "bpm": 123,
+    "energy": 0.65,
+    "brightness": 0.42,
+    "texture": 0.35,
+    "bass": 0.28,
+    "dynamics": 0.35,
+    "pulse": 0.55,
+    "fourFloor": 0.56,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5,
+    "bpmSpread": 1
+   },
+   "status": "estimate, from Shima genre targets placed relative to pop (named in her prompt); untested, no labelled audio"
+  },
+  {
+   "id": "indiepop",
+   "name": "Indie Pop",
+   "family": "Pop",
+   "atlas_ids": [
+    "pop08"
+   ],
+   "features": {
+    "bpm": 116,
+    "energy": 0.54,
+    "brightness": 0.37,
+    "texture": 0.35,
+    "bass": 0.28,
+    "dynamics": 0.35,
+    "pulse": 0.51,
+    "fourFloor": 0.43,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5,
+    "bpmSpread": 1.34
+   },
+   "status": "estimate, from Shima genre targets placed relative to pop (estimate neighbour); untested, no labelled audio"
+  },
+  {
+   "id": "altrock",
+   "name": "Alternative Rock",
+   "family": "Alternative",
+   "atlas_ids": [
+    "alt07"
+   ],
+   "features": {
+    "bpm": 120,
+    "energy": 0.48,
+    "brightness": 0.34,
+    "texture": 0.43,
+    "bass": 0.18,
+    "dynamics": 0.56,
+    "pulse": 0.52,
+    "fourFloor": 0.47,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5,
+    "bpmSpread": 1.62
+   },
+   "status": "estimate, from Shima genre targets placed relative to indie (estimate neighbour); untested, no labelled audio"
+  },
+  {
+   "id": "shoegaze",
+   "name": "Shoegaze",
+   "family": "Alternative",
+   "atlas_ids": [
+    "alt03"
+   ],
+   "features": {
+    "bpm": 105,
+    "energy": 0.42,
+    "brightness": 0.33,
+    "texture": 0.43,
+    "bass": 0.18,
+    "dynamics": 0.56,
+    "pulse": 0.49,
+    "fourFloor": 0.35,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5,
+    "bpmSpread": 1.38
+   },
+   "status": "estimate, from Shima genre targets placed relative to indie (estimate neighbour); untested, no labelled audio"
+  },
+  {
+   "id": "cinematic",
+   "name": "Cinematic",
+   "family": "Classical",
+   "atlas_ids": [
+    "cla"
+   ],
+   "features": {
+    "bpm": 80,
+    "energy": 0.17,
+    "brightness": 0.19,
+    "texture": 0.26,
+    "bass": 0.14,
+    "dynamics": 0.75,
+    "pulse": 0.28,
+    "fourFloor": 0.43,
+    "tresillo": 0.5,
+    "offbeat": 0.5,
+    "syncop": 0.5,
+    "backbeat": 0.5,
+    "bpmSpread": 2.46
+   },
+   "status": "estimate, from Shima genre targets placed relative to folk (estimate neighbour); untested, no labelled audio"
+  },
+  {
+   "id": "dancehall",
+   "name": "Dancehall",
+   "family": "Jamaican",
+   "atlas_ids": [
+    "jam08",
+    "jam09"
+   ],
+   "features": {
+    "bpm": 95,
+    "energy": 0.58,
+    "brightness": 0.48,
+    "texture": 0.32,
+    "bass": 0.54,
+    "dynamics": 0.28,
+    "pulse": 0.6,
+    "fourFloor": 0.64,
+    "tresillo": 0.75,
+    "offbeat": 0.37,
+    "syncop": 0.44,
+    "backbeat": 0.33,
+    "bpmSpread": 1.53,
+    "spread": {
+     "energy": 0.22,
+     "brightness": 0.27,
+     "texture": 0.22,
+     "bass": 0.22,
+     "dynamics": 0.22,
+     "pulse": 0.22,
+     "fourFloor": 0.22,
+     "tresillo": 0.22,
+     "offbeat": 0.22,
+     "syncop": 0.22,
+     "backbeat": 0.22
+    }
+   },
+   "status": "estimate, from Shima genre targets placed relative to amapiano (fitted neighbour); untested, no labelled audio"
   }
  ]
 }

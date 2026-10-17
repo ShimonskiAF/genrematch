@@ -5,7 +5,7 @@ import { analyse } from '../js/analyser.js';
 import { classify } from '../js/scoring.js';
 import { SR, clubLoop, acousticGuitar, silence, writeWav, readWav } from '../tools/synth.js';
 const P = JSON.parse(fs.readFileSync(new URL('../data/genre_profiles.json', import.meta.url))).profiles;
-const CLUB = new Set(['Rap', 'Techno', 'House', 'Trance', "Drum 'n' Bass", 'Breakbeat', 'Jamaican', 'World Pop', 'World Latin']);
+const CLUB = new Set(['Rap', 'Techno', 'House', 'Trance', 'Hardcore Techno', "Drum 'n' Bass", 'Breakbeat', 'Jamaican', 'World Pop', 'World Latin']);
 const ROCKISH = new Set(['Alternative', 'Contemporary', 'Folk', 'Country']);
 
 test('club loop at 144 BPM: tempo ~144, heavy low end, steady dynamics, club/rap family', () => {

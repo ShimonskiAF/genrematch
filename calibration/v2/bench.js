@@ -27,7 +27,8 @@ function score(name, rows, read) {
   const line = { stage: name, family: `${c('fam')}/${n} (${Math.round((100 * c('fam')) / n)}%)`, super: `${c('sup')}/${n} (${Math.round((100 * c('sup')) / n)}%)`, sub: `${c('sub')}/${n}`, top2fam: c('f2'), top3fam: c('f3'), top2sub: c('s2'), top3sub: c('s3'), high: band('high'), medium: band('medium'), low: band('low') };
   return { line, out };
 }
-const v1 = (r) => { const x = classify(r.base, P); return { ...x, fams: fams(x.ranked), subs: x.ranked.map((g) => g.id), conf: x.confidence }; };
+const LIVE_P = JSON.parse(fs.readFileSync(new URL('./live_profiles_020cef0.json', import.meta.url))).profiles; // live = 020cef0 profiles, frozen
+const v1 = (r) => { const x = classify(r.base, LIVE_P); return { ...x, fams: fams(x.ranked), subs: x.ranked.map((g) => g.id), conf: x.confidence }; };
 const v2 = (opts, useMel) => (r) => { const m2 = model; const x = rankV2({ f: r.base, v2: r.v2, mel: useMel ? Y[r.key] : null, profiles: P, model: m2, graph, opts }); return { ...x, fams: fams(x.ranked), subs: x.ranked.map((g) => g.id), conf: x.confidence }; };
 const stages = [
   ['S0 live (020cef0)', v1],

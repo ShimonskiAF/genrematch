@@ -45,7 +45,7 @@
   "World Cuban": "Global"
  },
  "relWeights": {
-  "sibling": 1.0,
+  "sibling": 1,
   "parent": 0.8,
   "influence": 0.5,
   "family": 0.6,
@@ -936,6 +936,123 @@
     "mechanical",
     "spiky"
    ]
+  },
+  "futurebass": {
+   "super": "Electronic",
+   "parent": [],
+   "siblings": [],
+   "influence": [],
+   "pocket": [
+    140,
+    160
+   ],
+   "character": "Melodic drop, Sidechain, Bright, Vocal chops",
+   "axes": [],
+   "estimate": true
+  },
+  "hardstyle": {
+   "super": "Electronic",
+   "parent": [],
+   "siblings": [],
+   "influence": [],
+   "pocket": [
+    150,
+    160
+   ],
+   "character": "Distorted kick, Bright lead, High energy, Hard pulse",
+   "axes": [],
+   "estimate": true
+  },
+  "ukgarage": {
+   "super": "Electronic",
+   "parent": [],
+   "siblings": [],
+   "influence": [],
+   "pocket": [
+    130,
+    140
+   ],
+   "character": "2-step, Swung, Bassline, Mid tempo",
+   "axes": [],
+   "estimate": true
+  },
+  "dancepop": {
+   "super": "Pop & R&B",
+   "parent": [],
+   "siblings": [],
+   "influence": [],
+   "pocket": [
+    118,
+    128
+   ],
+   "character": "Dance pulse, Bright, Hook-led, Electronic production",
+   "axes": [],
+   "estimate": true
+  },
+  "indiepop": {
+   "super": "Pop & R&B",
+   "parent": [],
+   "siblings": [],
+   "influence": [],
+   "pocket": [
+    100,
+    132
+   ],
+   "character": "Lighter, Textural, Melodic, Less polished",
+   "axes": [],
+   "estimate": true
+  },
+  "altrock": {
+   "super": "Rock",
+   "parent": [],
+   "siblings": [],
+   "influence": [],
+   "pocket": [
+    100,
+    140
+   ],
+   "character": "Guitar, Dynamic, Atmospheric, Band",
+   "axes": [],
+   "estimate": true
+  },
+  "shoegaze": {
+   "super": "Rock",
+   "parent": [],
+   "siblings": [],
+   "influence": [],
+   "pocket": [
+    90,
+    120
+   ],
+   "character": "Washed, Reverb, Textural, Mid tempo",
+   "axes": [],
+   "estimate": true
+  },
+  "cinematic": {
+   "super": "Song & jazz",
+   "parent": [],
+   "siblings": [],
+   "influence": [],
+   "pocket": [
+    60,
+    100
+   ],
+   "character": "Atmospheric, Dynamic, Emotional, Wide",
+   "axes": [],
+   "estimate": true
+  },
+  "dancehall": {
+   "super": "Global",
+   "parent": [],
+   "siblings": [],
+   "influence": [],
+   "pocket": [
+    80,
+    110
+   ],
+   "character": "Offbeat, Bass forward, Sparse, Rhythmic",
+   "axes": [],
+   "estimate": true
   }
  }
 }

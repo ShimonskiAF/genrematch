@@ -37,6 +37,7 @@ const FIT_META = {
 // Convert old-divisor centres to the new scales; rhythm stays neutral (0.5) for estimates.
 const oldToRaw = { energy: (v) => v * 24 - 30, brightness: (v) => v * 3500 + 500, bass: (v) => v * 0.45, dynamics: (v) => v * 20, pulse: (v) => v * 8 };
 import { scaleRaw } from '../js/analyser.js';
+import { mergeEstimates } from './v2/apply_estimates.js';
 function convert(f) {
   const raw = { bpm: f.bpm, rmsDb: oldToRaw.energy(f.energy), centroid: oldToRaw.brightness(f.brightness), flatness: 1, bassShare: oldToRaw.bass(f.bass), dynRangeDb: oldToRaw.dynamics(f.dynamics), onsetsPerSec: oldToRaw.pulse(f.pulse),
     fourFloor: 1.5, tresillo: 1.0, offbeat: 0.8, syncop: 0.8, backbeat: 1.2 };
@@ -75,7 +76,7 @@ export function fit(train) {
     const i = profiles.findIndex((x) => x.id === id);
     if (i >= 0) profiles[i] = p; else profiles.push(p);
   }
-  return profiles;
+  return mergeEstimates(profiles); // v2: Shima's estimate shelves (calibration/v2/estimate_shelves.json); fitted ones win
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {

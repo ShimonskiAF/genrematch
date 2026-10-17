@@ -5,7 +5,7 @@ export const WEIGHTS = { bpm: 3.6, energy: 1.5, brightness: 0.2, texture: 0.5, b
   // layer 1 groove reads (js/groove.js), weight picked by 5-fold CV on the training split (calibration/layers/drums_gate.js)
   ghost: 0.4, tight: 0.4, kickDensity: 0.4, hatDensity: 0.4, backbeat2: 0.4, kickOff: 0.4, gTempo: 0.4, halfTime: 0.4 };
 export const OCTAVE_PENALTY = 0.06;
-export const CLUB_FAMILIES = new Set(['Rap', 'Techno', 'House', 'Trance', "Drum 'n' Bass", 'Breakbeat', 'Jamaican', 'World Pop', 'World Latin']);
+export const CLUB_FAMILIES = new Set(['Rap', 'Techno', 'House', 'Trance', 'Hardcore Techno', "Drum 'n' Bass", 'Breakbeat', 'Jamaican', 'World Pop', 'World Latin']);
 export const GATED_FAMILIES = new Set(['Alternative', 'Contemporary', 'Folk', 'Country']);
 const nb = (b) => Math.min(1, Math.max(0, (b - 60) / 130));
 

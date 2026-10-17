@@ -1,0 +1,964 @@
+{
+"house": {
+"name": "House",
+"family": "Electronic",
+"bpm": [
+[
+118,
+130
+]
+],
+"targets": {
+"energy": 0.78,
+"brightness": 0.58,
+"bass": 0.7,
+"air": 0.32,
+"rhythm": 0.94,
+"harmonic": 0.28,
+"pulse": 0.68
+},
+"traits": [
+"Four-on-the-floor",
+"Offbeat hats",
+"Club low end",
+"Steady grid"
+],
+"opt": false
+},
+"tech-house": {
+"name": "Tech House",
+"family": "Electronic",
+"bpm": [
+[
+122,
+128
+]
+],
+"targets": {
+"energy": 0.74,
+"brightness": 0.42,
+"bass": 0.64,
+"air": 0.22,
+"rhythm": 0.96,
+"harmonic": 0.18,
+"pulse": 0.72
+},
+"traits": [
+"Four-on-the-floor",
+"Percussive",
+"Lean mids",
+"Groove tools"
+],
+"opt": false
+},
+"deep-house": {
+"name": "Deep House",
+"family": "Electronic",
+"bpm": [
+[
+118,
+126
+]
+],
+"targets": {
+"energy": 0.58,
+"brightness": 0.38,
+"bass": 0.62,
+"air": 0.18,
+"rhythm": 0.88,
+"harmonic": 0.52,
+"pulse": 0.48
+},
+"traits": [
+"Warm bass",
+"Softer kick",
+"Chordal",
+"Late night"
+],
+"opt": false
+},
+"techno": {
+"name": "Techno",
+"family": "Electronic",
+"bpm": [
+[
+126,
+140
+]
+],
+"targets": {
+"energy": 0.76,
+"brightness": 0.22,
+"bass": 0.5,
+"air": 0.08,
+"rhythm": 0.92,
+"harmonic": 0.16,
+"pulse": 0.74
+},
+"traits": [
+"Relentless kick",
+"Lean mids",
+"Dark spectrum",
+"Hypnotic loop"
+],
+"opt": false
+},
+"trance": {
+"name": "Trance",
+"family": "Electronic",
+"bpm": [
+[
+134,
+142
+]
+],
+"targets": {
+"energy": 0.8,
+"brightness": 0.74,
+"bass": 0.32,
+"air": 0.42,
+"rhythm": 0.86,
+"harmonic": 0.68,
+"pulse": 0.58
+},
+"traits": [
+"Uplifting lead",
+"Fast grid",
+"Bright spectrum",
+"Long arc"
+],
+"opt": false
+},
+"future-bass": {
+"name": "Future Bass",
+"family": "Electronic",
+"bpm": [
+[
+140,
+160
+]
+],
+"targets": {
+"energy": 0.76,
+"brightness": 0.78,
+"bass": 0.58,
+"air": 0.62,
+"rhythm": 0.72,
+"harmonic": 0.64,
+"pulse": 0.54
+},
+"traits": [
+"Melodic drop",
+"Sidechain",
+"Bright",
+"Vocal chops"
+],
+"opt": false
+},
+"hardstyle": {
+"name": "Hardstyle",
+"family": "Electronic",
+"bpm": [
+[
+150,
+160
+]
+],
+"targets": {
+"energy": 0.92,
+"brightness": 0.82,
+"bass": 0.68,
+"air": 0.28,
+"rhythm": 0.9,
+"harmonic": 0.42,
+"pulse": 0.78
+},
+"traits": [
+"Distorted kick",
+"Bright lead",
+"High energy",
+"Hard pulse"
+],
+"opt": false
+},
+"uk-garage": {
+"name": "UK Garage",
+"family": "Electronic",
+"bpm": [
+[
+130,
+140
+]
+],
+"targets": {
+"energy": 0.64,
+"brightness": 0.48,
+"bass": 0.56,
+"air": 0.24,
+"rhythm": 0.78,
+"harmonic": 0.46,
+"pulse": 0.62
+},
+"traits": [
+"2-step",
+"Swung",
+"Bassline",
+"Mid tempo"
+],
+"opt": false
+},
+"drum-and-bass": {
+"name": "Drum & Bass",
+"family": "Electronic",
+"bpm": [
+[
+168,
+178
+]
+],
+"targets": {
+"energy": 0.88,
+"brightness": 0.52,
+"bass": 0.64,
+"air": 0.22,
+"rhythm": 0.7,
+"harmonic": 0.32,
+"pulse": 0.82
+},
+"traits": [
+"Breakbeat",
+"Fast",
+"Rolling bass",
+"High energy"
+],
+"opt": false
+},
+"dubstep": {
+"name": "Dubstep",
+"family": "Electronic",
+"bpm": [
+[
+140,
+150
+]
+],
+"targets": {
+"energy": 0.74,
+"brightness": 0.34,
+"bass": 0.78,
+"air": 0.12,
+"rhythm": 0.48,
+"harmonic": 0.28,
+"pulse": 0.42
+},
+"traits": [
+"Heavy bass",
+"Half-time",
+"Drop-led",
+"Modulated"
+],
+"opt": false
+},
+"phonk": {
+"name": "Phonk",
+"family": "Hip-hop",
+"bpm": [
+[
+120,
+150
+]
+],
+"targets": {
+"energy": 0.82,
+"brightness": 0.18,
+"bass": 0.88,
+"air": 0.14,
+"rhythm": 0.74,
+"harmonic": 0.22,
+"pulse": 0.68
+},
+"traits": [
+"Distorted 808",
+"Dark",
+"Cowbell/hats",
+"Lo-fi edge"
+],
+"opt": false
+},
+"ambient": {
+"name": "Ambient",
+"family": "Electronic",
+"bpm": [
+[
+40,
+100
+]
+],
+"targets": {
+"energy": 0.18,
+"brightness": 0.14,
+"bass": 0.08,
+"air": 0.12,
+"rhythm": 0.04,
+"harmonic": 0.92,
+"pulse": 0.08
+},
+"traits": [
+"Atmospheric",
+"Sparse",
+"Low energy",
+"Texture"
+],
+"opt": true
+},
+"synthwave": {
+"name": "Synthwave",
+"family": "Electronic",
+"bpm": [
+[
+88,
+112
+]
+],
+"targets": {
+"energy": 0.52,
+"brightness": 0.52,
+"bass": 0.36,
+"air": 0.28,
+"rhythm": 0.58,
+"harmonic": 0.74,
+"pulse": 0.36
+},
+"traits": [
+"Synth leads",
+"Nostalgic",
+"Mid tempo",
+"Cinematic"
+],
+"opt": false
+},
+"trap": {
+"name": "Trap",
+"family": "Hip-hop",
+"bpm": [
+[
+130,
+150
+]
+],
+"targets": {
+"energy": 0.88,
+"brightness": 0.18,
+"bass": 0.9,
+"air": 0.16,
+"rhythm": 0.82,
+"harmonic": 0.38,
+"pulse": 0.7
+},
+"traits": [
+"808",
+"Rapid hats",
+"Dark",
+"High energy"
+],
+"opt": false
+},
+"drill": {
+"name": "Drill",
+"family": "Hip-hop",
+"bpm": [
+[
+140,
+150
+]
+],
+"targets": {
+"energy": 0.48,
+"brightness": 0.2,
+"bass": 0.66,
+"air": 0.1,
+"rhythm": 0.42,
+"harmonic": 0.28,
+"pulse": 0.32
+},
+"traits": [
+"Sliding 808",
+"Sparse",
+"Dark",
+"Mid tempo"
+],
+"opt": false
+},
+"boom-bap": {
+"name": "Boom Bap",
+"family": "Hip-hop",
+"bpm": [
+[
+84,
+100
+]
+],
+"targets": {
+"energy": 0.56,
+"brightness": 0.24,
+"bass": 0.64,
+"air": 0.12,
+"rhythm": 0.76,
+"harmonic": 0.68,
+"pulse": 0.44
+},
+"traits": [
+"Sampled drums",
+"Kick-snare",
+"Mid tempo",
+"Swing"
+],
+"opt": false
+},
+"lofi-hip-hop": {
+"name": "Lo-fi Hip-hop",
+"family": "Hip-hop",
+"bpm": [
+[
+70,
+96
+]
+],
+"targets": {
+"energy": 0.22,
+"brightness": 0.16,
+"bass": 0.24,
+"air": 0.06,
+"rhythm": 0.38,
+"harmonic": 0.58,
+"pulse": 0.22
+},
+"traits": [
+"Muffled",
+"Soft",
+"Low energy",
+"Sampled"
+],
+"opt": false
+},
+"pop": {
+"name": "Pop",
+"family": "Pop & R&B",
+"bpm": [
+[
+100,
+122
+]
+],
+"targets": {
+"energy": 0.62,
+"brightness": 0.56,
+"bass": 0.32,
+"air": 0.28,
+"rhythm": 0.68,
+"harmonic": 0.62,
+"pulse": 0.48
+},
+"traits": [
+"Hook-led",
+"Mid-bright",
+"Danceable",
+"Vocal"
+],
+"opt": false
+},
+"dance-pop": {
+"name": "Dance-Pop",
+"family": "Pop & R&B",
+"bpm": [
+[
+118,
+128
+]
+],
+"targets": {
+"energy": 0.74,
+"brightness": 0.68,
+"bass": 0.42,
+"air": 0.36,
+"rhythm": 0.82,
+"harmonic": 0.54,
+"pulse": 0.58
+},
+"traits": [
+"Dance pulse",
+"Bright",
+"Hook-led",
+"Electronic production"
+],
+"opt": false
+},
+"indie-pop": {
+"name": "Indie Pop",
+"family": "Pop & R&B",
+"bpm": [
+[
+100,
+132
+]
+],
+"targets": {
+"energy": 0.46,
+"brightness": 0.54,
+"bass": 0.22,
+"air": 0.24,
+"rhythm": 0.5,
+"harmonic": 0.7,
+"pulse": 0.36
+},
+"traits": [
+"Lighter",
+"Textural",
+"Melodic",
+"Less polished"
+],
+"opt": false
+},
+"hyperpop": {
+"name": "Hyperpop",
+"family": "Pop & R&B",
+"bpm": [
+[
+140,
+180
+]
+],
+"targets": {
+"energy": 0.86,
+"brightness": 0.88,
+"bass": 0.48,
+"air": 0.72,
+"rhythm": 0.64,
+"harmonic": 0.42,
+"pulse": 0.66
+},
+"traits": [
+"Maximalist",
+"Bright",
+"Processed vocals",
+"High energy"
+],
+"opt": false
+},
+"rnb": {
+"name": "R&B",
+"family": "Pop & R&B",
+"bpm": [
+[
+70,
+102
+]
+],
+"targets": {
+"energy": 0.34,
+"brightness": 0.3,
+"bass": 0.42,
+"air": 0.14,
+"rhythm": 0.4,
+"harmonic": 0.74,
+"pulse": 0.28
+},
+"traits": [
+"Smooth",
+"Vocal",
+"Warm bass",
+"Groove"
+],
+"opt": false
+},
+"indie-rock": {
+"name": "Indie Rock",
+"family": "Rock",
+"bpm": [
+[
+100,
+126
+]
+],
+"targets": {
+"energy": 0.6,
+"brightness": 0.38,
+"bass": 0.32,
+"air": 0.18,
+"rhythm": 0.74,
+"harmonic": 0.48,
+"pulse": 0.42
+},
+"traits": [
+"Guitar",
+"Mid energy",
+"Less polished",
+"Band"
+],
+"opt": false
+},
+"alternative-rock": {
+"name": "Alternative Rock",
+"family": "Rock",
+"bpm": [
+[
+100,
+140
+]
+],
+"targets": {
+"energy": 0.58,
+"brightness": 0.32,
+"bass": 0.3,
+"air": 0.16,
+"rhythm": 0.66,
+"harmonic": 0.52,
+"pulse": 0.38
+},
+"traits": [
+"Guitar",
+"Dynamic",
+"Atmospheric",
+"Band"
+],
+"opt": false
+},
+"punk": {
+"name": "Punk",
+"family": "Rock",
+"bpm": [
+[
+160,
+200
+]
+],
+"targets": {
+"energy": 0.9,
+"brightness": 0.62,
+"bass": 0.28,
+"air": 0.22,
+"rhythm": 0.7,
+"harmonic": 0.22,
+"pulse": 0.74
+},
+"traits": [
+"Fast",
+"Distorted",
+"Raw",
+"High energy"
+],
+"opt": false
+},
+"metal": {
+"name": "Metal",
+"family": "Rock",
+"bpm": [
+[
+120,
+190
+]
+],
+"targets": {
+"energy": 0.92,
+"brightness": 0.72,
+"bass": 0.28,
+"air": 0.2,
+"rhythm": 0.62,
+"harmonic": 0.16,
+"pulse": 0.68
+},
+"traits": [
+"Distorted",
+"High energy",
+"Dense",
+"Bright"
+],
+"opt": false
+},
+"shoegaze": {
+"name": "Shoegaze",
+"family": "Rock",
+"bpm": [
+[
+90,
+120
+]
+],
+"targets": {
+"energy": 0.42,
+"brightness": 0.28,
+"bass": 0.22,
+"air": 0.32,
+"rhythm": 0.36,
+"harmonic": 0.64,
+"pulse": 0.24
+},
+"traits": [
+"Washed",
+"Reverb",
+"Textural",
+"Mid tempo"
+],
+"opt": false
+},
+"singer-songwriter": {
+"name": "Singer-songwriter",
+"family": "Song & jazz",
+"bpm": [
+[
+68,
+108
+]
+],
+"targets": {
+"energy": 0.42,
+"brightness": 0.16,
+"bass": 0.14,
+"air": 0.08,
+"rhythm": 0.38,
+"harmonic": 0.88,
+"pulse": 0.18
+},
+"traits": [
+"Vocal",
+"Acoustic",
+"Low energy",
+"Harmonic"
+],
+"opt": true
+},
+"folk": {
+"name": "Folk",
+"family": "Song & jazz",
+"bpm": [
+[
+60,
+110
+]
+],
+"targets": {
+"energy": 0.32,
+"brightness": 0.22,
+"bass": 0.12,
+"air": 0.1,
+"rhythm": 0.28,
+"harmonic": 0.86,
+"pulse": 0.16
+},
+"traits": [
+"Acoustic",
+"Storytelling",
+"Natural",
+"Harmonic"
+],
+"opt": true
+},
+"country": {
+"name": "Country",
+"family": "Song & jazz",
+"bpm": [
+[
+70,
+120
+]
+],
+"targets": {
+"energy": 0.48,
+"brightness": 0.36,
+"bass": 0.22,
+"air": 0.14,
+"rhythm": 0.52,
+"harmonic": 0.78,
+"pulse": 0.32
+},
+"traits": [
+"Guitar",
+"Storytelling",
+"Mid tempo",
+"Harmonic"
+],
+"opt": false
+},
+"jazz": {
+"name": "Jazz",
+"family": "Song & jazz",
+"bpm": [
+[
+70,
+160
+]
+],
+"targets": {
+"energy": 0.36,
+"brightness": 0.38,
+"bass": 0.18,
+"air": 0.28,
+"rhythm": 0.24,
+"harmonic": 0.84,
+"pulse": 0.22
+},
+"traits": [
+"Harmony-led",
+"Breathing time",
+"Dynamic",
+"Cymbal air"
+],
+"opt": true
+},
+"cinematic": {
+"name": "Cinematic",
+"family": "Song & jazz",
+"bpm": [
+[
+60,
+100
+]
+],
+"targets": {
+"energy": 0.28,
+"brightness": 0.24,
+"bass": 0.16,
+"air": 0.22,
+"rhythm": 0.12,
+"harmonic": 0.78,
+"pulse": 0.14
+},
+"traits": [
+"Atmospheric",
+"Dynamic",
+"Emotional",
+"Wide"
+],
+"opt": true
+},
+"afrobeats": {
+"name": "Afrobeats",
+"family": "Global",
+"bpm": [
+[
+98,
+116
+]
+],
+"targets": {
+"energy": 0.66,
+"brightness": 0.5,
+"bass": 0.42,
+"air": 0.16,
+"rhythm": 0.76,
+"harmonic": 0.6,
+"pulse": 0.58
+},
+"traits": [
+"Bouncing groove",
+"Percussion",
+"Melodic",
+"Mid tempo"
+],
+"opt": false
+},
+"amapiano": {
+"name": "Amapiano",
+"family": "Global",
+"bpm": [
+[
+110,
+120
+]
+],
+"targets": {
+"energy": 0.62,
+"brightness": 0.36,
+"bass": 0.58,
+"air": 0.12,
+"rhythm": 0.82,
+"harmonic": 0.42,
+"pulse": 0.52
+},
+"traits": [
+"Log drum",
+"Bounce",
+"Percussive",
+"Mid tempo"
+],
+"opt": false
+},
+"reggaeton": {
+"name": "Reggaeton",
+"family": "Global",
+"bpm": [
+[
+88,
+98
+]
+],
+"targets": {
+"energy": 0.7,
+"brightness": 0.42,
+"bass": 0.6,
+"air": 0.12,
+"rhythm": 0.84,
+"harmonic": 0.44,
+"pulse": 0.48
+},
+"traits": [
+"Dembow",
+"Forward bass",
+"Narrow tempo",
+"Hook-led"
+],
+"opt": false
+},
+"dancehall": {
+"name": "Dancehall",
+"family": "Global",
+"bpm": [
+[
+80,
+110
+]
+],
+"targets": {
+"energy": 0.58,
+"brightness": 0.34,
+"bass": 0.54,
+"air": 0.1,
+"rhythm": 0.7,
+"harmonic": 0.4,
+"pulse": 0.4
+},
+"traits": [
+"Offbeat",
+"Bass forward",
+"Sparse",
+"Rhythmic"
+],
+"opt": false
+},
+"latin-pop": {
+"name": "Latin Pop",
+"family": "Global",
+"bpm": [
+[
+90,
+120
+]
+],
+"targets": {
+"energy": 0.64,
+"brightness": 0.58,
+"bass": 0.36,
+"air": 0.22,
+"rhythm": 0.72,
+"harmonic": 0.66,
+"pulse": 0.46
+},
+"traits": [
+"Melodic",
+"Danceable",
+"Bright",
+"Hook-led"
+],
+"opt": false
+}
+}

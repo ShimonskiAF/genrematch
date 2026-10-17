@@ -22,7 +22,7 @@ export async function yamnetEmbed(tf, model, x16k) {
 }
 // AudioSet genre classes YAMNet can name that GenreMatch has no trained crate for. Used only as
 // out-of-domain evidence for the estimate shelves (rock, jazz, folk...), never to label in-domain music.
-export const OOD_CLASSES = { 214: 'rock', 215: 'metal', 216: 'punk', 217: 'indie', 218: 'rock', 219: 'rock', 220: 'rock', 224: 'country', 225: 'jazz', 226: 'country', 228: 'folk', 230: 'jazz', 232: 'ambient', 233: 'songwriter', 241: 'ambient', 245: 'folk', 246: 'blues', 248: 'ambient', 254: 'soul', 260: 'indie', 266: 'songwriter' };
+export const OOD_CLASSES = { 214: 'rock', 215: 'metal', 216: 'punk', 217: 'indie', 218: 'rock', 219: 'rock', 220: 'rock', 224: 'country', 225: 'jazz', 226: 'country', 228: 'folk', 230: 'jazz', 232: 'cinematic', 233: 'cinematic', 263: 'cinematic', 265: 'cinematic', 241: 'ambient', 245: 'folk', 246: 'blues', 248: 'ambient', 254: 'soul', 260: 'indie', 266: 'songwriter' };
 // All AudioSet music-genre class indices (211-270) for the denominator.
 export const GENRE_CLASS_RANGE = [211, 270];
 export function oodEvidence(scores) {
