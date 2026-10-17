@@ -6,10 +6,12 @@ import { labelFor, buildHoldout, isHeldOut, SKIP_FITTING } from '../labels.js';
 const T = JSON.parse(fs.readFileSync(new URL('../features.json', import.meta.url)));
 const GT = JSON.parse(fs.readFileSync(new URL('../layers/groove_tracks.json', import.meta.url)));
 const V2 = JSON.parse(fs.readFileSync(new URL('./features_v2.json', import.meta.url)));
+const FOF = JSON.parse(fs.readFileSync(new URL('./fof_b.json', import.meta.url))); // js/fourfloor.js, tools/fof_extract.js
 buildHoldout(T);
 const rows = T.filter((t) => { const l = labelFor(t.folder); return l.family && !SKIP_FITTING.has(l.crate); }).map((t) => {
   const key = `${t.root}|${t.folder}|${t.file}`, lab = labelFor(t.folder), base = featuresFromRaw(t.raw), g = GT[key];
   if (g) Object.assign(base, scaleGroove(g));
+  if (FOF[key] != null) base.fofB = FOF[key];
   return { key, ...lab, held: isHeldOut(t), base, v2: V2[key]?.v2, mel: V2[key]?.mel };
 });
 fs.writeFileSync(process.argv[2] || '/tmp/rows.json', JSON.stringify(rows));

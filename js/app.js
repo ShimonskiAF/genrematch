@@ -2,6 +2,7 @@ import { analyse, toMono } from './analyser.js';
 import { groove, scaleGroove } from './groove.js';
 import { extractV2 } from './features2.js';
 import { rankV2 } from './rank2.js';
+import { fourOnFloorB } from './fourfloor.js';
 import { reasonsV2 } from './reasons2.js';
 import { melRead, loadMel } from './mel_browser.js';
 import { loadLog, saveLog, mark, biasesFrom, summary as fbSummary } from './feedback.js';
@@ -50,6 +51,7 @@ async function readFile(file) {
   const x2 = features.silent ? null : extractV2(samples, sampleRate, features.bpm || 0);
   let mel = null;
   if (!features.silent) { try { mel = await melRead(samples, sampleRate); } catch (e) { console.warn('[GenreMatch] mel path failed', e); } }
+  if (!mel && !features.silent && MODEL.fb) features.fofB = fourOnFloorB(samples, sampleRate); // fallback head only
   const result = rankV2({ f: features, v2: x2?.v2, mel, profiles: PROFILES, model: MODEL, graph: GRAPH, bias: biasesFrom(FEEDBACK) });
   const rs = reasonsV2(result, features, MODEL, GRAPH);
   console.info('[GenreMatch] read', { raw: features.raw, v2: x2?.v2, drivers: rs.drivers, supers: result.supers, families: result.families, mel: mel ? mel.backend : 'off' });

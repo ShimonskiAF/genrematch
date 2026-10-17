@@ -320,7 +320,6 @@
     "drill",
     "hiphop",
     "songwriter",
-    "ambient",
     "folk"
    ]
   },
@@ -452,11 +451,9 @@
     "bouncy"
    ],
    "anti": [
-    "trap",
     "dubstep",
     "metal",
-    "trance",
-    "phonk"
+    "trance"
    ]
   },
   "trap": {
@@ -986,7 +983,6 @@
    "anti": [
     "house",
     "peaktechno",
-    "trance",
     "metal",
     "trap",
     "dubstep",

@@ -16,14 +16,17 @@ export function handVector(f, v2, keys) { return keys.map((k) => { if (k.startsW
 export function headLogits(h, x) { const z = h.W.map((row, c) => { let s = h.b[c]; for (let j = 0; j < row.length; j++) s += row[j] * ((x[j] - h.mu[j]) / (h.sd[j] || 1)); return s; }); return z; }
 
 // In-domain probabilities over model.classes. Mel is optional; the hand heads always run.
+// Without the mel path, a separate features-only head (model.fb: same hand keys + Bloom's fourOnFloorB,
+// fitted on the training split only) is used when present. The full (mel) path is unchanged.
+export function handHead(model, emb) { return !emb && model.fb ? { classes: model.classes, ...model.fb } : model; }
 export function inDomain(model, f, v2, emb) {
-  const x = handVector(f, v2, model.handKeys);
-  const pl = softmax(headLogits(model.lr, x), model.temps.lr), pd = softmax(headLogits(model.lda, x), model.temps.lda);
+  const h = handHead(model, emb), x = handVector(f, v2, h.handKeys);
+  const pl = softmax(headLogits(h.lr, x), h.temps.lr), pd = softmax(headLogits(h.lda, x), h.temps.lda);
   const hand = pl.map((v, i) => (v + pd[i]) / 2);
-  if (!emb) return { classes: model.classes, p: hand, hand, mel: null, x };
+  if (!emb) return { classes: model.classes, p: hand, hand, mel: null, x, head: h };
   const mel = softmax(headLogits(model.mel, emb), model.temps.mel), a = model.melWeight;
   const g = hand.map((v, i) => Math.exp((1 - a) * Math.log(v + 1e-9) + a * Math.log(mel[i] + 1e-9))), s = g.reduce((u, v) => u + v, 0);
-  return { classes: model.classes, p: g.map((v) => v / s), hand, mel, x };
+  return { classes: model.classes, p: g.map((v) => v / s), hand, mel, x, head: h };
 }
 
 export function relation(graph, a, b, famOf) {
@@ -109,6 +112,6 @@ export function rankV2({ f, v2, mel, profiles, model, graph, bias = {}, opts = {
     primary, second: ranked[1], nearMisses, secondFamily: fam2?.[0] ?? null, hybrid, confidence: conf, confidencePct: Math.round(100 * famP),
     leansToward: nearMisses.map((n) => n.name), tempoUsed: primary.tempoUsed, octave: primary.octave, ranked,
     supers: supers.map(([k, v]) => ({ name: k, p: v })), families: fams.map(([k, v]) => ({ name: k, p: v })),
-    trace: { ood: { m: ood.m, gates: ood.gates, nov: ood.nov }, melUsed: !!ind.mel, x: ind.x, hand: ind.hand, mel: ind.mel, classes: ind.classes },
+    trace: { ood: { m: ood.m, gates: ood.gates, nov: ood.nov }, melUsed: !!ind.mel, x: ind.x, hand: ind.hand, mel: ind.mel, classes: ind.classes, head: ind.head },
   };
 }

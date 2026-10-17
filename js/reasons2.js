@@ -3,7 +3,7 @@
 // "124 BPM + four-on-the-floor lock + low spectral flatness + high rhythmic regularity → House".
 const GROUPS = [
   { g: 'tempo', keys: ['b_bpm', 'b_gTempo'] },
-  { g: 'lock', keys: ['b_fourFloor', 'b_kickDensity'], rep: 'b_fourFloor', hi: 'four-on-the-floor lock', lo: 'no four-on-the-floor kick' },
+  { g: 'lock', keys: ['b_fourFloor', 'b_kickDensity', 'b_fofB'], rep: 'b_fourFloor', hi: 'four-on-the-floor lock', lo: 'no four-on-the-floor kick' },
   { g: 'backbeat', keys: ['b_backbeat', 'b_backbeat2', 'b_halfTime'], rep: 'b_backbeat2', hi: 'strong 2 & 4 backbeat', lo: 'soft backbeat' },
   { g: 'synco', keys: ['b_tresillo', 'b_syncop', 'b_offbeat', 'b_kickOff', 'acThreeQ', 'acDotted'], rep: 'b_kickOff', hi: 'syncopated kick (3-3-2 feel)', lo: 'straight kick pattern' },
   { g: 'regular', keys: ['regularity', 'tgEntropy', 'acBeat', 'acBar', 'acTwo', 'acHalf', 'acQuarter', 'b_tight'], rep: 'regularity', hi: 'high rhythmic regularity', lo: 'loose, shifting rhythm' },
@@ -56,6 +56,7 @@ export function phrase(model, x, g, f) {
 // Returns { headline, lines[] }. Short and scannable.
 export function reasonsV2(res, f, model, graph) {
   if (res.status === 'none') return { headline: res.reason, lines: [res.reason], drivers: [] };
+  model = res.trace.head || model; // hand head actually used (fallback head when mel is off)
   const x = res.trace.x, p = res.primary, rival = res.ranked.find((r) => r.id !== p.id && !r.estimate);
   let drivers = [];
   if (!p.estimate && rival) drivers = contributions(model, x, p.id, rival.id).filter((d) => d.c > 0.05);

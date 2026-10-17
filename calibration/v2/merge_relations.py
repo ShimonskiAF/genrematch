@@ -17,7 +17,7 @@ for kind in ('influence', 'anti'):
             B = M.get(b)
             if B not in P or B == A: skipped.add(b); continue
             pa = P[A]
-            if kind == 'anti' and (B in pa['siblings'] or B in pa['parent'] or A in P[B]['siblings']): conflicts.append((A, B)); continue
+            if kind == 'anti' and any(B in pa.get(k, []) or A in P[B].get(k, []) for k in ('siblings', 'parent', 'influence')): conflicts.append((A, B)); continue  # never anti over a Musicmap link, either direction
             lst = pa.setdefault(kind, [])
             if B not in lst: lst.append(B); added[kind] += 1
 g['relSources'] = g.get('relSources', []) + ["Shima analyze-patch.ts INFLUENCE/ANTI (hand-set, merged as extra links)"]

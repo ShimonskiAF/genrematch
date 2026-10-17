@@ -69,3 +69,17 @@ Holdout (same 126 as live), family / super / exact shelf, top-2 / top-3 family:
 - Live 020cef0: 67 (53%) / 80 / 59, top-2 91, top-3 102.
 - v2 shipped config: 99 (79%) / 108 (86%) / 85, top-2 118, top-3 123. Paired: 40 newly right, 8 newly wrong (McNemar 20.0).
 - Without the mel path (fallback): 90 (71%) / 101 / 77.
+
+## Bloom fallback head (branch `bloom-fallback`)
+From Shima's Bloom builder app (`ShimonskiAF/bloom-moss-gold-flame`). Its scorer itself reads 25/126 family on our holdout (hand targets don't fit loud club masters), so only one feature was kept.
+
+- Candidates: Bloom's `fourOnFloor` (30–180 Hz onset grid at the beat and its multiples), `hatDensity`, 8-band mel shape, and every combination. Chosen by 3×5-fold CV on the training split only (same LR + LDA heads as `fit_v2.py`): family CV 0.650 baseline → **0.669 with fourOnFloor alone** (ties fof+hat; hat and mel8 add nothing).
+- `js/fourfloor.js`: port of Bloom's code (matches Bloom's values on all 533 tracks to 5e-6). `calibration/v2/fof_b.json` from `tools/fof_extract.js`.
+- `model.fb` (`calibration/v2/fit_fb.py` + `merge_fb.js`): a separate features-only head = `handKeys` + `b_fofB`. `rank2.inDomain` uses it **only when the mel path is unavailable**; the fused path and every other key in `model_v2.json` are unchanged.
+- Holdout, read once: fallback (S4b) family 90 → **92**/126, super 101 → 102, exact 77 → 80 (3 newly right, 1 newly wrong; not significant). Full path S4 unchanged at 99 / 108 / 85.
+
+    node tools/fof_extract.js <shard> <n> > part.json        # merge -> calibration/v2/fof_b.json
+    node calibration/v2/export.js /tmp/rows.json
+    python calibration/v2/fit_fb.py /tmp/rows.json data/model_v2.json /tmp/fb.json && node calibration/v2/merge_fb.js /tmp/fb.json
+
+Atlas graph: the prompt-2 merge mapped Bloom's `boom-bap` onto `hiphop`, which added `hiphop` anti `trap`/`phonk` although both have `hiphop` as Musicmap parent, and `ambient`/`trance` anti on top of a Musicmap influence link. Anti wins in `relation()`, so those links were inverted. Removed; `merge_relations.py` now refuses an anti over any sibling/parent/influence link in either direction.
