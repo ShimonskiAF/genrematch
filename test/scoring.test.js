@@ -8,7 +8,7 @@ const A = JSON.parse(fs.readFileSync(new URL('../data/atlas_lite.json', import.m
 const at = (id) => ({ ...P.find((p) => p.id === id).features });
 
 test('profiles: calibrated + estimates, features in range, linked to atlas', () => {
-  assert.ok(P.length >= 35 && P.length <= 50, P.length);
+  assert.ok(P.length >= 35 && P.length <= 60, P.length); // 52 since round 6 (Neo-Soul, Alt R&B)
   const atlas = new Set(A.genres.map((g) => g.id));
   const keys = ['energy', 'brightness', 'texture', 'bass', 'dynamics', 'pulse', 'fourFloor', 'tresillo', 'offbeat', 'syncop', 'backbeat'];
   for (const p of P) {

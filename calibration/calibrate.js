@@ -26,12 +26,19 @@ const FIT_META = {
   phonk: { name: 'Phonk', family: 'Rap', atlas_ids: ['x_phonk'], anchor: 140 },
   gwalk: { name: 'G-Walk', family: 'Rap', atlas_ids: ['x_gwalk', 'rap03', 'rap04'], anchor: 100 },
   jerseyclub: { name: 'Jersey Club', family: 'Breakbeat', atlas_ids: ['x_jersey_club', 'hou08'], anchor: 140 },
-  rnb: { name: 'R&B / Soul', family: "Rhythm 'n' Blues", atlas_ids: ['rnb12', 'rnb13', 'rap10'], anchor: 90 },
+  rnb: { name: 'Contemporary R&B', family: "Rhythm 'n' Blues", atlas_ids: ['rnb13', 'rap10'], anchor: 90 }, // the R&B Soul crate; Soul / Neo-Soul / Alt R&B are separate since round 6
   afrobeats: { name: 'Afrobeats', family: 'World Pop', atlas_ids: ['x_afrobeats', 'woC10'], anchor: 105 },
   bailefunk: { name: 'Baile Funk', family: 'World Latin', atlas_ids: ['x_baile_funk', 'x_dembow', 'rap03'], anchor: 130 },
   reggae: { name: 'Reggae', family: 'Jamaican', atlas_ids: ['jam04', 'jam08'], anchor: 80 },
   reggaeton: { name: 'Reggaeton', family: 'Jamaican', atlas_ids: ['jam11', 'x_dembow'], anchor: 95 },
   dnb: { name: 'Drum & Bass', family: "Drum 'n' Bass", atlas_ids: ['dnb01', 'dnb05'], anchor: 174 },
+  // Round 6 shelves (promoted from estimates when they have >= MIN_FIT training tracks)
+  soul: { name: 'Soul', family: "Rhythm 'n' Blues", atlas_ids: ['rnb04', 'rnb03', 'rnb05'], anchor: 100 },
+  neosoul: { name: 'Neo-Soul', family: "Rhythm 'n' Blues", atlas_ids: ['rnb12'], anchor: 85 },
+  altrnb: { name: 'Alt R&B', family: "Rhythm 'n' Blues", atlas_ids: ['rnb13', 'rap10'], anchor: 85 },
+  deephouse: { name: 'Deep House', family: 'House', atlas_ids: ['hou04'], anchor: 122 },
+  country: { name: 'Country', family: 'Country', atlas_ids: ['cou10', 'cou07'], anchor: 110 },
+  cinematic: { name: 'Cinematic', family: 'Classical', atlas_ids: ['cla'], anchor: 100 },
 };
 
 // Convert old-divisor centres to the new scales; rhythm stays neutral (0.5) for estimates.

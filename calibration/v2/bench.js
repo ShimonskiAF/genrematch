@@ -11,13 +11,14 @@ const model = JSON.parse(fs.readFileSync(modelPath));
 const P = JSON.parse(fs.readFileSync(new URL('../../data/genre_profiles.json', import.meta.url))).profiles;
 const graph = JSON.parse(fs.readFileSync(new URL('../../data/atlas_graph.json', import.meta.url)));
 const famOf = Object.fromEntries(P.map((p) => [p.id, p.family])), supOf = (fam) => graph.familySuper[fam];
-const train = R.filter((r) => !r.held), held = R.filter((r) => r.held);
+// train = not in either holdout; held = the frozen 126 (v1); heldR6 = round-6 holdout (reported separately)
+const train = R.filter((r) => !r.held), held = R.filter((r) => r.heldV1 ?? r.held), heldR6 = R.filter((r) => r.heldR6);
 // OOD gates: 95th percentile of each signal on in-domain TRAINING tracks (see rank2.oodMass). Holdout not used.
 import { novelty } from '../../js/rank2.js';
 import { oodEvidence } from '../../js/melpath.js';
 const inSet = new Set(model.classes), pc = (a, p) => { const s = [...a].sort((x, y) => x - y); return +s[Math.floor(p * (s.length - 1))].toFixed(4); };
 const mD = train.map((r) => { let se = 0, sa = 0; for (const p of P) { const w = (classify(r.base, [p]).ranked[0].fit / 100) ** 4; sa += w; if (!inSet.has(p.id)) se += w; } return se / sa; });
-model.ood = { K: 4, thetaDist: pc(mD, 0.95), thetaYam: pc(train.map((r) => oodEvidence(Y[r.key].scores).share), 0.95), novLo: Math.max(2.5, pc(train.map((r) => novelty(model, Y[r.key].emb)), 0.99)), novSpan: 5 };
+model.ood = { K: 4, thetaDist: pc(mD, 0.95), thetaYam: pc(train.map((r) => oodEvidence(Y[r.key].scores, inSet).share), 0.95), novLo: Math.max(2.5, pc(train.map((r) => novelty(model, Y[r.key].emb)), 0.99)), novSpan: 5 };
 if (process.argv.includes('--write-ood')) { const m = JSON.parse(fs.readFileSync(modelPath)); m.ood = model.ood; fs.writeFileSync(modelPath, JSON.stringify(m)); }
 const fams = (ranked) => { const o = []; for (const r of ranked) if (!o.includes(r.family)) o.push(r.family); return o; };
 function score(name, rows, read) {
@@ -51,3 +52,13 @@ console.log('confusions', JSON.stringify(Object.entries(conf).sort((p, q) => q[1
 // a few example reasons
 if (process.argv.includes('--examples')) for (const o of b.filter((_, i) => [3, 40, 77, 101].includes(i))) { const rs = reasonsV2(o.x, o.r.base, model, graph); console.log('\n' + o.r.key.split('|').at(-1), '| label:', o.r.crate, '| read:', o.x.label, o.x.confidencePct + '%', o.x.confidence, '| near:', o.x.nearMisses.map((n) => n.name + ' ' + n.fit + '%').join(', ')); console.log('  ' + rs.lines.join('\n  ')); }
 fs.writeFileSync('/tmp/bench_rows.json', JSON.stringify(b.map((o) => ({ key: o.r.key, crate: o.r.crate, fam: o.fam, read: o.x.label, conf: o.x.confidencePct }))));
+
+// Round-6 holdout: per shelf, with the confusions (fused path and features-only fallback)
+if (heldR6.length) {
+  for (const [nm, fn] of [['R6 shipped', v2({}, true)], ['R6 mel unavailable', v2({}, false)]]) {
+    const { line, out } = score(nm, heldR6, fn); console.log(JSON.stringify(line));
+    const per = {}; for (const o of out) { const k = o.r.sub; per[k] ??= [0, 0, 0, []]; per[k][2]++; if (o.fam) per[k][0]++; if (o.sub) per[k][1]++; else per[k][3].push(o.x.primary?.id || 'none'); }
+    console.log(nm, 'per shelf fam/exact/n [wrong ->]', JSON.stringify(per));
+  }
+}
+const all = [...held, ...heldR6]; if (heldR6.length) { const { line } = score('V1+R6 combined', all, v2({}, true)); console.log(JSON.stringify(line)); }

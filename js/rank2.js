@@ -64,7 +64,7 @@ export function novelty(model, emb) {
 export function oodMass(model, distFits, isEst, yamScores, emb) {
   const o = model.ood || {}, K = o.K ?? 4;
   let se = 0, sa = 0; for (const r of distFits) { const w = (r.fit / 100) ** K; sa += w; if (isEst(r.id)) se += w; }
-  const mDist = sa > 0 ? se / sa : 0, ev = oodEvidence(yamScores), nov = novelty(model, emb);
+  const mDist = sa > 0 ? se / sa : 0, ev = oodEvidence(yamScores, new Set(model.classes)), nov = novelty(model, emb);
   const gd = gate(mDist, o.thetaDist ?? 0.57), gy = ev ? gate(ev.share, o.thetaYam ?? 0.23) : 0;
   const gn = emb ? Math.max(0, Math.min(1, (nov - (o.novLo ?? 2.5)) / (o.novSpan ?? 5))) : 0;
   return { m: Math.max(gd, gy, gn), mDist, yam: ev, nov, gates: { dist: gd, yam: gy, novelty: gn } };

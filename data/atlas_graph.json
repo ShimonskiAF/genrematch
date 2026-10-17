@@ -576,7 +576,9 @@
     "soul"
    ],
    "siblings": [
-    "soul"
+    "soul",
+    "neosoul",
+    "altrnb"
    ],
    "influence": [
     "hiphop",
@@ -606,7 +608,8 @@
    "influence": [
     "jazz",
     "hiphop",
-    "house"
+    "house",
+    "neosoul"
    ],
    "pocket": [
     70,
@@ -1353,7 +1356,6 @@
    ],
    "character": "Atmospheric, Dynamic, Emotional, Wide",
    "axes": [],
-   "estimate": true,
    "anti": [
     "trap",
     "metal",
@@ -1384,6 +1386,54 @@
     "trance",
     "metal",
     "ambient"
+   ]
+  },
+  "neosoul": {
+   "super": "Pop & R&B",
+   "parent": [
+    "soul"
+   ],
+   "siblings": [
+    "rnb",
+    "altrnb",
+    "soul"
+   ],
+   "influence": [
+    "hiphop",
+    "jazz"
+   ],
+   "pocket": [
+    70,
+    100
+   ],
+   "character": "Live-feel drums behind the beat, jazz chords, warm low end",
+   "axes": [
+    "organic",
+    "atmospheric"
+   ]
+  },
+  "altrnb": {
+   "super": "Pop & R&B",
+   "parent": [
+    "rnb"
+   ],
+   "siblings": [
+    "neosoul",
+    "rnb"
+   ],
+   "influence": [
+    "trap",
+    "ambient",
+    "hiphop"
+   ],
+   "pocket": [
+    60,
+    100
+   ],
+   "character": "Sparse, moody production, processed vocals, sub-heavy",
+   "axes": [
+    "atmospheric",
+    "electronic"
    ]
   }
  },

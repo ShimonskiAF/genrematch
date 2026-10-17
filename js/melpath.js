@@ -25,10 +25,11 @@ export async function yamnetEmbed(tf, model, x16k) {
 export const OOD_CLASSES = { 214: 'rock', 215: 'metal', 216: 'punk', 217: 'indie', 218: 'rock', 219: 'rock', 220: 'rock', 224: 'country', 225: 'jazz', 226: 'country', 228: 'folk', 230: 'jazz', 232: 'cinematic', 233: 'cinematic', 263: 'cinematic', 265: 'cinematic', 241: 'ambient', 245: 'folk', 246: 'blues', 248: 'ambient', 254: 'soul', 260: 'indie', 266: 'songwriter' };
 // All AudioSet music-genre class indices (211-270) for the denominator.
 export const GENRE_CLASS_RANGE = [211, 270];
-export function oodEvidence(scores) {
+// inDomain (optional Set of trained shelf ids): classes that now map to a trained shelf are not out-of-domain evidence.
+export function oodEvidence(scores, inDomain = null) {
   if (!scores) return null;
   let tot = 0, ood = 0; const per = {};
-  for (let i = GENRE_CLASS_RANGE[0]; i <= GENRE_CLASS_RANGE[1]; i++) { tot += scores[i]; const p = OOD_CLASSES[i]; if (p) { ood += scores[i]; per[p] = (per[p] || 0) + scores[i]; } }
+  for (let i = GENRE_CLASS_RANGE[0]; i <= GENRE_CLASS_RANGE[1]; i++) { tot += scores[i]; const p = OOD_CLASSES[i]; if (p && !inDomain?.has(p)) { ood += scores[i]; per[p] = (per[p] || 0) + scores[i]; } }
   return { share: tot > 0 ? ood / tot : 0, per: Object.fromEntries(Object.entries(per).map(([k, v]) => [k, ood > 0 ? v / ood : 0])) };
 }
 
