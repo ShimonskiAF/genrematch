@@ -41,6 +41,7 @@ const hash = (t) => parseInt(createHash('sha1').update(labelFor(t.folder).crate 
 // Holdouts.
 // 1) The original 126 tracks (rounds 1-5), frozen in holdout_v1.json so later rounds can't reshuffle them.
 // 2) Round 6 (root r6): its own stratified ~30% per folder, lowest hash first, at least 1 when n >= 3.
+// Round 7 (root r7, 59 tracks) is training only: no new holdout, so the v1 126 and r6 25 stay comparable across rounds.
 // isHeldOut = excluded from every fit (either holdout). isHeldV1 / isHeldR6 pick one for benchmarks.
 const FROZEN = new Set(JSON.parse(fs.readFileSync(new URL('./holdout_v1.json', import.meta.url))).keys);
 export const R6_ROOT = 'r6', R6_FRAC = 0.3;
