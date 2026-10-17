@@ -1,14 +1,16 @@
 // Family-first scoring against genre centres. Pure functions.
 // Weights picked by 5-fold CV on the training split only (calibration/tune_cv.js); dynamics and texture held where played-music tests need them.
 export const WEIGHTS = { bpm: 3.6, energy: 1.5, brightness: 0.2, texture: 0.5, bass: 0.9, dynamics: 0.7, pulse: 0.9,
-  fourFloor: 2.0, tresillo: 0, offbeat: 1.0, syncop: 0, backbeat: 1.2, tonal: 1.6, vocalMid: 0.8 };
+  fourFloor: 2.0, tresillo: 0, offbeat: 1.0, syncop: 0, backbeat: 1.2, tonal: 1.6, vocalMid: 0.8,
+  // layer 1 groove reads (js/groove.js), weight picked by 5-fold CV on the training split (calibration/layers/drums_gate.js)
+  ghost: 0.4, tight: 0.4, kickDensity: 0.4, hatDensity: 0.4, backbeat2: 0.4, kickOff: 0.4, gTempo: 0.4, halfTime: 0.4 };
 export const OCTAVE_PENALTY = 0.06;
 export const CLUB_FAMILIES = new Set(['Rap', 'Techno', 'House', 'Trance', "Drum 'n' Bass", 'Breakbeat', 'Jamaican', 'World Pop', 'World Latin']);
 export const GATED_FAMILIES = new Set(['Alternative', 'Contemporary', 'Folk', 'Country']);
-const KEYS = Object.keys(WEIGHTS);
 const nb = (b) => Math.min(1, Math.max(0, (b - 60) / 130));
 
 export function distance(f, centre, bpm) {
+  const KEYS = Object.keys(WEIGHTS); // read live so calibration can add or drop features
   const useTempo = bpm > 0;
   const wsum = KEYS.reduce((a, k) => a + WEIGHTS[k], 0);
   const used = KEYS.reduce((a, k) => a + (k === 'bpm' && !useTempo ? 0 : WEIGHTS[k]), 0);

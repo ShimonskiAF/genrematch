@@ -1,0 +1,714 @@
+{
+ "layer": "drums/grooves",
+ "family": "Rhythm 'n' Blues",
+ "genres": [
+  "R&B",
+  "Soul",
+  "Neo-Soul",
+  "Alt R&B"
+ ],
+ "made": "2026-10-17",
+ "loops": {
+  "counts": {
+   "R&B": 60,
+   "Soul": 60,
+   "Neo-Soul": 60,
+   "Alt R&B": 60
+  },
+  "source": "Factory drum loops on the Studio drive (Logic Apple Loops: Modern RnB, TRAKGIRL, Soulection, Tom Misch, Session Player, Motown/Jam Packs; one own Soul loop). Ableton Loopmasters packs are copy-protected and were skipped.",
+  "heldOut": {
+   "acc": "18/52",
+   "perGenre": {
+    "R&B": "9/13",
+    "Soul": "3/15",
+    "Neo-Soul": "3/12",
+    "Alt R&B": "3/12"
+   },
+   "confusion": {
+    "R&B": {
+     "Alt R&B": 4,
+     "R&B": 9
+    },
+    "Soul": {
+     "R&B": 3,
+     "Neo-Soul": 9,
+     "Soul": 3
+    },
+    "Neo-Soul": {
+     "Alt R&B": 5,
+     "Soul": 2,
+     "Neo-Soul": 3,
+     "R&B": 2
+    },
+    "Alt R&B": {
+     "Neo-Soul": 5,
+     "R&B": 3,
+     "Alt R&B": 3,
+     "Soul": 1
+    }
+   }
+  },
+  "trainN": 188,
+  "heldN": 52,
+  "cvByK": [
+   [
+    3,
+    40.4
+   ],
+   [
+    4,
+    46.3
+   ],
+   [
+    5,
+    50
+   ],
+   [
+    6,
+    51.1
+   ],
+   [
+    7,
+    46.8
+   ],
+   [
+    8,
+    44.1
+   ],
+   [
+    9,
+    43.1
+   ],
+   [
+    10,
+    46.3
+   ],
+   [
+    11,
+    45.2
+   ],
+   [
+    12,
+    46.8
+   ],
+   [
+    13,
+    45.7
+   ]
+  ],
+  "featureRank": [
+   [
+    "snareOn",
+    21.9
+   ],
+   [
+    "kickOff",
+    14.9
+   ],
+   [
+    "kickDensity",
+    12.6
+   ],
+   [
+    "backbeat2",
+    7.7
+   ],
+   [
+    "gTempo",
+    7.1
+   ],
+   [
+    "tight",
+    6.2
+   ],
+   [
+    "ghost",
+    6.1
+   ],
+   [
+    "swing8",
+    3.7
+   ],
+   [
+    "triplet",
+    3.2
+   ],
+   [
+    "halfTime",
+    2.6
+   ],
+   [
+    "hat16",
+    2.4
+   ],
+   [
+    "hatDensity",
+    2
+   ],
+   [
+    "swing16",
+    0.5
+   ]
+  ],
+  "keys": [
+   "snareOn",
+   "kickOff",
+   "kickDensity",
+   "backbeat2",
+   "gTempo",
+   "tight"
+  ],
+  "model": {
+   "keys": [
+    "snareOn",
+    "kickOff",
+    "kickDensity",
+    "backbeat2",
+    "gTempo",
+    "tight"
+   ],
+   "glob": {
+    "snareOn": {
+     "m": 0.5074605506996483,
+     "s": 0.2292950242490607
+    },
+    "kickOff": {
+     "m": 0.6491575888439983,
+     "s": 0.14776910726390108
+    },
+    "kickDensity": {
+     "m": 1.605874507207764,
+     "s": 0.7160211721188896
+    },
+    "backbeat2": {
+     "m": 0.26990131775969634,
+     "s": 0.22739168724009787
+    },
+    "gTempo": {
+     "m": 97.69150246010639,
+     "s": 17.9927009914883
+    },
+    "tight": {
+     "m": 0.9480887352309668,
+     "s": 0.049699167329805
+    }
+   },
+   "prof": {
+    "Alt R&B": {
+     "n": 48,
+     "mean": {
+      "snareOn": -0.4216577563883259,
+      "kickOff": -0.010662150105774875,
+      "kickDensity": -0.7007454716502733,
+      "backbeat2": 0.4403148675075379,
+      "gTempo": -0.2370723402204938,
+      "tight": 0.203994036723564
+     },
+     "sd": {
+      "snareOn": 0.6955741480315455,
+      "kickOff": 0.8942805493132082,
+      "kickDensity": 0.6166590840171218,
+      "backbeat2": 1.151607582455747,
+      "gTempo": 0.9994550294022275,
+      "tight": 0.9358093178137655
+     }
+    },
+    "Neo-Soul": {
+     "n": 48,
+     "mean": {
+      "snareOn": 0.3628782499746231,
+      "kickOff": -0.3462818243468941,
+      "kickDensity": 0.21554072093840568,
+      "backbeat2": 0.18489425355824482,
+      "gTempo": -0.3460482719104738,
+      "tight": 0.3408941329186861
+     },
+     "sd": {
+      "snareOn": 0.9696635965138419,
+      "kickOff": 0.9411843927206408,
+      "kickDensity": 0.9882834357779472,
+      "backbeat2": 1.0582740507288648,
+      "gTempo": 0.7699788422527224,
+      "tight": 0.8719125866909072
+     }
+    },
+    "R&B": {
+     "n": 47,
+     "mean": {
+      "snareOn": -0.5662135145594848,
+      "kickOff": 0.7217481663255882,
+      "kickDensity": 0.21097507307821303,
+      "backbeat2": -0.3109581706113463,
+      "gTempo": 0.14264760061394674,
+      "tight": -0.13811797755052804
+     },
+     "sd": {
+      "snareOn": 0.6405100870831234,
+      "kickOff": 0.5688959978595215,
+      "kickDensity": 1.1685677151022207,
+      "backbeat2": 0.8738694079903727,
+      "gTempo": 1.1801003094236788,
+      "tight": 0.925317304667681
+     }
+    },
+    "Soul": {
+     "n": 45,
+     "mean": {
+      "snareOn": 0.654076699825627,
+      "kickOff": -0.37308562319054583,
+      "kickDensity": 0.2971999910998671,
+      "backbeat2": -0.342111195387207,
+      "gTempo": 0.47300782563179555,
+      "tight": -0.43695749328782174
+     },
+     "sd": {
+      "snareOn": 1.0873482241753107,
+      "kickOff": 1.132000624003838,
+      "kickDensity": 0.8053813843125655,
+      "backbeat2": 0.6057478787287967,
+      "gTempo": 0.8069994216620592,
+      "tight": 1.1043263712611946
+     }
+    }
+   }
+  },
+  "medians": {
+   "R&B": {
+    "gTempo": 107.179,
+    "swing8": 0.542,
+    "swing16": 0.275,
+    "tight": 0.949,
+    "hatDensity": 2.023,
+    "hat16": 0.195,
+    "triplet": 0.232,
+    "kickDensity": 1.538,
+    "kickOff": 0.773,
+    "snareOn": 0.333,
+    "backbeat2": 0.131,
+    "halfTime": 0.177,
+    "ghost": 0.591
+   },
+   "Soul": {
+    "gTempo": 99.45,
+    "swing8": 0.243,
+    "swing16": 0.539,
+    "tight": 0.943,
+    "hatDensity": 2.064,
+    "hat16": 0.051,
+    "triplet": 0.102,
+    "kickDensity": 1.812,
+    "kickOff": 0.617,
+    "snareOn": 0.697,
+    "backbeat2": 0.147,
+    "halfTime": 0.069,
+    "ghost": 0.876
+   },
+   "Neo-Soul": {
+    "gTempo": 89.295,
+    "swing8": 0.38,
+    "swing16": 0.141,
+    "tight": 0.983,
+    "hatDensity": 2.064,
+    "hat16": 0.13,
+    "triplet": 0.039,
+    "kickDensity": 1.734,
+    "kickOff": 0.618,
+    "snareOn": 0.583,
+    "backbeat2": 0.263,
+    "halfTime": 0.128,
+    "ghost": 0.5
+   },
+   "Alt R&B": {
+    "gTempo": 92.042,
+    "swing8": 0.483,
+    "swing16": 0.341,
+    "tight": 0.974,
+    "hatDensity": 2.325,
+    "hat16": 0.177,
+    "triplet": 0.159,
+    "kickDensity": 1.088,
+    "kickOff": 0.669,
+    "snareOn": 0.45,
+    "backbeat2": 0.312,
+    "halfTime": 0.165,
+    "ghost": 0.749
+   }
+  }
+ },
+ "contrast": [
+  {
+   "k": "ghost",
+   "Floops": 729.3,
+   "Ftracks": 21.7,
+   "loopDir": -1,
+   "trackDir": 1,
+   "rnbLoops": 0.746,
+   "rnbTracks": 2.88,
+   "rap": 2.514,
+   "house": 2.081,
+   "afro": 2.73
+  },
+  {
+   "k": "tight",
+   "Floops": 396.1,
+   "Ftracks": 1.3,
+   "loopDir": 1,
+   "trackDir": -1,
+   "rnbLoops": 0.965,
+   "rnbTracks": 0.797,
+   "rap": 0.82,
+   "house": 0.834,
+   "afro": 0.773
+  },
+  {
+   "k": "kickDensity",
+   "Floops": 307.1,
+   "Ftracks": 0.1,
+   "loopDir": -1,
+   "trackDir": 1,
+   "rnbLoops": 1.501,
+   "rnbTracks": 3.065,
+   "rap": 2.778,
+   "house": 3.015,
+   "afro": 3.181
+  },
+  {
+   "k": "hatDensity",
+   "Floops": 81.2,
+   "Ftracks": 1.8,
+   "loopDir": -1,
+   "trackDir": 1,
+   "rnbLoops": 2.178,
+   "rnbTracks": 2.838,
+   "rap": 2.925,
+   "house": 2.507,
+   "afro": 3.03
+  },
+  {
+   "k": "backbeat2",
+   "Floops": 31.4,
+   "Ftracks": 18.3,
+   "loopDir": 1,
+   "trackDir": 1,
+   "rnbLoops": 0.202,
+   "rnbTracks": 0.244,
+   "rap": 0.153,
+   "house": 0.114,
+   "afro": 0.143
+  },
+  {
+   "k": "kickOff",
+   "Floops": 21.5,
+   "Ftracks": 1.4,
+   "loopDir": -1,
+   "trackDir": 1,
+   "rnbLoops": 0.674,
+   "rnbTracks": 0.73,
+   "rap": 0.74,
+   "house": 0.673,
+   "afro": 0.71
+  },
+  {
+   "k": "gTempo",
+   "Floops": 14.9,
+   "Ftracks": 1.2,
+   "loopDir": -1,
+   "trackDir": -1,
+   "rnbLoops": 91.927,
+   "rnbTracks": 100.5,
+   "rap": 80.5,
+   "house": 125,
+   "afro": 111.5
+  },
+  {
+   "k": "halfTime",
+   "Floops": 4.6,
+   "Ftracks": 0.1,
+   "loopDir": -1,
+   "trackDir": 1,
+   "rnbLoops": 0.123,
+   "rnbTracks": 0.163,
+   "rap": 0.174,
+   "house": 0.092,
+   "afro": 0.358
+  },
+  {
+   "k": "hat16",
+   "Floops": 2.5,
+   "Ftracks": 1.7,
+   "loopDir": -1,
+   "trackDir": -1,
+   "rnbLoops": 0.133,
+   "rnbTracks": 0.238,
+   "rap": 0.269,
+   "house": 0.224,
+   "afro": 0.354
+  },
+  {
+   "k": "swing16",
+   "Floops": 2.4,
+   "Ftracks": 14.7,
+   "loopDir": 1,
+   "trackDir": 1,
+   "rnbLoops": 0.305,
+   "rnbTracks": 0.429,
+   "rap": 0.399,
+   "house": 0.29,
+   "afro": 0.23
+  },
+  {
+   "k": "snareOn",
+   "Floops": 2.4,
+   "Ftracks": 3.2,
+   "loopDir": -1,
+   "trackDir": -1,
+   "rnbLoops": 0.481,
+   "rnbTracks": 0.455,
+   "rap": 0.432,
+   "house": 0.592,
+   "afro": 0.476
+  },
+  {
+   "k": "triplet",
+   "Floops": 0.7,
+   "Ftracks": 1.2,
+   "loopDir": -1,
+   "trackDir": 1,
+   "rnbLoops": 0.116,
+   "rnbTracks": 0.243,
+   "rap": 0.248,
+   "house": 0.075,
+   "afro": 0.114
+  },
+  {
+   "k": "swing8",
+   "Floops": 0,
+   "Ftracks": 2.1,
+   "loopDir": -1,
+   "trackDir": 1,
+   "rnbLoops": 0.417,
+   "rnbTracks": 0.512,
+   "rap": 0.448,
+   "house": 0.271,
+   "afro": 0.601
+  }
+ ],
+ "scoring": {
+  "pass": true,
+  "chosen": "A top8 loopF w0.4",
+  "keys": [
+   "ghost",
+   "tight",
+   "kickDensity",
+   "hatDensity",
+   "backbeat2",
+   "kickOff",
+   "gTempo",
+   "halfTime"
+  ],
+  "weight": 0.4,
+  "scales": {
+   "gTempo": {
+    "lo": 67.5,
+    "hi": 128
+   },
+   "swing8": {
+    "lo": 0.13,
+    "hi": 0.784
+   },
+   "swing16": {
+    "lo": 0.005,
+    "hi": 0.678
+   },
+   "tight": {
+    "lo": 0.636,
+    "hi": 0.974
+   },
+   "hatDensity": {
+    "lo": 1.722,
+    "hi": 4.88
+   },
+   "hat16": {
+    "lo": 0.064,
+    "hi": 0.535
+   },
+   "triplet": {
+    "lo": 0.026,
+    "hi": 0.84
+   },
+   "kickDensity": {
+    "lo": 1.425,
+    "hi": 4.92
+   },
+   "kickOff": {
+    "lo": 0.53,
+    "hi": 0.823
+   },
+   "snareOn": {
+    "lo": 0.215,
+    "hi": 0.701
+   },
+   "backbeat2": {
+    "lo": 0.027,
+    "hi": 0.419
+   },
+   "halfTime": {
+    "lo": 0.034,
+    "hi": 0.501
+   },
+   "ghost": {
+    "lo": 1.381,
+    "hi": 3.894
+   }
+  },
+  "cv": [
+   [
+    "A top8 loopF w0.4",
+    45.7,
+    "22/54"
+   ],
+   [
+    "A top8 loopF w0.2",
+    45.7,
+    "17/54"
+   ],
+   [
+    "A top13 loopF w0.2",
+    45,
+    "18/54"
+   ],
+   [
+    "A top5 loopF w0.4",
+    44.5,
+    "20/54"
+   ],
+   [
+    "A top13 loopF w0.4",
+    44.2,
+    "19/54"
+   ],
+   [
+    "A top3 loopF w0.2",
+    44.2,
+    "13/54"
+   ],
+   [
+    "A top5 loopF w0.2",
+    44,
+    "13/54"
+   ],
+   [
+    "B prior agree a4",
+    44,
+    "9/54"
+   ],
+   [
+    "B prior top8 a2",
+    44,
+    "3/54"
+   ],
+   [
+    "B prior agree a1",
+    43.7,
+    "8/54"
+   ]
+  ],
+  "held126": {
+   "base": {
+    "perCrate": {
+     "Speed House": "2/5",
+     "Bass House": "6/7",
+     "Tech House": "4/7",
+     "Peak Time Techno": "5/14",
+     "Hip Hop": "5/7",
+     "R&B Soul": "5/18",
+     "Afrobeats": "3/10",
+     "Baile Funk": "2/6",
+     "Jersey Club": "3/6",
+     "Phonk": "3/7",
+     "Trap Hip Hop": "2/5",
+     "G-Walk": "2/3",
+     "DnB": "5/5",
+     "Moombahton": "1/3",
+     "Reggaeton": "8/17",
+     "Reggae": "2/2",
+     "Amapiano": "1/2",
+     "House Dance": "1/2"
+    },
+    "family": "60/126",
+    "sub": "48/126",
+    "rnb": "5/18",
+    "rnbAs": [
+     [
+      "World Latin",
+      2
+     ],
+     [
+      "Rap",
+      6
+     ],
+     [
+      "House",
+      4
+     ],
+     [
+      "Jamaican",
+      1
+     ]
+    ],
+    "n": 60,
+    "rnbN": 5
+   },
+   "best": {
+    "perCrate": {
+     "Speed House": "2/5",
+     "Bass House": "4/7",
+     "Tech House": "5/7",
+     "Peak Time Techno": "6/14",
+     "Hip Hop": "4/7",
+     "R&B Soul": "11/18",
+     "Afrobeats": "5/10",
+     "Baile Funk": "4/6",
+     "Jersey Club": "3/6",
+     "Phonk": "3/7",
+     "Trap Hip Hop": "2/5",
+     "G-Walk": "0/3",
+     "DnB": "5/5",
+     "Moombahton": "1/3",
+     "Reggaeton": "9/17",
+     "Reggae": "2/2",
+     "Amapiano": "0/2",
+     "House Dance": "1/2"
+    },
+    "family": "67/126",
+    "sub": "59/126",
+    "rnb": "11/18",
+    "rnbAs": [
+     [
+      "Rap",
+      3
+     ],
+     [
+      "World Pop",
+      1
+     ],
+     [
+      "House",
+      2
+     ],
+     [
+      "Drum 'n' Bass",
+      1
+     ]
+    ],
+    "n": 67,
+    "rnbN": 11
+   }
+  },
+  "paired": {
+   "newOnly": 13,
+   "baseOnly": 6,
+   "mcnemar": 1.89
+  }
+ }
+}

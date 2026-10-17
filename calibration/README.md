@@ -30,3 +30,18 @@ Two new harmonic features (`tonal`: 12-bin chroma peakiness 100–2000 Hz; `voca
 - Round 5: 60/126 (48%) family, 48/126 subgenre. On those 110: 51/110.
 - Paired: 30 tracks only r5 gets right vs 16 only live gets right (McNemar χ² 3.67).
 Round 2’s published 59% was on its own 34-track holdout, not comparable.
+
+## Layer 1: drums / grooves (R&B family)
+Layered plan: drums → harmony → sound design → vocals → full tracks. This is the drum layer for R&B, Soul, Neo-Soul and Alt R&B.
+
+- Loops: 60 drum loops per genre from the factory libraries on the Studio drive (`layers/loops_used.json`). R&B = Logic Modern RnB + TRAKGIRL; Soul = Motown/Jam Pack + Session Player Modern Motown + 1 own loop; Neo-Soul = Tom Misch + Session Player Neo Soul; Alt R&B = Soulection. The Ableton Loopmasters packs (Urban Soul, Reel People, Hip Hop RnB Breaks) are copy-protected Ableton content and were skipped. Tempo from Apple Loop metadata (beat count ÷ length). Short loops are tiled to ≥20 s.
+- `js/groove.js`: kick / snare / hat onset events at ~3 ms, folded onto beat and bar → swing (8th, 16th), timing tightness, hat density, 16th-hat share, triplet feel, kick density, kick off-beat share, snare on-grid share, 2&4 backbeat, half-time, ghost notes, tempo.
+- `layers/drums_loops.js`: 4-way loop classifier (diagonal Gaussian, top features by grouped 5-fold CV). Holdout = ~20% per genre by whole variant groups ("Beat 01/02" stay together).
+- `layers/drums_gate.js`: picks how to use groove in full-track scoring by 5-fold CV on the training split only, then reads the 126-track holdout once. A loop-trained "R&B prior" failed (loops are clean drums, mixes aren't: it learned loop-vs-mix). Groove centres fitted on training tracks, with the 8 groove reads the loops ranked highest, passed.
+
+    node tools/groove_extract.js <list.json>                    # [{id, path, bpm, tile}] -> groove reads
+    node calibration/layers/drums_loops.js calibration/layers/loops_used.json calibration/layers/groove_loops.json > /tmp/dl.json
+    node calibration/layers/drums_gate.js calibration/layers/groove_tracks.json calibration/layers/groove_loops.json calibration/layers/loops_used.json --write --loops /tmp/dl.json
+
+Result: held-out loops 18/52 (35%, chance 25%; CV on training loops ~51%). 126-track holdout family 60 → 67 (48% → 53%), subgenre 48 → 58, R&B Soul 5/18 → 11/18. Paired: 13 newly right, 6 newly wrong (McNemar 1.89, not yet significant).
+Note: `calibrate.js --write` alone drops the groove centres; re-run `drums_gate.js --write` after it.

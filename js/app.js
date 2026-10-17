@@ -1,4 +1,5 @@
 import { analyse, toMono } from './analyser.js';
+import { groove, scaleGroove } from './groove.js';
 import { classify, whyLines } from './scoring.js';
 import { marketFor } from './market.js';
 import { briefArticle, briefDocument, printDocument } from './brief.js';
@@ -39,6 +40,7 @@ async function readFile(file) {
   const { samples, sampleRate } = await decodeFile(file);
   await new Promise((r) => setTimeout(r, 20));
   const features = analyse(samples, sampleRate);
+  if (!features.silent && features.bpm > 0) { features.groove = groove(samples, sampleRate, features.bpm); Object.assign(features, scaleGroove(features.groove)); }
   if (features.raw) console.info('[GenreMatch] raw measures', features.raw);
   const result = classify(features, PROFILES);
   const why = whyLines(features, result);

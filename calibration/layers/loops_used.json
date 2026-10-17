@@ -1,0 +1,2402 @@
+[
+{
+"id": "R&B/Hit Me Up Break.wav",
+"genre": "R&B",
+"file": "Hit Me Up Break.wav",
+"src": "Hit Me Up Break.caf",
+"metagenre": null,
+"beats": 64,
+"bpm": 149.66,
+"dur": 25.66
+},
+{
+"id": "R&B/Shades of Night Beat 04.wav",
+"genre": "R&B",
+"file": "Shades of Night Beat 04.wav",
+"src": "Shades of Night Beat 04.caf",
+"metagenre": "Hip Hop",
+"beats": 32,
+"bpm": 119.49,
+"dur": 16.07
+},
+{
+"id": "R&B/Oh Yeah Beat.wav",
+"genre": "R&B",
+"file": "Oh Yeah Beat.wav",
+"src": "Oh Yeah Beat.caf",
+"metagenre": "Hip Hop",
+"beats": 32,
+"bpm": 171.2,
+"dur": 11.22
+},
+{
+"id": "R&B/Shades of Night Beat 02.wav",
+"genre": "R&B",
+"file": "Shades of Night Beat 02.wav",
+"src": "Shades of Night Beat 02.caf",
+"metagenre": "Hip Hop",
+"beats": 32,
+"bpm": 119.49,
+"dur": 16.07
+},
+{
+"id": "R&B/Stone Cold Rolls Beat.wav",
+"genre": "R&B",
+"file": "Stone Cold Rolls Beat.wav",
+"src": "Stone Cold Rolls Beat.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 32,
+"bpm": 105.6,
+"dur": 18.18
+},
+{
+"id": "R&B/Chiptune Tip Beat.wav",
+"genre": "R&B",
+"file": "Chiptune Tip Beat.wav",
+"src": "Chiptune Tip Beat.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 32,
+"bpm": 138.74,
+"dur": 13.84
+},
+{
+"id": "R&B/Shades of Night Beat 01.wav",
+"genre": "R&B",
+"file": "Shades of Night Beat 01.wav",
+"src": "Shades of Night Beat 01.caf",
+"metagenre": "Hip Hop",
+"beats": 32,
+"bpm": 119.49,
+"dur": 16.07
+},
+{
+"id": "R&B/Shades of Night Beat 03.wav",
+"genre": "R&B",
+"file": "Shades of Night Beat 03.wav",
+"src": "Shades of Night Beat 03.caf",
+"metagenre": "Hip Hop",
+"beats": 32,
+"bpm": 119.49,
+"dur": 16.07
+},
+{
+"id": "R&B/Light the Fuse Beat 02.wav",
+"genre": "R&B",
+"file": "Light the Fuse Beat 02.wav",
+"src": "Light the Fuse Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 138.74,
+"dur": 6.92
+},
+{
+"id": "R&B/Double Time Beat 02.wav",
+"genre": "R&B",
+"file": "Double Time Beat 02.wav",
+"src": "Double Time Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 128.8,
+"dur": 7.45
+},
+{
+"id": "R&B/Club Trot Beat 01.wav",
+"genre": "R&B",
+"file": "Club Trot Beat 01.wav",
+"src": "Club Trot Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 126.82,
+"dur": 7.57
+},
+{
+"id": "R&B/Closing Credits Beat 01.wav",
+"genre": "R&B",
+"file": "Closing Credits Beat 01.wav",
+"src": "Closing Credits Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 81.55,
+"dur": 11.77
+},
+{
+"id": "R&B/Native Tongue Beat 02.wav",
+"genre": "R&B",
+"file": "Native Tongue Beat 02.wav",
+"src": "Native Tongue Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 116.13,
+"dur": 8.27
+},
+{
+"id": "R&B/DJ Dreams Beat 02.wav",
+"genre": "R&B",
+"file": "DJ Dreams Beat 02.wav",
+"src": "DJ Dreams Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 124.16,
+"dur": 7.73
+},
+{
+"id": "R&B/Busting Brick Beat 01.wav",
+"genre": "R&B",
+"file": "Busting Brick Beat 01.wav",
+"src": "Busting Brick Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 119.15,
+"dur": 8.06
+},
+{
+"id": "R&B/Glassworks Beat.wav",
+"genre": "R&B",
+"file": "Glassworks Beat.wav",
+"src": "Glassworks Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 69.72,
+"dur": 13.77
+},
+{
+"id": "R&B/Missing You Beat 02.wav",
+"genre": "R&B",
+"file": "Missing You Beat 02.wav",
+"src": "Missing You Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 101.33,
+"dur": 9.47
+},
+{
+"id": "R&B/Hot Stuff Beat 01.wav",
+"genre": "R&B",
+"file": "Hot Stuff Beat 01.wav",
+"src": "Hot Stuff Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 119.15,
+"dur": 8.06
+},
+{
+"id": "R&B/Softer Side Beat 01.wav",
+"genre": "R&B",
+"file": "Softer Side Beat 01.wav",
+"src": "Softer Side Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 61.8,
+"dur": 15.53
+},
+{
+"id": "R&B/Going Up Beat.wav",
+"genre": "R&B",
+"file": "Going Up Beat.wav",
+"src": "Going Up Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 124.91,
+"dur": 7.69
+},
+{
+"id": "R&B/Hand in Hand Beat 02.wav",
+"genre": "R&B",
+"file": "Hand in Hand Beat 02.wav",
+"src": "Hand in Hand Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 77.57,
+"dur": 12.38
+},
+{
+"id": "R&B/Hot Stuff Beat 02.wav",
+"genre": "R&B",
+"file": "Hot Stuff Beat 02.wav",
+"src": "Hot Stuff Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 119.15,
+"dur": 8.06
+},
+{
+"id": "R&B/Space Cadet Beat 01.wav",
+"genre": "R&B",
+"file": "Space Cadet Beat 01.wav",
+"src": "Space Cadet Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 114.21,
+"dur": 8.41
+},
+{
+"id": "R&B/Jump Up Beat 02.wav",
+"genre": "R&B",
+"file": "Jump Up Beat 02.wav",
+"src": "Jump Up Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 126.82,
+"dur": 7.57
+},
+{
+"id": "R&B/Stutter Step Beat 02.wav",
+"genre": "R&B",
+"file": "Stutter Step Beat 02.wav",
+"src": "Stutter Step Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 67.67,
+"dur": 14.19
+},
+{
+"id": "R&B/Busting Brick Beat 02.wav",
+"genre": "R&B",
+"file": "Busting Brick Beat 02.wav",
+"src": "Busting Brick Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 119.15,
+"dur": 8.06
+},
+{
+"id": "R&B/Last Dance Beat 02.wav",
+"genre": "R&B",
+"file": "Last Dance Beat 02.wav",
+"src": "Last Dance Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 93.54,
+"dur": 10.26
+},
+{
+"id": "R&B/Cascading Beat 01.wav",
+"genre": "R&B",
+"file": "Cascading Beat 01.wav",
+"src": "Cascading Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 71.65,
+"dur": 13.4
+},
+{
+"id": "R&B/Go Time Beat 01.wav",
+"genre": "R&B",
+"file": "Go Time Beat 01.wav",
+"src": "Go Time Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 119.15,
+"dur": 8.06
+},
+{
+"id": "R&B/Bumper to Bumper Beat 02.wav",
+"genre": "R&B",
+"file": "Bumper to Bumper Beat 02.wav",
+"src": "Bumper to Bumper Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 99.38,
+"dur": 9.66
+},
+{
+"id": "R&B/Light the Fuse Beat 01.wav",
+"genre": "R&B",
+"file": "Light the Fuse Beat 01.wav",
+"src": "Light the Fuse Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 138.74,
+"dur": 6.92
+},
+{
+"id": "R&B/Bended Knee Beat 01.wav",
+"genre": "R&B",
+"file": "Bended Knee Beat 01.wav",
+"src": "Bended Knee Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 64.7,
+"dur": 14.84
+},
+{
+"id": "R&B/Native Tongue Beat 01.wav",
+"genre": "R&B",
+"file": "Native Tongue Beat 01.wav",
+"src": "Native Tongue Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 116.13,
+"dur": 8.27
+},
+{
+"id": "R&B/Get Low Beat 03.wav",
+"genre": "R&B",
+"file": "Get Low Beat 03.wav",
+"src": "Get Low Beat 03.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 126.82,
+"dur": 7.57
+},
+{
+"id": "R&B/Go Time Beat 02.wav",
+"genre": "R&B",
+"file": "Go Time Beat 02.wav",
+"src": "Go Time Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 119.15,
+"dur": 8.06
+},
+{
+"id": "R&B/Paparazzi Beat 01.wav",
+"genre": "R&B",
+"file": "Paparazzi Beat 01.wav",
+"src": "Paparazzi Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 114.21,
+"dur": 8.41
+},
+{
+"id": "R&B/Laidback Flow Beat.wav",
+"genre": "R&B",
+"file": "Laidback Flow Beat.wav",
+"src": "Laidback Flow Beat.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 16,
+"bpm": 74.63,
+"dur": 12.86
+},
+{
+"id": "R&B/Rookie Mistake Beat 01.wav",
+"genre": "R&B",
+"file": "Rookie Mistake Beat 01.wav",
+"src": "Rookie Mistake Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 80.59,
+"dur": 11.91
+},
+{
+"id": "R&B/Closing Credits Beat 02.wav",
+"genre": "R&B",
+"file": "Closing Credits Beat 02.wav",
+"src": "Closing Credits Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 81.55,
+"dur": 11.77
+},
+{
+"id": "R&B/Subtle Swing Beat 01.wav",
+"genre": "R&B",
+"file": "Subtle Swing Beat 01.wav",
+"src": "Subtle Swing Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 88.53,
+"dur": 10.84
+},
+{
+"id": "R&B/Fine Line Beat.wav",
+"genre": "R&B",
+"file": "Fine Line Beat.wav",
+"src": "Fine Line Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 84.55,
+"dur": 11.35
+},
+{
+"id": "R&B/Midnight Beat 01.wav",
+"genre": "R&B",
+"file": "Midnight Beat 01.wav",
+"src": "Midnight Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 138.74,
+"dur": 6.92
+},
+{
+"id": "R&B/Space Cadet Beat 04.wav",
+"genre": "R&B",
+"file": "Space Cadet Beat 04.wav",
+"src": "Space Cadet Beat 04.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 114.21,
+"dur": 8.41
+},
+{
+"id": "R&B/Set Free Beat.wav",
+"genre": "R&B",
+"file": "Set Free Beat.wav",
+"src": "Set Free Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 87.59,
+"dur": 10.96
+},
+{
+"id": "R&B/Subtle Swing Beat 02.wav",
+"genre": "R&B",
+"file": "Subtle Swing Beat 02.wav",
+"src": "Subtle Swing Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 88.53,
+"dur": 10.84
+},
+{
+"id": "R&B/Breathless Tabla Beat.wav",
+"genre": "R&B",
+"file": "Breathless Tabla Beat.wav",
+"src": "Breathless Tabla Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 108.23,
+"dur": 8.87
+},
+{
+"id": "R&B/Last Dance Beat 01.wav",
+"genre": "R&B",
+"file": "Last Dance Beat 01.wav",
+"src": "Last Dance Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 93.54,
+"dur": 10.26
+},
+{
+"id": "R&B/Club Trot Beat 02.wav",
+"genre": "R&B",
+"file": "Club Trot Beat 02.wav",
+"src": "Club Trot Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 126.82,
+"dur": 7.57
+},
+{
+"id": "R&B/Feeling Emotional Beat 01.wav",
+"genre": "R&B",
+"file": "Feeling Emotional Beat 01.wav",
+"src": "Feeling Emotional Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 59.75,
+"dur": 16.07
+},
+{
+"id": "R&B/Midnight Beat 02.wav",
+"genre": "R&B",
+"file": "Midnight Beat 02.wav",
+"src": "Midnight Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 138.74,
+"dur": 6.92
+},
+{
+"id": "R&B/Paparazzi Beat 02.wav",
+"genre": "R&B",
+"file": "Paparazzi Beat 02.wav",
+"src": "Paparazzi Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 114.21,
+"dur": 8.41
+},
+{
+"id": "R&B/Get Low Beat 04.wav",
+"genre": "R&B",
+"file": "Get Low Beat 04.wav",
+"src": "Get Low Beat 04.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 126.82,
+"dur": 7.57
+},
+{
+"id": "R&B/Oasis Beat 01.wav",
+"genre": "R&B",
+"file": "Oasis Beat 01.wav",
+"src": "Oasis Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 128.8,
+"dur": 7.45
+},
+{
+"id": "R&B/Kaleidoscope Beat.wav",
+"genre": "R&B",
+"file": "Kaleidoscope Beat.wav",
+"src": "Kaleidoscope Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 62.74,
+"dur": 15.3
+},
+{
+"id": "R&B/Fire it Up Beat 02.wav",
+"genre": "R&B",
+"file": "Fire it Up Beat 02.wav",
+"src": "Fire it Up Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 126.82,
+"dur": 7.57
+},
+{
+"id": "R&B/Neon Fireworks Beat 01.wav",
+"genre": "R&B",
+"file": "Neon Fireworks Beat 01.wav",
+"src": "Neon Fireworks Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 128.0,
+"dur": 7.5
+},
+{
+"id": "R&B/Long Gone Beat 02.wav",
+"genre": "R&B",
+"file": "Long Gone Beat 02.wav",
+"src": "Long Gone Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 64.7,
+"dur": 14.84
+},
+{
+"id": "R&B/Oasis Beat 02.wav",
+"genre": "R&B",
+"file": "Oasis Beat 02.wav",
+"src": "Oasis Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 128.8,
+"dur": 7.45
+},
+{
+"id": "R&B/Rookie Mistake Beat 02.wav",
+"genre": "R&B",
+"file": "Rookie Mistake Beat 02.wav",
+"src": "Rookie Mistake Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 80.59,
+"dur": 11.91
+},
+{
+"id": "R&B/Stutter Step Beat 01.wav",
+"genre": "R&B",
+"file": "Stutter Step Beat 01.wav",
+"src": "Stutter Step Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 67.67,
+"dur": 14.19
+},
+{
+"id": "Soul/Modern Motown Drums 02.wav",
+"genre": "Soul",
+"file": "Modern Motown Drums 02.wav",
+"src": "Modern Motown Drums 02.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 109.67,
+"dur": 17.51
+},
+{
+"id": "Soul/Modern Motown Drums 04.wav",
+"genre": "Soul",
+"file": "Modern Motown Drums 04.wav",
+"src": "Modern Motown Drums 04.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 124.53,
+"dur": 15.42
+},
+{
+"id": "Soul/Modern Motown Drums 03.wav",
+"genre": "Soul",
+"file": "Modern Motown Drums 03.wav",
+"src": "Modern Motown Drums 03.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 99.74,
+"dur": 19.25
+},
+{
+"id": "Soul/Modern Motown Drums 01.wav",
+"genre": "Soul",
+"file": "Modern Motown Drums 01.wav",
+"src": "Modern Motown Drums 01.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 109.67,
+"dur": 17.51
+},
+{
+"id": "Soul/Modern Motown Drums 05.wav",
+"genre": "Soul",
+"file": "Modern Motown Drums 05.wav",
+"src": "Modern Motown Drums 05.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 183.75,
+"dur": 10.45
+},
+{
+"id": "Soul/Pure Soul Beat.wav",
+"genre": "Soul",
+"file": "Pure Soul Beat.wav",
+"src": "Pure Soul Beat.caf",
+"metagenre": "Indie",
+"beats": 16,
+"bpm": 118.0,
+"dur": 8.14
+},
+{
+"id": "Soul/Soul Mate Beat.wav",
+"genre": "Soul",
+"file": "Soul Mate Beat.wav",
+"src": "Soul Mate Beat.caf",
+"metagenre": "Hip Hop",
+"beats": 16,
+"bpm": 78.6,
+"dur": 12.21
+},
+{
+"id": "Soul/OLIVER_retro_drum_loop_modern_soul_kick_snare_88.wav",
+"genre": "Soul",
+"file": "OLIVER_retro_drum_loop_modern_soul_kick_snare_88.wav",
+"src": "OLIVER_retro_drum_loop_modern_soul_kick_snare_88.wav",
+"metagenre": null,
+"beats": 16,
+"bpm": 88.0,
+"dur": 10.91
+},
+{
+"id": "Soul/Motown Drummer 08.wav",
+"genre": "Soul",
+"file": "Motown Drummer 08.wav",
+"src": "Motown Drummer 08.caf",
+"metagenre": "Urban",
+"beats": 16,
+"bpm": 128.8,
+"dur": 7.45
+},
+{
+"id": "Soul/Motown Ballad Drumset 03.wav",
+"genre": "Soul",
+"file": "Motown Ballad Drumset 03.wav",
+"src": "Motown Ballad Drumset 03.caf",
+"metagenre": "Urban",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Soul/Motown Mixed Drumset 01.wav",
+"genre": "Soul",
+"file": "Motown Mixed Drumset 01.wav",
+"src": "Motown Mixed Drumset 01.caf",
+"metagenre": "Urban",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Soul/Motown Beat 02.wav",
+"genre": "Soul",
+"file": "Motown Beat 02.wav",
+"src": "Motown Beat 02.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Soul/Motown Drummer 15.wav",
+"genre": "Soul",
+"file": "Motown Drummer 15.wav",
+"src": "Motown Drummer 15.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 128.4,
+"dur": 3.74
+},
+{
+"id": "Soul/Motown Drummer 23.wav",
+"genre": "Soul",
+"file": "Motown Drummer 23.wav",
+"src": "Motown Drummer 23.caf",
+"metagenre": "Urban",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Soul/Motown Drummer 02.wav",
+"genre": "Soul",
+"file": "Motown Drummer 02.wav",
+"src": "Motown Drummer 02.caf",
+"metagenre": "World/Ethnic",
+"beats": 8,
+"bpm": 108.8,
+"dur": 4.41
+},
+{
+"id": "Soul/Motown Beat 05.wav",
+"genre": "Soul",
+"file": "Motown Beat 05.wav",
+"src": "Motown Beat 05.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Soul/Motown Beat 07.wav",
+"genre": "Soul",
+"file": "Motown Beat 07.wav",
+"src": "Motown Beat 07.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Soul/Motown Drummer 18.wav",
+"genre": "Soul",
+"file": "Motown Drummer 18.wav",
+"src": "Motown Drummer 18.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 118.13,
+"dur": 4.06
+},
+{
+"id": "Soul/Motown Ballad Drumset 01.wav",
+"genre": "Soul",
+"file": "Motown Ballad Drumset 01.wav",
+"src": "Motown Ballad Drumset 01.caf",
+"metagenre": "Urban",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Soul/Motown Upbeat Drumset 08.wav",
+"genre": "Soul",
+"file": "Motown Upbeat Drumset 08.wav",
+"src": "Motown Upbeat Drumset 08.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 108.8,
+"dur": 4.41
+},
+{
+"id": "Soul/Motown Drummer 16.wav",
+"genre": "Soul",
+"file": "Motown Drummer 16.wav",
+"src": "Motown Drummer 16.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 108.8,
+"dur": 4.41
+},
+{
+"id": "Soul/Motown Upbeat Drumset 03.wav",
+"genre": "Soul",
+"file": "Motown Upbeat Drumset 03.wav",
+"src": "Motown Upbeat Drumset 03.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 108.8,
+"dur": 4.41
+},
+{
+"id": "Soul/Motown Mixed Drumset 02.wav",
+"genre": "Soul",
+"file": "Motown Mixed Drumset 02.wav",
+"src": "Motown Mixed Drumset 02.caf",
+"metagenre": "Urban",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Soul/Motown Ballad Drumset 16.wav",
+"genre": "Soul",
+"file": "Motown Ballad Drumset 16.wav",
+"src": "Motown Ballad Drumset 16.caf",
+"metagenre": "Urban",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Soul/Motown Upbeat Drumset 05.wav",
+"genre": "Soul",
+"file": "Motown Upbeat Drumset 05.wav",
+"src": "Motown Upbeat Drumset 05.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 108.8,
+"dur": 4.41
+},
+{
+"id": "Soul/Motown Upbeat Drumset 01.wav",
+"genre": "Soul",
+"file": "Motown Upbeat Drumset 01.wav",
+"src": "Motown Upbeat Drumset 01.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 108.8,
+"dur": 4.41
+},
+{
+"id": "Soul/Motown Drummer 13.wav",
+"genre": "Soul",
+"file": "Motown Drummer 13.wav",
+"src": "Motown Drummer 13.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 108.8,
+"dur": 4.41
+},
+{
+"id": "Soul/Motown Drummer 07.wav",
+"genre": "Soul",
+"file": "Motown Drummer 07.wav",
+"src": "Motown Drummer 07.caf",
+"metagenre": "Urban",
+"beats": 8,
+"bpm": 127.6,
+"dur": 3.76
+},
+{
+"id": "Soul/Motown Beat 04.wav",
+"genre": "Soul",
+"file": "Motown Beat 04.wav",
+"src": "Motown Beat 04.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Soul/Motown Drummer 11.wav",
+"genre": "Soul",
+"file": "Motown Drummer 11.wav",
+"src": "Motown Drummer 11.caf",
+"metagenre": "Urban",
+"beats": 8,
+"bpm": 118.13,
+"dur": 4.06
+},
+{
+"id": "Soul/Motown Drummer 03.wav",
+"genre": "Soul",
+"file": "Motown Drummer 03.wav",
+"src": "Motown Drummer 03.caf",
+"metagenre": null,
+"beats": 8,
+"bpm": 83.69,
+"dur": 5.74
+},
+{
+"id": "Soul/Motown Drummer 05.wav",
+"genre": "Soul",
+"file": "Motown Drummer 05.wav",
+"src": "Motown Drummer 05.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 127.6,
+"dur": 3.76
+},
+{
+"id": "Soul/Motown Drummer 17.wav",
+"genre": "Soul",
+"file": "Motown Drummer 17.wav",
+"src": "Motown Drummer 17.caf",
+"metagenre": "World/Ethnic",
+"beats": 8,
+"bpm": 108.8,
+"dur": 4.41
+},
+{
+"id": "Soul/Motown Drummer 01.wav",
+"genre": "Soul",
+"file": "Motown Drummer 01.wav",
+"src": "Motown Drummer 01.caf",
+"metagenre": "World/Ethnic",
+"beats": 8,
+"bpm": 118.13,
+"dur": 4.06
+},
+{
+"id": "Soul/Motown Drummer 19.wav",
+"genre": "Soul",
+"file": "Motown Drummer 19.wav",
+"src": "Motown Drummer 19.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 118.13,
+"dur": 4.06
+},
+{
+"id": "Soul/Motown Drummer 04.wav",
+"genre": "Soul",
+"file": "Motown Drummer 04.wav",
+"src": "Motown Drummer 04.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 128.4,
+"dur": 3.74
+},
+{
+"id": "Soul/Motown Ballad Drumset 10.wav",
+"genre": "Soul",
+"file": "Motown Ballad Drumset 10.wav",
+"src": "Motown Ballad Drumset 10.caf",
+"metagenre": "Urban",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Soul/Motown Drummer 12.wav",
+"genre": "Soul",
+"file": "Motown Drummer 12.wav",
+"src": "Motown Drummer 12.caf",
+"metagenre": "Urban",
+"beats": 8,
+"bpm": 118.13,
+"dur": 4.06
+},
+{
+"id": "Soul/Motown Upbeat Drumset 04.wav",
+"genre": "Soul",
+"file": "Motown Upbeat Drumset 04.wav",
+"src": "Motown Upbeat Drumset 04.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 108.8,
+"dur": 4.41
+},
+{
+"id": "Soul/Motown Beat 01.wav",
+"genre": "Soul",
+"file": "Motown Beat 01.wav",
+"src": "Motown Beat 01.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Soul/Breaks Soul Patch Beat.wav",
+"genre": "Soul",
+"file": "Breaks Soul Patch Beat.wav",
+"src": "Breaks Soul Patch Beat.caf",
+"metagenre": "Electronic/Dance",
+"beats": 8,
+"bpm": 98.91,
+"dur": 4.85
+},
+{
+"id": "Soul/Motown Drummer 22.wav",
+"genre": "Soul",
+"file": "Motown Drummer 22.wav",
+"src": "Motown Drummer 22.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 98.91,
+"dur": 4.85
+},
+{
+"id": "Soul/Motown Mixed Drumset 04.wav",
+"genre": "Soul",
+"file": "Motown Mixed Drumset 04.wav",
+"src": "Motown Mixed Drumset 04.caf",
+"metagenre": "Urban",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Soul/Motown Upbeat Drumset 02.wav",
+"genre": "Soul",
+"file": "Motown Upbeat Drumset 02.wav",
+"src": "Motown Upbeat Drumset 02.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 108.8,
+"dur": 4.41
+},
+{
+"id": "Soul/Motown Beat 03.wav",
+"genre": "Soul",
+"file": "Motown Beat 03.wav",
+"src": "Motown Beat 03.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Soul/Motown Drummer 06.wav",
+"genre": "Soul",
+"file": "Motown Drummer 06.wav",
+"src": "Motown Drummer 06.caf",
+"metagenre": "Urban",
+"beats": 8,
+"bpm": 127.6,
+"dur": 3.76
+},
+{
+"id": "Soul/Motown Drummer 09.wav",
+"genre": "Soul",
+"file": "Motown Drummer 09.wav",
+"src": "Motown Drummer 09.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 84.03,
+"dur": 5.71
+},
+{
+"id": "Soul/Motown Drummer 10.wav",
+"genre": "Soul",
+"file": "Motown Drummer 10.wav",
+"src": "Motown Drummer 10.caf",
+"metagenre": "World/Ethnic",
+"beats": 8,
+"bpm": 79.81,
+"dur": 6.01
+},
+{
+"id": "Soul/Motown Ballad Drumset 02.wav",
+"genre": "Soul",
+"file": "Motown Ballad Drumset 02.wav",
+"src": "Motown Ballad Drumset 02.caf",
+"metagenre": "Urban",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Soul/Motown Mixed Drumset 03.wav",
+"genre": "Soul",
+"file": "Motown Mixed Drumset 03.wav",
+"src": "Motown Mixed Drumset 03.caf",
+"metagenre": "Urban",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Soul/Motown Beat 06.wav",
+"genre": "Soul",
+"file": "Motown Beat 06.wav",
+"src": "Motown Beat 06.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Soul/Motown Upbeat Drumset 07.wav",
+"genre": "Soul",
+"file": "Motown Upbeat Drumset 07.wav",
+"src": "Motown Upbeat Drumset 07.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 108.8,
+"dur": 4.41
+},
+{
+"id": "Soul/Motown Drummer 14.wav",
+"genre": "Soul",
+"file": "Motown Drummer 14.wav",
+"src": "Motown Drummer 14.caf",
+"metagenre": "Rock/Blues",
+"beats": 8,
+"bpm": 118.13,
+"dur": 4.06
+},
+{
+"id": "Soul/Motown Ballad Drumset 07.wav",
+"genre": "Soul",
+"file": "Motown Ballad Drumset 07.wav",
+"src": "Motown Ballad Drumset 07.caf",
+"metagenre": "Urban",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Soul/Motown Ballad Drumset 05.wav",
+"genre": "Soul",
+"file": "Motown Ballad Drumset 05.wav",
+"src": "Motown Ballad Drumset 05.caf",
+"metagenre": "Urban",
+"beats": 4,
+"bpm": 88.34,
+"dur": 2.72
+},
+{
+"id": "Soul/Motown Ballad Drumset 04.wav",
+"genre": "Soul",
+"file": "Motown Ballad Drumset 04.wav",
+"src": "Motown Ballad Drumset 04.caf",
+"metagenre": "Urban",
+"beats": 4,
+"bpm": 88.34,
+"dur": 2.72
+},
+{
+"id": "Soul/Motown Ballad Drumset 11.wav",
+"genre": "Soul",
+"file": "Motown Ballad Drumset 11.wav",
+"src": "Motown Ballad Drumset 11.caf",
+"metagenre": "Urban",
+"beats": 4,
+"bpm": 88.34,
+"dur": 2.72
+},
+{
+"id": "Soul/Motown Drummer 21.wav",
+"genre": "Soul",
+"file": "Motown Drummer 21.wav",
+"src": "Motown Drummer 21.caf",
+"metagenre": null,
+"beats": 4,
+"bpm": 107.67,
+"dur": 2.23
+},
+{
+"id": "Soul/Motown Upbeat Drumset 12.wav",
+"genre": "Soul",
+"file": "Motown Upbeat Drumset 12.wav",
+"src": "Motown Upbeat Drumset 12.caf",
+"metagenre": "Rock/Blues",
+"beats": 4,
+"bpm": 106.56,
+"dur": 2.25
+},
+{
+"id": "Soul/Motown Pocket Drumset 01.wav",
+"genre": "Soul",
+"file": "Motown Pocket Drumset 01.wav",
+"src": "Motown Pocket Drumset 01.caf",
+"metagenre": "Urban",
+"beats": 4,
+"bpm": 88.34,
+"dur": 2.72
+},
+{
+"id": "Neo-Soul/Neo Soul Drums 09.wav",
+"genre": "Neo-Soul",
+"file": "Neo Soul Drums 09.wav",
+"src": "Neo Soul Drums 09.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 79.81,
+"dur": 24.06
+},
+{
+"id": "Neo-Soul/Neo Soul Drums 06.wav",
+"genre": "Neo-Soul",
+"file": "Neo Soul Drums 06.wav",
+"src": "Neo Soul Drums 06.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 89.78,
+"dur": 21.39
+},
+{
+"id": "Neo-Soul/Neo Soul Drums 02.wav",
+"genre": "Neo-Soul",
+"file": "Neo Soul Drums 02.wav",
+"src": "Neo Soul Drums 02.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 89.78,
+"dur": 21.39
+},
+{
+"id": "Neo-Soul/Neo Soul Drums 05.wav",
+"genre": "Neo-Soul",
+"file": "Neo Soul Drums 05.wav",
+"src": "Neo Soul Drums 05.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 94.72,
+"dur": 20.27
+},
+{
+"id": "Neo-Soul/Neo Soul Drums 07.wav",
+"genre": "Neo-Soul",
+"file": "Neo Soul Drums 07.wav",
+"src": "Neo Soul Drums 07.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 89.78,
+"dur": 21.39
+},
+{
+"id": "Neo-Soul/Neo Soul Drums 04.wav",
+"genre": "Neo-Soul",
+"file": "Neo Soul Drums 04.wav",
+"src": "Neo Soul Drums 04.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 94.72,
+"dur": 20.27
+},
+{
+"id": "Neo-Soul/Neo Soul Drums 03.wav",
+"genre": "Neo-Soul",
+"file": "Neo Soul Drums 03.wav",
+"src": "Neo Soul Drums 03.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 69.84,
+"dur": 27.49
+},
+{
+"id": "Neo-Soul/Neo Soul Drums 01.wav",
+"genre": "Neo-Soul",
+"file": "Neo Soul Drums 01.wav",
+"src": "Neo Soul Drums 01.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 89.78,
+"dur": 21.39
+},
+{
+"id": "Neo-Soul/Neo Soul Drums 08.wav",
+"genre": "Neo-Soul",
+"file": "Neo Soul Drums 08.wav",
+"src": "Neo Soul Drums 08.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 89.78,
+"dur": 21.39
+},
+{
+"id": "Neo-Soul/Slow Vibes Break 02.wav",
+"genre": "Neo-Soul",
+"file": "Slow Vibes Break 02.wav",
+"src": "Slow Vibes Break 02.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 24,
+"bpm": 119.49,
+"dur": 12.05
+},
+{
+"id": "Neo-Soul/Digging Deep Soul Break.wav",
+"genre": "Neo-Soul",
+"file": "Digging Deep Soul Break.wav",
+"src": "Digging Deep Soul Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 24,
+"bpm": 119.49,
+"dur": 12.05
+},
+{
+"id": "Neo-Soul/Slow Vibes Break 01.wav",
+"genre": "Neo-Soul",
+"file": "Slow Vibes Break 01.wav",
+"src": "Slow Vibes Break 01.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 24,
+"bpm": 119.49,
+"dur": 12.05
+},
+{
+"id": "Neo-Soul/Laid Back Soul Break 01.wav",
+"genre": "Neo-Soul",
+"file": "Laid Back Soul Break 01.wav",
+"src": "Laid Back Soul Break 01.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 16,
+"bpm": 69.72,
+"dur": 13.77
+},
+{
+"id": "Neo-Soul/Simple Steady Break.wav",
+"genre": "Neo-Soul",
+"file": "Simple Steady Break.wav",
+"src": "Simple Steady Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 16,
+"bpm": 119.15,
+"dur": 8.06
+},
+{
+"id": "Neo-Soul/Relaxed Half Time Break 02.wav",
+"genre": "Neo-Soul",
+"file": "Relaxed Half Time Break 02.wav",
+"src": "Relaxed Half Time Break 02.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 16,
+"bpm": 138.74,
+"dur": 6.92
+},
+{
+"id": "Neo-Soul/Soft Disco Break.wav",
+"genre": "Neo-Soul",
+"file": "Soft Disco Break.wav",
+"src": "Soft Disco Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 16,
+"bpm": 99.38,
+"dur": 9.66
+},
+{
+"id": "Neo-Soul/Salty Popcorn Break 01.wav",
+"genre": "Neo-Soul",
+"file": "Salty Popcorn Break 01.wav",
+"src": "Salty Popcorn Break 01.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 16,
+"bpm": 110.25,
+"dur": 8.71
+},
+{
+"id": "Neo-Soul/Lush Snare Break.wav",
+"genre": "Neo-Soul",
+"file": "Lush Snare Break.wav",
+"src": "Lush Snare Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 16,
+"bpm": 74.63,
+"dur": 12.86
+},
+{
+"id": "Neo-Soul/Crunchy Soul Break 01.wav",
+"genre": "Neo-Soul",
+"file": "Crunchy Soul Break 01.wav",
+"src": "Crunchy Soul Break 01.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 16,
+"bpm": 74.63,
+"dur": 12.86
+},
+{
+"id": "Neo-Soul/Deep Feels Soul Break 05.wav",
+"genre": "Neo-Soul",
+"file": "Deep Feels Soul Break 05.wav",
+"src": "Deep Feels Soul Break 05.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 16,
+"bpm": 89.49,
+"dur": 10.73
+},
+{
+"id": "Neo-Soul/Laid Back Soul Break 02.wav",
+"genre": "Neo-Soul",
+"file": "Laid Back Soul Break 02.wav",
+"src": "Laid Back Soul Break 02.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 16,
+"bpm": 69.72,
+"dur": 13.77
+},
+{
+"id": "Neo-Soul/Vintage Soul Break.wav",
+"genre": "Neo-Soul",
+"file": "Vintage Soul Break.wav",
+"src": "Vintage Soul Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 16,
+"bpm": 84.55,
+"dur": 11.35
+},
+{
+"id": "Neo-Soul/Uptempo Driving Break.wav",
+"genre": "Neo-Soul",
+"file": "Uptempo Driving Break.wav",
+"src": "Uptempo Driving Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 16,
+"bpm": 138.74,
+"dur": 6.92
+},
+{
+"id": "Neo-Soul/Salty Popcorn Break 03.wav",
+"genre": "Neo-Soul",
+"file": "Salty Popcorn Break 03.wav",
+"src": "Salty Popcorn Break 03.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 16,
+"bpm": 104.4,
+"dur": 9.2
+},
+{
+"id": "Neo-Soul/Shuffling Snare Break.wav",
+"genre": "Neo-Soul",
+"file": "Shuffling Snare Break.wav",
+"src": "Shuffling Snare Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 16,
+"bpm": 109.37,
+"dur": 8.78
+},
+{
+"id": "Neo-Soul/Thick Laid-back Beat 03.wav",
+"genre": "Neo-Soul",
+"file": "Thick Laid-back Beat 03.wav",
+"src": "Thick Laid-back Beat 03.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 16,
+"bpm": 94.39,
+"dur": 10.17
+},
+{
+"id": "Neo-Soul/Relaxing House Break.wav",
+"genre": "Neo-Soul",
+"file": "Relaxing House Break.wav",
+"src": "Relaxing House Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 16,
+"bpm": 100.35,
+"dur": 9.57
+},
+{
+"id": "Neo-Soul/Crunchy Soul Break 02.wav",
+"genre": "Neo-Soul",
+"file": "Crunchy Soul Break 02.wav",
+"src": "Crunchy Soul Break 02.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 16,
+"bpm": 74.63,
+"dur": 12.86
+},
+{
+"id": "Neo-Soul/Slow Vibes Break 03.wav",
+"genre": "Neo-Soul",
+"file": "Slow Vibes Break 03.wav",
+"src": "Slow Vibes Break 03.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 12,
+"bpm": 118.8,
+"dur": 6.06
+},
+{
+"id": "Neo-Soul/Perked Up Break.wav",
+"genre": "Neo-Soul",
+"file": "Perked Up Break.wav",
+"src": "Perked Up Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Neo-Soul/Deep Toms Break 01.wav",
+"genre": "Neo-Soul",
+"file": "Deep Toms Break 01.wav",
+"src": "Deep Toms Break 01.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 82.03,
+"dur": 5.85
+},
+{
+"id": "Neo-Soul/Thick Laid-back Beat 01.wav",
+"genre": "Neo-Soul",
+"file": "Thick Laid-back Beat 01.wav",
+"src": "Thick Laid-back Beat 01.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 93.96,
+"dur": 5.11
+},
+{
+"id": "Neo-Soul/Shuffling Vintage Break.wav",
+"genre": "Neo-Soul",
+"file": "Shuffling Vintage Break.wav",
+"src": "Shuffling Vintage Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 82.03,
+"dur": 5.85
+},
+{
+"id": "Neo-Soul/Classic Tambourine Break.wav",
+"genre": "Neo-Soul",
+"file": "Classic Tambourine Break.wav",
+"src": "Classic Tambourine Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 74.36,
+"dur": 6.46
+},
+{
+"id": "Neo-Soul/Bone Dry Break 02.wav",
+"genre": "Neo-Soul",
+"file": "Bone Dry Break 02.wav",
+"src": "Bone Dry Break 02.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 91.07,
+"dur": 5.27
+},
+{
+"id": "Neo-Soul/Sweet Chilled Break 02.wav",
+"genre": "Neo-Soul",
+"file": "Sweet Chilled Break 02.wav",
+"src": "Sweet Chilled Break 02.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 82.03,
+"dur": 5.85
+},
+{
+"id": "Neo-Soul/Steady Funk Break.wav",
+"genre": "Neo-Soul",
+"file": "Steady Funk Break.wav",
+"src": "Steady Funk Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 91.07,
+"dur": 5.27
+},
+{
+"id": "Neo-Soul/Hard Knocking Break.wav",
+"genre": "Neo-Soul",
+"file": "Hard Knocking Break.wav",
+"src": "Hard Knocking Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 108.8,
+"dur": 4.41
+},
+{
+"id": "Neo-Soul/Thick Laid-back Beat 02.wav",
+"genre": "Neo-Soul",
+"file": "Thick Laid-back Beat 02.wav",
+"src": "Thick Laid-back Beat 02.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 93.96,
+"dur": 5.11
+},
+{
+"id": "Neo-Soul/Bone Dry Break 01.wav",
+"genre": "Neo-Soul",
+"file": "Bone Dry Break 01.wav",
+"src": "Bone Dry Break 01.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 91.07,
+"dur": 5.27
+},
+{
+"id": "Neo-Soul/Deep Feels Soul Break 04.wav",
+"genre": "Neo-Soul",
+"file": "Deep Feels Soul Break 04.wav",
+"src": "Deep Feels Soul Break 04.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Neo-Soul/Bubble Beat Break.wav",
+"genre": "Neo-Soul",
+"file": "Bubble Beat Break.wav",
+"src": "Bubble Beat Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 103.88,
+"dur": 4.62
+},
+{
+"id": "Neo-Soul/Deep Toms Break 02.wav",
+"genre": "Neo-Soul",
+"file": "Deep Toms Break 02.wav",
+"src": "Deep Toms Break 02.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 82.03,
+"dur": 5.85
+},
+{
+"id": "Neo-Soul/Brush Work Break.wav",
+"genre": "Neo-Soul",
+"file": "Brush Work Break.wav",
+"src": "Brush Work Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 84.03,
+"dur": 5.71
+},
+{
+"id": "Neo-Soul/Deep Toms Break 03.wav",
+"genre": "Neo-Soul",
+"file": "Deep Toms Break 03.wav",
+"src": "Deep Toms Break 03.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 82.03,
+"dur": 5.85
+},
+{
+"id": "Neo-Soul/Sweet Snare Break.wav",
+"genre": "Neo-Soul",
+"file": "Sweet Snare Break.wav",
+"src": "Sweet Snare Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 118.13,
+"dur": 4.06
+},
+{
+"id": "Neo-Soul/Deep Feels Soul Break 03.wav",
+"genre": "Neo-Soul",
+"file": "Deep Feels Soul Break 03.wav",
+"src": "Deep Feels Soul Break 03.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Neo-Soul/Salty Popcorn Break 02.wav",
+"genre": "Neo-Soul",
+"file": "Salty Popcorn Break 02.wav",
+"src": "Salty Popcorn Break 02.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 103.88,
+"dur": 4.62
+},
+{
+"id": "Neo-Soul/Deep Feels Soul Break 02.wav",
+"genre": "Neo-Soul",
+"file": "Deep Feels Soul Break 02.wav",
+"src": "Deep Feels Soul Break 02.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Neo-Soul/Sweet Chilled Break 01.wav",
+"genre": "Neo-Soul",
+"file": "Sweet Chilled Break 01.wav",
+"src": "Sweet Chilled Break 01.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 82.03,
+"dur": 5.85
+},
+{
+"id": "Neo-Soul/Deep Feels Soul Break 01.wav",
+"genre": "Neo-Soul",
+"file": "Deep Feels Soul Break 01.wav",
+"src": "Deep Feels Soul Break 01.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 89.1,
+"dur": 5.39
+},
+{
+"id": "Neo-Soul/Relaxed Half Time Break 01.wav",
+"genre": "Neo-Soul",
+"file": "Relaxed Half Time Break 01.wav",
+"src": "Relaxed Half Time Break 01.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 137.81,
+"dur": 3.48
+},
+{
+"id": "Neo-Soul/Lo-Fi Funk Break.wav",
+"genre": "Neo-Soul",
+"file": "Lo-Fi Funk Break.wav",
+"src": "Lo-Fi Funk Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 8,
+"bpm": 103.88,
+"dur": 4.62
+},
+{
+"id": "Neo-Soul/Uptempo Funk Break.wav",
+"genre": "Neo-Soul",
+"file": "Uptempo Funk Break.wav",
+"src": "Uptempo Funk Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 4,
+"bpm": 136.0,
+"dur": 1.76
+},
+{
+"id": "Neo-Soul/Lo-Fi Brushes Break.wav",
+"genre": "Neo-Soul",
+"file": "Lo-Fi Brushes Break.wav",
+"src": "Lo-Fi Brushes Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 4,
+"bpm": 102.34,
+"dur": 2.35
+},
+{
+"id": "Neo-Soul/Conga Break Beat.wav",
+"genre": "Neo-Soul",
+"file": "Conga Break Beat.wav",
+"src": "Conga Break Beat.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 4,
+"bpm": 81.39,
+"dur": 2.95
+},
+{
+"id": "Neo-Soul/Lazy Turnaround Break.wav",
+"genre": "Neo-Soul",
+"file": "Lazy Turnaround Break.wav",
+"src": "Lazy Turnaround Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 4,
+"bpm": 81.39,
+"dur": 2.95
+},
+{
+"id": "Neo-Soul/Soft Slice Break.wav",
+"genre": "Neo-Soul",
+"file": "Soft Slice Break.wav",
+"src": "Soft Slice Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 4,
+"bpm": 83.35,
+"dur": 2.88
+},
+{
+"id": "Neo-Soul/Seventies Turnaround Break.wav",
+"genre": "Neo-Soul",
+"file": "Seventies Turnaround Break.wav",
+"src": "Seventies Turnaround Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 4,
+"bpm": 88.34,
+"dur": 2.72
+},
+{
+"id": "Neo-Soul/Vintage Fill Break.wav",
+"genre": "Neo-Soul",
+"file": "Vintage Fill Break.wav",
+"src": "Vintage Fill Break.caf",
+"metagenre": "Hip Hop/RnB",
+"beats": 4,
+"bpm": 81.39,
+"dur": 2.95
+},
+{
+"id": "Alt R&B/Fond Farewell Beat.wav",
+"genre": "Alt R&B",
+"file": "Fond Farewell Beat.wav",
+"src": "Fond Farewell Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 64,
+"bpm": 162.61,
+"dur": 23.61
+},
+{
+"id": "Alt R&B/Spooky Dub Beat.wav",
+"genre": "Alt R&B",
+"file": "Spooky Dub Beat.wav",
+"src": "Spooky Dub Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 142.32,
+"dur": 13.49
+},
+{
+"id": "Alt R&B/In Too Deep Beat.wav",
+"genre": "Alt R&B",
+"file": "In Too Deep Beat.wav",
+"src": "In Too Deep Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 124.53,
+"dur": 15.42
+},
+{
+"id": "Alt R&B/New Toys Beat.wav",
+"genre": "Alt R&B",
+"file": "New Toys Beat.wav",
+"src": "New Toys Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 116.63,
+"dur": 16.46
+},
+{
+"id": "Alt R&B/Long Night Drive Beat.wav",
+"genre": "Alt R&B",
+"file": "Long Night Drive Beat.wav",
+"src": "Long Night Drive Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 88.72,
+"dur": 21.64
+},
+{
+"id": "Alt R&B/Warm Summer Waves Beat.wav",
+"genre": "Alt R&B",
+"file": "Warm Summer Waves Beat.wav",
+"src": "Warm Summer Waves Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 110.69,
+"dur": 17.35
+},
+{
+"id": "Alt R&B/Deep Pockets Beat.wav",
+"genre": "Alt R&B",
+"file": "Deep Pockets Beat.wav",
+"src": "Deep Pockets Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 100.72,
+"dur": 19.06
+},
+{
+"id": "Alt R&B/Fear Not Beat.wav",
+"genre": "Alt R&B",
+"file": "Fear Not Beat.wav",
+"src": "Fear Not Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 129.4,
+"dur": 14.84
+},
+{
+"id": "Alt R&B/Velvet Breeze Beat.wav",
+"genre": "Alt R&B",
+"file": "Velvet Breeze Beat.wav",
+"src": "Velvet Breeze Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 93.75,
+"dur": 20.48
+},
+{
+"id": "Alt R&B/Afternoon Dreaming Beat.wav",
+"genre": "Alt R&B",
+"file": "Afternoon Dreaming Beat.wav",
+"src": "Afternoon Dreaming Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 113.58,
+"dur": 16.9
+},
+{
+"id": "Alt R&B/Daydream Delight Beat 01.wav",
+"genre": "Alt R&B",
+"file": "Daydream Delight Beat 01.wav",
+"src": "Daydream Delight Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 99.74,
+"dur": 19.25
+},
+{
+"id": "Alt R&B/Strike Out Beat.wav",
+"genre": "Alt R&B",
+"file": "Strike Out Beat.wav",
+"src": "Strike Out Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 134.45,
+"dur": 14.28
+},
+{
+"id": "Alt R&B/Sweetly Dreaming Beat.wav",
+"genre": "Alt R&B",
+"file": "Sweetly Dreaming Beat.wav",
+"src": "Sweetly Dreaming Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 134.45,
+"dur": 14.28
+},
+{
+"id": "Alt R&B/Perfectly Playful Beat.wav",
+"genre": "Alt R&B",
+"file": "Perfectly Playful Beat.wav",
+"src": "Perfectly Playful Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 128.4,
+"dur": 14.95
+},
+{
+"id": "Alt R&B/Sixties Soul Beat.wav",
+"genre": "Alt R&B",
+"file": "Sixties Soul Beat.wav",
+"src": "Sixties Soul Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 85.78,
+"dur": 22.38
+},
+{
+"id": "Alt R&B/Life Story Beat.wav",
+"genre": "Alt R&B",
+"file": "Life Story Beat.wav",
+"src": "Life Story Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 124.53,
+"dur": 15.42
+},
+{
+"id": "Alt R&B/Keep It Together Beat.wav",
+"genre": "Alt R&B",
+"file": "Keep It Together Beat.wav",
+"src": "Keep It Together Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 87.78,
+"dur": 21.87
+},
+{
+"id": "Alt R&B/Twilight Escape Beat 01.wav",
+"genre": "Alt R&B",
+"file": "Twilight Escape Beat 01.wav",
+"src": "Twilight Escape Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 139.44,
+"dur": 13.77
+},
+{
+"id": "Alt R&B/Friday Night Beat.wav",
+"genre": "Alt R&B",
+"file": "Friday Night Beat.wav",
+"src": "Friday Night Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 134.45,
+"dur": 14.28
+},
+{
+"id": "Alt R&B/Neo Miami Machine Beat.wav",
+"genre": "Alt R&B",
+"file": "Neo Miami Machine Beat.wav",
+"src": "Neo Miami Machine Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 139.44,
+"dur": 13.77
+},
+{
+"id": "Alt R&B/Sweet Cream Beat.wav",
+"genre": "Alt R&B",
+"file": "Sweet Cream Beat.wav",
+"src": "Sweet Cream Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 134.45,
+"dur": 14.28
+},
+{
+"id": "Alt R&B/Better Together Beat.wav",
+"genre": "Alt R&B",
+"file": "Better Together Beat.wav",
+"src": "Better Together Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 144.31,
+"dur": 13.31
+},
+{
+"id": "Alt R&B/Floating Adrift Beat.wav",
+"genre": "Alt R&B",
+"file": "Floating Adrift Beat.wav",
+"src": "Floating Adrift Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 124.53,
+"dur": 15.42
+},
+{
+"id": "Alt R&B/Big Love Beat.wav",
+"genre": "Alt R&B",
+"file": "Big Love Beat.wav",
+"src": "Big Love Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 90.77,
+"dur": 21.15
+},
+{
+"id": "Alt R&B/Heart Felt Beat.wav",
+"genre": "Alt R&B",
+"file": "Heart Felt Beat.wav",
+"src": "Heart Felt Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 32,
+"bpm": 124.53,
+"dur": 15.42
+},
+{
+"id": "Alt R&B/Icons and Rebels Beat.wav",
+"genre": "Alt R&B",
+"file": "Icons and Rebels Beat.wav",
+"src": "Icons and Rebels Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 24,
+"bpm": 219.91,
+"dur": 6.55
+},
+{
+"id": "Alt R&B/Glitter Shimmer Beat.wav",
+"genre": "Alt R&B",
+"file": "Glitter Shimmer Beat.wav",
+"src": "Glitter Shimmer Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 104.4,
+"dur": 9.2
+},
+{
+"id": "Alt R&B/Lazer Battle Beat.wav",
+"genre": "Alt R&B",
+"file": "Lazer Battle Beat.wav",
+"src": "Lazer Battle Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 121.24,
+"dur": 7.92
+},
+{
+"id": "Alt R&B/Dark Secret Beat.wav",
+"genre": "Alt R&B",
+"file": "Dark Secret Beat.wav",
+"src": "Dark Secret Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 104.4,
+"dur": 9.2
+},
+{
+"id": "Alt R&B/Memories Fade Beat.wav",
+"genre": "Alt R&B",
+"file": "Memories Fade Beat.wav",
+"src": "Memories Fade Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 93.54,
+"dur": 10.26
+},
+{
+"id": "Alt R&B/Now And Always Beat.wav",
+"genre": "Alt R&B",
+"file": "Now And Always Beat.wav",
+"src": "Now And Always Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 81.55,
+"dur": 11.77
+},
+{
+"id": "Alt R&B/Fried Rice Beat.wav",
+"genre": "Alt R&B",
+"file": "Fried Rice Beat.wav",
+"src": "Fried Rice Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 87.59,
+"dur": 10.96
+},
+{
+"id": "Alt R&B/Lean Back Beat.wav",
+"genre": "Alt R&B",
+"file": "Lean Back Beat.wav",
+"src": "Lean Back Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 89.49,
+"dur": 10.73
+},
+{
+"id": "Alt R&B/Stars At Night Beat.wav",
+"genre": "Alt R&B",
+"file": "Stars At Night Beat.wav",
+"src": "Stars At Night Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 88.53,
+"dur": 10.84
+},
+{
+"id": "Alt R&B/Low Swampy Beat.wav",
+"genre": "Alt R&B",
+"file": "Low Swampy Beat.wav",
+"src": "Low Swampy Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 87.59,
+"dur": 10.96
+},
+{
+"id": "Alt R&B/Amped Funk Beat.wav",
+"genre": "Alt R&B",
+"file": "Amped Funk Beat.wav",
+"src": "Amped Funk Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 123.05,
+"dur": 7.8
+},
+{
+"id": "Alt R&B/Slump Mode Beat.wav",
+"genre": "Alt R&B",
+"file": "Slump Mode Beat.wav",
+"src": "Slump Mode Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 79.51,
+"dur": 12.07
+},
+{
+"id": "Alt R&B/Snapped In Half Beat.wav",
+"genre": "Alt R&B",
+"file": "Snapped In Half Beat.wav",
+"src": "Snapped In Half Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 91.47,
+"dur": 10.5
+},
+{
+"id": "Alt R&B/Fast and Loose Beat.wav",
+"genre": "Alt R&B",
+"file": "Fast and Loose Beat.wav",
+"src": "Fast and Loose Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 113.27,
+"dur": 8.48
+},
+{
+"id": "Alt R&B/Sweet Summer Beat 02.wav",
+"genre": "Alt R&B",
+"file": "Sweet Summer Beat 02.wav",
+"src": "Sweet Summer Beat 02.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 84.55,
+"dur": 11.35
+},
+{
+"id": "Alt R&B/Shifting Feels Beat.wav",
+"genre": "Alt R&B",
+"file": "Shifting Feels Beat.wav",
+"src": "Shifting Feels Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 95.48,
+"dur": 10.05
+},
+{
+"id": "Alt R&B/Throw Down Beat.wav",
+"genre": "Alt R&B",
+"file": "Throw Down Beat.wav",
+"src": "Throw Down Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 91.47,
+"dur": 10.5
+},
+{
+"id": "Alt R&B/No Time Now Beat.wav",
+"genre": "Alt R&B",
+"file": "No Time Now Beat.wav",
+"src": "No Time Now Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 99.38,
+"dur": 9.66
+},
+{
+"id": "Alt R&B/Elevated Heart Beat.wav",
+"genre": "Alt R&B",
+"file": "Elevated Heart Beat.wav",
+"src": "Elevated Heart Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 101.33,
+"dur": 9.47
+},
+{
+"id": "Alt R&B/Drive Home Beat.wav",
+"genre": "Alt R&B",
+"file": "Drive Home Beat.wav",
+"src": "Drive Home Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 107.39,
+"dur": 8.94
+},
+{
+"id": "Alt R&B/Tight Swing Beat.wav",
+"genre": "Alt R&B",
+"file": "Tight Swing Beat.wav",
+"src": "Tight Swing Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 88.53,
+"dur": 10.84
+},
+{
+"id": "Alt R&B/Stereo Kick Beat.wav",
+"genre": "Alt R&B",
+"file": "Stereo Kick Beat.wav",
+"src": "Stereo Kick Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 89.49,
+"dur": 10.73
+},
+{
+"id": "Alt R&B/Gliding Funk Beat.wav",
+"genre": "Alt R&B",
+"file": "Gliding Funk Beat.wav",
+"src": "Gliding Funk Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 105.2,
+"dur": 9.13
+},
+{
+"id": "Alt R&B/On A Roll Beat.wav",
+"genre": "Alt R&B",
+"file": "On A Roll Beat.wav",
+"src": "On A Roll Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 132.09,
+"dur": 7.27
+},
+{
+"id": "Alt R&B/Soul Survivor Beat.wav",
+"genre": "Alt R&B",
+"file": "Soul Survivor Beat.wav",
+"src": "Soul Survivor Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 95.48,
+"dur": 10.05
+},
+{
+"id": "Alt R&B/Loose Vintage Beat.wav",
+"genre": "Alt R&B",
+"file": "Loose Vintage Beat.wav",
+"src": "Loose Vintage Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 95.48,
+"dur": 10.05
+},
+{
+"id": "Alt R&B/Sweet Summer Beat 01.wav",
+"genre": "Alt R&B",
+"file": "Sweet Summer Beat 01.wav",
+"src": "Sweet Summer Beat 01.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 84.55,
+"dur": 11.35
+},
+{
+"id": "Alt R&B/Way Back Beat.wav",
+"genre": "Alt R&B",
+"file": "Way Back Beat.wav",
+"src": "Way Back Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 86.49,
+"dur": 11.1
+},
+{
+"id": "Alt R&B/Keep Up With Me Beat.wav",
+"genre": "Alt R&B",
+"file": "Keep Up With Me Beat.wav",
+"src": "Keep Up With Me Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 106.28,
+"dur": 9.03
+},
+{
+"id": "Alt R&B/Hopeful Beginnings Beat.wav",
+"genre": "Alt R&B",
+"file": "Hopeful Beginnings Beat.wav",
+"src": "Hopeful Beginnings Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 124.91,
+"dur": 7.69
+},
+{
+"id": "Alt R&B/Soul Flow Beat.wav",
+"genre": "Alt R&B",
+"file": "Soul Flow Beat.wav",
+"src": "Soul Flow Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 115.16,
+"dur": 8.34
+},
+{
+"id": "Alt R&B/Heavy Vibes Beat.wav",
+"genre": "Alt R&B",
+"file": "Heavy Vibes Beat.wav",
+"src": "Heavy Vibes Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 91.47,
+"dur": 10.5
+},
+{
+"id": "Alt R&B/Drifting Falling Beat.wav",
+"genre": "Alt R&B",
+"file": "Drifting Falling Beat.wav",
+"src": "Drifting Falling Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 134.67,
+"dur": 7.13
+},
+{
+"id": "Alt R&B/Green Persimmon Beat.wav",
+"genre": "Alt R&B",
+"file": "Green Persimmon Beat.wav",
+"src": "Green Persimmon Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 86.49,
+"dur": 11.1
+},
+{
+"id": "Alt R&B/Minimalist Scheme Beat.wav",
+"genre": "Alt R&B",
+"file": "Minimalist Scheme Beat.wav",
+"src": "Minimalist Scheme Beat.caf",
+"metagenre": "Modern RnB",
+"beats": 16,
+"bpm": 113.27,
+"dur": 8.48
+}
+]

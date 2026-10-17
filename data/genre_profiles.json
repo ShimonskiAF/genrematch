@@ -1,5 +1,5 @@
 {
- "note": "Genre centres for GenreMatch features (7 acoustic + 5 rhythm). Club/urban subgenres fitted to labelled DJ-library tracks (training split, shrunk toward the pooled mean, with per-feature spread). Estimates rescaled. See calibration/.",
+ "note": "Genre centres for GenreMatch features (7 acoustic + 5 rhythm). Club/urban subgenres fitted to labelled DJ-library tracks (training split, shrunk toward the pooled mean, with per-feature spread). Estimates rescaled. See calibration/. Fitted profiles also carry groove centres (layer 1, drums: calibration/layers/drums_rnb.json). Fitted profiles also carry groove centres (layer 1, drums: calibration/layers/drums_rnb.json).",
  "profiles": [
   {
    "id": "techno",
@@ -63,8 +63,24 @@
      "syncop": 0.15,
      "backbeat": 0.15,
      "tonal": 0.21,
-     "vocalMid": 0.31
-    }
+     "vocalMid": 0.31,
+     "ghost": 0.15,
+     "tight": 0.23,
+     "kickDensity": 0.21,
+     "hatDensity": 0.22,
+     "backbeat2": 0.32,
+     "kickOff": 0.29,
+     "gTempo": 0.3,
+     "halfTime": 0.15
+    },
+    "ghost": 0.42,
+    "tight": 0.63,
+    "kickDensity": 0.53,
+    "hatDensity": 0.22,
+    "backbeat2": 0.41,
+    "kickOff": 0.65,
+    "gTempo": 0.94,
+    "halfTime": 0.02
    },
    "status": "calibrated on 8 labelled tracks"
   },
@@ -152,8 +168,24 @@
      "syncop": 0.15,
      "backbeat": 0.15,
      "tonal": 0.16,
-     "vocalMid": 0.15
-    }
+     "vocalMid": 0.15,
+     "ghost": 0.25,
+     "tight": 0.25,
+     "kickDensity": 0.24,
+     "hatDensity": 0.25,
+     "backbeat2": 0.25,
+     "kickOff": 0.24,
+     "gTempo": 0.15,
+     "halfTime": 0.17
+    },
+    "ghost": 0.87,
+    "tight": 0.46,
+    "kickDensity": 0.67,
+    "hatDensity": 0.85,
+    "backbeat2": 0.27,
+    "kickOff": 0.83,
+    "gTempo": 0.32,
+    "halfTime": 0.18
    },
    "status": "calibrated on 15 labelled tracks"
   },
@@ -241,8 +273,24 @@
      "syncop": 0.15,
      "backbeat": 0.15,
      "tonal": 0.18,
-     "vocalMid": 0.25
-    }
+     "vocalMid": 0.25,
+     "ghost": 0.27,
+     "tight": 0.38,
+     "kickDensity": 0.35,
+     "hatDensity": 0.3,
+     "backbeat2": 0.28,
+     "kickOff": 0.2,
+     "gTempo": 0.3,
+     "halfTime": 0.28
+    },
+    "ghost": 0.47,
+    "tight": 0.63,
+    "kickDensity": 0.39,
+    "hatDensity": 0.45,
+    "backbeat2": 0.35,
+    "kickOff": 0.77,
+    "gTempo": 0.4,
+    "halfTime": 0.29
    },
    "status": "calibrated on 21 labelled tracks"
   },
@@ -282,8 +330,24 @@
      "syncop": 0.15,
      "backbeat": 0.15,
      "tonal": 0.3,
-     "vocalMid": 0.23
-    }
+     "vocalMid": 0.23,
+     "ghost": 0.27,
+     "tight": 0.27,
+     "kickDensity": 0.25,
+     "hatDensity": 0.28,
+     "backbeat2": 0.3,
+     "kickOff": 0.22,
+     "gTempo": 0.28,
+     "halfTime": 0.18
+    },
+    "ghost": 0.38,
+    "tight": 0.52,
+    "kickDensity": 0.39,
+    "hatDensity": 0.33,
+    "backbeat2": 0.18,
+    "kickOff": 0.65,
+    "gTempo": 0.16,
+    "halfTime": 0.32
    },
    "status": "calibrated on 15 labelled tracks"
   },
@@ -348,8 +412,24 @@
      "syncop": 0.15,
      "backbeat": 0.15,
      "tonal": 0.28,
-     "vocalMid": 0.15
-    }
+     "vocalMid": 0.15,
+     "ghost": 0.26,
+     "tight": 0.24,
+     "kickDensity": 0.31,
+     "hatDensity": 0.35,
+     "backbeat2": 0.25,
+     "kickOff": 0.23,
+     "gTempo": 0.3,
+     "halfTime": 0.24
+    },
+    "ghost": 0.43,
+    "tight": 0.48,
+    "kickDensity": 0.58,
+    "hatDensity": 0.74,
+    "backbeat2": 0.17,
+    "kickOff": 0.85,
+    "gTempo": 0.54,
+    "halfTime": 0.28
    },
    "status": "calibrated on 23 labelled tracks"
   },
@@ -391,8 +471,24 @@
      "syncop": 0.15,
      "backbeat": 0.15,
      "tonal": 0.19,
-     "vocalMid": 0.21
-    }
+     "vocalMid": 0.21,
+     "ghost": 0.24,
+     "tight": 0.34,
+     "kickDensity": 0.26,
+     "hatDensity": 0.27,
+     "backbeat2": 0.34,
+     "kickOff": 0.24,
+     "gTempo": 0.31,
+     "halfTime": 0.32
+    },
+    "ghost": 0.6,
+    "tight": 0.48,
+    "kickDensity": 0.47,
+    "hatDensity": 0.35,
+    "backbeat2": 0.55,
+    "kickOff": 0.68,
+    "gTempo": 0.55,
+    "halfTime": 0.27
    },
    "status": "calibrated on 54 labelled tracks"
   },
@@ -814,8 +910,24 @@
      "syncop": 0.15,
      "backbeat": 0.15,
      "tonal": 0.23,
-     "vocalMid": 0.15
-    }
+     "vocalMid": 0.15,
+     "ghost": 0.27,
+     "tight": 0.3,
+     "kickDensity": 0.26,
+     "hatDensity": 0.28,
+     "backbeat2": 0.29,
+     "kickOff": 0.19,
+     "gTempo": 0.33,
+     "halfTime": 0.3
+    },
+    "ghost": 0.36,
+    "tight": 0.76,
+    "kickDensity": 0.44,
+    "hatDensity": 0.13,
+    "backbeat2": 0.27,
+    "kickOff": 0.42,
+    "gTempo": 0.15,
+    "halfTime": 0.39
    },
    "status": "calibrated on 9 labelled tracks"
   },
@@ -856,8 +968,24 @@
      "syncop": 0.15,
      "backbeat": 0.15,
      "tonal": 0.19,
-     "vocalMid": 0.21
-    }
+     "vocalMid": 0.21,
+     "ghost": 0.25,
+     "tight": 0.24,
+     "kickDensity": 0.22,
+     "hatDensity": 0.18,
+     "backbeat2": 0.28,
+     "kickOff": 0.29,
+     "gTempo": 0.23,
+     "halfTime": 0.17
+    },
+    "ghost": 0.62,
+    "tight": 0.39,
+    "kickDensity": 0.41,
+    "hatDensity": 0.45,
+    "backbeat2": 0.2,
+    "kickOff": 0.46,
+    "gTempo": 0.44,
+    "halfTime": 0.2
    },
    "status": "calibrated on 53 labelled tracks"
   },
@@ -921,8 +1049,24 @@
      "syncop": 0.15,
      "backbeat": 0.15,
      "tonal": 0.18,
-     "vocalMid": 0.25
-    }
+     "vocalMid": 0.25,
+     "ghost": 0.21,
+     "tight": 0.26,
+     "kickDensity": 0.21,
+     "hatDensity": 0.3,
+     "backbeat2": 0.3,
+     "kickOff": 0.22,
+     "gTempo": 0.24,
+     "halfTime": 0.35
+    },
+    "ghost": 0.54,
+    "tight": 0.41,
+    "kickDensity": 0.5,
+    "hatDensity": 0.41,
+    "backbeat2": 0.3,
+    "kickOff": 0.61,
+    "gTempo": 0.73,
+    "halfTime": 0.69
    },
    "status": "calibrated on 30 labelled tracks"
   },
@@ -962,8 +1106,24 @@
      "syncop": 0.15,
      "backbeat": 0.15,
      "tonal": 0.15,
-     "vocalMid": 0.2
-    }
+     "vocalMid": 0.2,
+     "ghost": 0.16,
+     "tight": 0.19,
+     "kickDensity": 0.15,
+     "hatDensity": 0.15,
+     "backbeat2": 0.25,
+     "kickOff": 0.15,
+     "gTempo": 0.15,
+     "halfTime": 0.33
+    },
+    "ghost": 0.59,
+    "tight": 0.56,
+    "kickDensity": 0.52,
+    "hatDensity": 0.3,
+    "backbeat2": 0.18,
+    "kickOff": 0.62,
+    "gTempo": 0.75,
+    "halfTime": 0.46
    },
    "status": "calibrated on 9 labelled tracks"
   },
@@ -1004,8 +1164,24 @@
      "syncop": 0.15,
      "backbeat": 0.15,
      "tonal": 0.16,
-     "vocalMid": 0.15
-    }
+     "vocalMid": 0.15,
+     "ghost": 0.21,
+     "tight": 0.27,
+     "kickDensity": 0.22,
+     "hatDensity": 0.2,
+     "backbeat2": 0.18,
+     "kickOff": 0.3,
+     "gTempo": 0.21,
+     "halfTime": 0.27
+    },
+    "ghost": 0.38,
+    "tight": 0.5,
+    "kickDensity": 0.33,
+    "hatDensity": 0.34,
+    "backbeat2": 0.16,
+    "kickOff": 0.51,
+    "gTempo": 0.08,
+    "halfTime": 0.18
    },
    "status": "calibrated on 15 labelled tracks"
   },
@@ -1047,8 +1223,24 @@
      "syncop": 0.15,
      "backbeat": 0.15,
      "tonal": 0.19,
-     "vocalMid": 0.24
-    }
+     "vocalMid": 0.24,
+     "ghost": 0.21,
+     "tight": 0.24,
+     "kickDensity": 0.2,
+     "hatDensity": 0.17,
+     "backbeat2": 0.25,
+     "kickOff": 0.3,
+     "gTempo": 0.44,
+     "halfTime": 0.25
+    },
+    "ghost": 0.28,
+    "tight": 0.56,
+    "kickDensity": 0.44,
+    "hatDensity": 0.29,
+    "backbeat2": 0.23,
+    "kickOff": 0.55,
+    "gTempo": 0.97,
+    "halfTime": 0.13
    },
    "status": "calibrated on 24 labelled tracks"
   },
@@ -1089,8 +1281,24 @@
      "syncop": 0.15,
      "backbeat": 0.15,
      "tonal": 0.29,
-     "vocalMid": 0.15
-    }
+     "vocalMid": 0.15,
+     "ghost": 0.19,
+     "tight": 0.17,
+     "kickDensity": 0.17,
+     "hatDensity": 0.19,
+     "backbeat2": 0.27,
+     "kickOff": 0.24,
+     "gTempo": 0.19,
+     "halfTime": 0.15
+    },
+    "ghost": 0.13,
+    "tight": 0.62,
+    "kickDensity": 0.45,
+    "hatDensity": 0.22,
+    "backbeat2": 0.18,
+    "kickOff": 0.41,
+    "gTempo": 0.95,
+    "halfTime": 0.1
    },
    "status": "calibrated on 24 labelled tracks"
   },
@@ -1131,8 +1339,24 @@
      "syncop": 0.15,
      "backbeat": 0.15,
      "tonal": 0.28,
-     "vocalMid": 0.16
-    }
+     "vocalMid": 0.16,
+     "ghost": 0.21,
+     "tight": 0.19,
+     "kickDensity": 0.23,
+     "hatDensity": 0.26,
+     "backbeat2": 0.29,
+     "kickOff": 0.32,
+     "gTempo": 0.41,
+     "halfTime": 0.26
+    },
+    "ghost": 0.19,
+    "tight": 0.69,
+    "kickDensity": 0.52,
+    "hatDensity": 0.34,
+    "backbeat2": 0.09,
+    "kickOff": 0.46,
+    "gTempo": 0.9,
+    "halfTime": 0.1
    },
    "status": "calibrated on 45 labelled tracks"
   },
@@ -1172,8 +1396,24 @@
      "syncop": 0.15,
      "backbeat": 0.15,
      "tonal": 0.22,
-     "vocalMid": 0.25
-    }
+     "vocalMid": 0.25,
+     "ghost": 0.32,
+     "tight": 0.22,
+     "kickDensity": 0.15,
+     "hatDensity": 0.21,
+     "backbeat2": 0.18,
+     "kickOff": 0.21,
+     "gTempo": 0.3,
+     "halfTime": 0.27
+    },
+    "ghost": 0.39,
+    "tight": 0.42,
+    "kickDensity": 0.2,
+    "hatDensity": 0.18,
+    "backbeat2": 0.26,
+    "kickOff": 0.56,
+    "gTempo": 0.7,
+    "halfTime": 0.15
    },
    "status": "calibrated on 11 labelled tracks"
   },
@@ -1215,8 +1455,24 @@
      "syncop": 0.15,
      "backbeat": 0.15,
      "tonal": 0.21,
-     "vocalMid": 0.24
-    }
+     "vocalMid": 0.24,
+     "ghost": 0.15,
+     "tight": 0.32,
+     "kickDensity": 0.32,
+     "hatDensity": 0.26,
+     "backbeat2": 0.19,
+     "kickOff": 0.27,
+     "gTempo": 0.16,
+     "halfTime": 0.15
+    },
+    "ghost": 0.57,
+    "tight": 0.25,
+    "kickDensity": 0.57,
+    "hatDensity": 0.46,
+    "backbeat2": 0.35,
+    "kickOff": 0.77,
+    "gTempo": 0.55,
+    "halfTime": 0.22
    },
    "status": "calibrated on 12 labelled tracks"
   },
@@ -1257,8 +1513,24 @@
      "syncop": 0.15,
      "backbeat": 0.15,
      "tonal": 0.2,
-     "vocalMid": 0.2
-    }
+     "vocalMid": 0.2,
+     "ghost": 0.23,
+     "tight": 0.26,
+     "kickDensity": 0.23,
+     "hatDensity": 0.25,
+     "backbeat2": 0.24,
+     "kickOff": 0.27,
+     "gTempo": 0.31,
+     "halfTime": 0.2
+    },
+    "ghost": 0.34,
+    "tight": 0.36,
+    "kickDensity": 0.08,
+    "hatDensity": 0.21,
+    "backbeat2": 0.31,
+    "kickOff": 0.38,
+    "gTempo": 0.12,
+    "halfTime": 0.2
    },
    "status": "calibrated on 21 labelled tracks"
   },
@@ -1300,8 +1572,24 @@
      "syncop": 0.15,
      "backbeat": 0.15,
      "tonal": 0.25,
-     "vocalMid": 0.21
-    }
+     "vocalMid": 0.21,
+     "ghost": 0.26,
+     "tight": 0.25,
+     "kickDensity": 0.22,
+     "hatDensity": 0.23,
+     "backbeat2": 0.23,
+     "kickOff": 0.35,
+     "gTempo": 0.35,
+     "halfTime": 0.29
+    },
+    "ghost": 0.34,
+    "tight": 0.5,
+    "kickDensity": 0.34,
+    "hatDensity": 0.29,
+    "backbeat2": 0.19,
+    "kickOff": 0.55,
+    "gTempo": 0.29,
+    "halfTime": 0.21
    },
    "status": "calibrated on 18 labelled tracks"
   }
